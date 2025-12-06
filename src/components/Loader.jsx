@@ -43,7 +43,7 @@ const Loader = () => {
 {loaderProgress === 100 && (
                         <div className="absolute bottom-0  m-5">
                             <p className="text-2xl font-bold uppercase text-white">
-                                PRAVAH 2025
+                                PRAVAH 2026
                             </p>
                         </div>
                     )}
