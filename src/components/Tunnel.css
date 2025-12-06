@@ -1,0 +1,282 @@
+.content {
+	width: 100vmin;
+	height: 100vmin;
+	perspective: 35vmin;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.door {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+	clip-path: circle(32% at 50% 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	border: 5px solid #333;
+}
+
+.door:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("https://pravah.skit.ac.in/_next/static/media/skit_logo.175f7fd3.png");
+  background-size:  50vh; /* Ensure the image fits within the element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  animation: spin 500s linear infinite;
+  border-radius: 100%; /* Maintain a circular shape */
+}
+
+
+@keyframes spin {
+	100% { transform: rotate(360deg); }
+}
+
+.door:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 100%;
+	background: radial-gradient(#fff0 0 35%, #0e0e0e calc(35% + 1px), #343434 43% 45% , #2c2c2c 50% 100%);
+	filter: drop-shadow(-2px -2px 5px #000a) drop-shadow(2px 2px 5px #000a);
+}
+
+
+
+
+.panel {
+	position: absolute;
+	width: 75vmin;
+	height: 75vmin;
+	border-radius: 100%;
+}
+
+
+.panel:before {
+	--line1: #c17300;
+	--line2: #1c1c1c;
+	--screw1: #c17300 0.25vmin, #fff0 calc(0.25vmin + 3px) 100%;
+	--screw2: #242424 0.45vmin, #fff0 calc(0.45vmin + 1px) 100%;
+	--bg-screws: 
+		radial-gradient(circle at 77.5% 88%, var(--screw1)), 
+		radial-gradient(circle at 77.4% 88%, var(--screw2)), 
+		radial-gradient(circle at 68.5% 80%, var(--screw1)), 
+		radial-gradient(circle at 68.4% 80%, var(--screw2)), 
+		radial-gradient(circle at 60% 67%, var(--screw1)), 
+		radial-gradient(circle at 60% 67%, var(--screw2)), 
+		radial-gradient(circle at 55% 51.5%, var(--screw1)), 
+		radial-gradient(circle at 55% 51.55%, var(--screw2));
+	position: absolute;
+	background: 
+		var(--bg-screws), 
+		radial-gradient(circle at 108.5% 44.75%,#fff0 41%, #a7a7a700 calc(41% + 1px), var(--line1) calc(41% + 2px) 46%, var(--line2) calc(46% + 1px) 51%, var(--line1) calc(51% + 1px) 56%, var(--line2) calc(56% + 1px) 61%, var(--line1) calc(61% + 1px) 66%, var(--line2)calc(66% + 1px) 71%, var(--line1) calc(71% + 1px) 100%);
+	width: 54vmin;
+	height: 54vmin;
+	transform: rotate(50deg);
+	content: "";
+	border-radius: 100%;
+	filter: drop-shadow(0px 0px 1px #0008) drop-shadow(0px 0px 5px #0008);
+	box-sizing: border-box;
+	margin-top: -8.5vmin;
+	margin-left: -8.5vmin;
+	transition: all var(--spd) ease 0s;
+	animation: start var(--spd) ease-in-out 0s 1;
+}
+
+
+.panel:nth-child(2) {
+	transform: rotate(72deg);
+}
+
+.panel:nth-child(3) {
+	transform: rotate(144deg);
+}
+
+.panel:nth-child(4) {
+	transform: rotate(216deg);
+}
+
+.panel:nth-child(5) {
+	transform: rotate(288deg);
+}
+
+
+
+
+
+.door:hover .panel:before {
+	transform: rotate(-4deg);
+	filter: drop-shadow(0px 0px 1px #0008) drop-shadow(0px 0px 2px #0008);
+}
+
+@keyframes start {
+	0% { transform: rotate(-4deg);}
+	100% { transform: rotate(50deg);}
+}
+
+
+
+
+
+
+
+.ring {
+	--screw1: #2a2a2a 0.5%, #fff0 calc(0.5% + 3px) 100%;
+	--screw2: #0a0a0a 0.75%, #fff0 calc(0.75% + 1px) 100%;
+	--bg-screws: 
+		radial-gradient(circle at 77.5% 50%, var(--screw1)), 
+		radial-gradient(circle at 77.55% 50%, var(--screw2)),
+		radial-gradient(circle at 22.5% 50%, var(--screw1)), 
+		radial-gradient(circle at 22.45% 50%, var(--screw2)),
+		radial-gradient(circle at 50% 22.25%, var(--screw1)), 
+		radial-gradient(circle at 50% 22.2%, var(--screw2)),
+		radial-gradient(circle at 50% 77.5%, var(--screw1)), 
+		radial-gradient(circle at 50% 77.55%, var(--screw2));
+	background: 
+		var(--bg-screws);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.ring:before, .ring:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	transform: rotate(32deg);
+	position: absolute;
+	background: var(--bg-screws);
+}
+
+
+
+.ring:after {
+	transform: rotate(61deg);
+}
+
+
+
+
+/*** tunnel ***/
+
+.tunnel {
+	--height: 75;
+	--width: 75;
+	--depth: 200;
+	--hue: 200;
+	--sat: 25%;
+	height: calc(var(--height) * 1vmin);
+	width: calc(var(--width) * 1vmin);
+	position: absolute;
+	--bg-side: repeating-linear-gradient(50deg, #725f5880 0.001%, #8b888780 0.002%, #bfbfbf80 0.001%);
+	--shw: #fff0 50%, #000 50%, #fff0 50.25% 100%;
+	--shw2: #fff0 50%, #0008 50%, #fff0 50.5% 100%;
+	--shw3: linear-gradient(0deg, #fff0 15%, #000b 15%, #fff0 16.5% 83.5%, #000b 85%, #fff0 85%);
+	background: radial-gradient(circle at 96.5% 50%, var(--screw1)), radial-gradient(circle at 96.55% 50%, var(--screw2)), radial-gradient(circle at 3.5% 50%, var(--screw1)), radial-gradient(circle at 3.45% 50%, var(--screw2)), radial-gradient(circle at 50% 3.25%, var(--screw1)), radial-gradient(circle at 50% 3.2%, var(--screw2)), radial-gradient(circle at 50% 96.5%, var(--screw1)), radial-gradient(circle at 50% 96.55%, var(--screw2)), radial-gradient(#000000, #545454);
+	--screw1: #444444 0.5%, #fff0 calc(0.5% + 3px) 100%;
+	--screw2: #1a1a1a 0.75%, #fff0 calc(0.75% + 1px) 100%;
+	--screw1: #505050 0.5%, #fff0 calc(0.5% + 3px) 100%;
+	--screw2: #060606 0.75%, #fff0 calc(0.75% + 1px) 100%;
+}
+.tunnel > div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	filter: blur(0.25px) brightness(0.75);
+	box-shadow: 0 0 0 1vmin #000, 0 0 1vmin 0vmin #000 inset;
+}
+
+.tunnel > div:nth-of-type(1) {
+	width: calc(var(--depth) * 1vmin);
+	height: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(90deg) translate3d( 0, 0, calc(var(--width) * 0.5vmin)  );	
+	background: var(--shw3), linear-gradient(-90deg, var(--shw2)), linear-gradient(-90deg, var(--shw)), repeating-linear-gradient(-90deg, #c17300 0 1vmin, #1c1c1c 1vmin 2vmin), repeating-linear-gradient(-90deg, #c17300 0 1vmin, #1c1c1c 1vmin 2vmin), var(--bg-side), hsl(var(--hue), 0%, 0%);
+	background-size: 100% 100%, 100% 100%, 100% 100%, 100% 15%, 100% 15%, 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0, 0 0, 0 0, 0 0, 100% 100%, 0 0, 0 0;	
+}
+
+.tunnel > div:nth-of-type(2) {
+	width: calc(var(--depth) * 1vmin);
+	height: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(-90deg) translate3d( 0, 0, calc(var(--width) * 0.5vmin)  );
+	background: var(--shw3), linear-gradient(90deg, var(--shw2)),  linear-gradient(90deg, var(--shw)), repeating-linear-gradient(90deg, #c17300 0 1vmin, #1c1c1c 1vmin 2vmin), repeating-linear-gradient(90deg, #c17300 0 1vmin, #1c1c1c 1vmin 2vmin), var(--bg-side), hsl(var(--hue), 0%, 0%);
+	background-size: 100% 100%, 100% 100%, 100% 100%, 100% 15%, 100% 15%, 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0, 0 0, 0 0, 0 0, 100% 100%, 0 0, 0 0;
+}
+
+.tunnel > div:nth-of-type(3) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(90deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin)  );
+	background: linear-gradient(180deg, var(--shw2)), linear-gradient(180deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 5%);
+}
+
+.tunnel > div:nth-of-type(4) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin)  );
+	background: linear-gradient(0deg, var(--shw2)), linear-gradient(0deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 5%);
+}
+
+.tunnel > div:nth-of-type(5) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg) rotateY(45deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin) );
+	background: linear-gradient(0deg, var(--shw2)), linear-gradient(0deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 20%);
+}
+
+.tunnel > div:nth-of-type(6) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-45deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin) );
+	background: linear-gradient(0deg, var(--shw2)), linear-gradient(0deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 20%);
+}
+
+.tunnel > div:nth-of-type(7) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg) rotateY(135deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin) );
+	background: linear-gradient(0deg, var(--shw2)), linear-gradient(0deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 20%);
+}
+
+.tunnel > div:nth-of-type(8) {
+	height: calc(var(--depth) * 1vmin);
+	width: calc(calc(calc(var(--width) * 41.17) / 100) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-135deg) translate3d( 0, 0, calc(var(--height) * 0.5vmin) );
+	background: linear-gradient(0deg, var(--shw2)), linear-gradient(0deg, var(--shw)), var(--bg-side), hsl(var(--hue), var(--sat), 20%);
+}
+
+
+
+
+
+
+.tunnel:before, .tunnel:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle at 96.5% 50%, var(--screw1)), radial-gradient(circle at 96.55% 50%, var(--screw2)), radial-gradient(circle at 3.5% 50%, var(--screw1)), radial-gradient(circle at 3.45% 50%, var(--screw2)), radial-gradient(circle at 50% 3.25%, var(--screw1)), radial-gradient(circle at 50% 3.2%, var(--screw2)), radial-gradient(circle at 50% 96.5%, var(--screw1)), radial-gradient(circle at 50% 96.55%, var(--screw2));
+	transform: rotate(33deg);
+}
+
+.tunnel:after {
+	transform: rotate(61deg);
+}
