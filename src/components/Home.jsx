@@ -855,13 +855,13 @@ const Home = () => {
                   />
                 </div> */}
 
-                <div className="absolute -right-0 w-full hidden sm:block z-0 pointer-events-none">
+                {/* <div className="absolute -right-0 w-full hidden sm:block z-0 pointer-events-none">
                   <img
                     src="/cityscape.png"
                     alt="Pravah 2026 - Incredible India | SKIT"
                     className="w-full transform lg:translate-y-[0px] 2xl:translate-y-[210px]"
                   />
-                </div>
+                </div> */}
 
                 {/* Here to add bg image golden - kashish */}
                 <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-0 pointer-events-none">
@@ -872,7 +872,7 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex justify-end items-end gap-4">
+                <div className="fixed bottom-0 right-3 z-20 w-[50%] sm:flex flex-row justify-end items-end gap-4">
                   <ImageAnimation />
                 </div>
 
