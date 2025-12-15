@@ -19,7 +19,16 @@ const Landing = () => {
 
   return (
     <>
-      <div className="relative h-screen overflow-hidden bg-gradient-to-br from-[#0a0a0f] via-[#1a0f1d] to-black">
+      <div className="relative h-screen overflow-hidden "
+      style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+      >
         
         {/* Soft glow circles */}
         <div className="absolute w-[600px] h-[600px] bg-[#80328e4a] top-[-200px] left-[-150px] rounded-full blur-[140px] opacity-40"></div>
@@ -58,11 +67,14 @@ const Landing = () => {
           >
             {/* Main Title */}
             <motion.h1
-              className="uppercase text-[18vw] sm:text-[11vw] max-[640px]:text-[9vw] font-black tracking-widest drop-shadow-[0_0_25px_rgba(255,0,90,0.5)]"
+              className="text-[#5A3E36] uppercase text-[18vw] sm:text-[11vw] max-[640px]:text-[9vw] font-bold"
               style={{
-                backgroundImage: "linear-gradient(90deg, #ff2f65, #ff7a7a, #ff2f65)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                textShadow: `
+    0 2px 2px rgba(0,0,0,0.2),
+    0 4px 4px rgba(0,0,0,0.15),
+    0 8px 8px rgba(0,0,0,0.1),
+    0 12px 18px rgba(0,0,0,0.08)
+  `
               }}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -73,7 +85,7 @@ const Landing = () => {
 
             {/* College Name */}
             <motion.p
-              className="text-gray-200 text-lg sm:text-3xl font-light tracking-wide mt-3"
+              className="text-[#5A3e36] text-lg sm:text-3xl font-light tracking-wide mt-3"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -83,7 +95,7 @@ const Landing = () => {
 
             {/* Tagline */}
             <motion.p
-              className="text-pink-300 text-xl sm:text-3xl mt-4 font-medium"
+              className="text-[#7a5c50] text-xl sm:text-3xl mt-4 font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -93,7 +105,7 @@ const Landing = () => {
 
             {/* Type Line */}
             <motion.p
-              className="text-gray-300 mt-5 text-xl sm:text-3xl tracking-wide font-light"
+              className="text-[#6B4F45] mt-5 text-xl sm:text-3xl tracking-wide font-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
@@ -105,7 +117,7 @@ const Landing = () => {
 
             {/* Button */}
             <motion.button
-              className="mt-10 px-10 py-4 bg-gradient-to-r from-[#6a1b9a] to-[#9c27b0] rounded-full text-white text-xl font-semibold shadow-xl hover:scale-110 transition-all relative overflow-hidden"
+              className="mt-10 px-10 py-4 bg-gradient-to-r from-[#5a3836] to-[#5a4636] rounded-full text-white text-xl font-semibold shadow-xl hover:scale-110 transition-all relative overflow-hidden"
               onClick={() => setShowLanding(false)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

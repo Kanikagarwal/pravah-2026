@@ -635,3 +635,16 @@ html, body {
   0%, 100% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
 }
+
+
+.fade-image {
+  opacity: 0;
+  animation: fadeInOut 4s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  75%  { opacity: 1; }
+  100% { opacity: 0; }
+}

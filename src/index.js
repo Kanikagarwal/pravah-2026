@@ -36,7 +36,7 @@ import Webteampravah from './components/Webteampravah';
 
 
 
-console.log = () => { };
+// console.log = () => { };
 console.warn = () => { };
 console.error = () => { };
 console.info = () => { };

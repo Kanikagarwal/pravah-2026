@@ -282,7 +282,16 @@ const Glimpses = () => {
                 </AnimatePresence>
 
                 {/* Images Section */}
-                <div className="relative w-full flex flex-wrap justify-center items-start gap-4 overflow-y-auto px-4">
+                <div className="relative w-full flex flex-wrap justify-center items-start gap-4 overflow-y-auto px-4"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+                >
                     {images[selectedCategory].map((columnImages, columnIndex) => (
                         <div
                             key={columnIndex}
@@ -302,7 +311,7 @@ const Glimpses = () => {
                                         alt={`Gallery Image ${imageIndex}`}
                                         className="rounded-lg shadow-lg w-full h-auto mb-4 border border-gray-700"
                                         style={{
-                                            boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.6)",
+                                            boxShadow: "0px 6px 12px #5a3e36",
                                         }}
                                     />
                                 ))}
@@ -330,16 +339,24 @@ const Glimpses = () => {
 
 
 
-            <div className="relative h-screen overflow-hidden bg-black text-white justify-center sm:flex hidden" style={{ zIndex: "100" }}>
+            <div className="relative h-screen overflow-hidden bg-blue-400 text-white justify-center sm:flex hidden"
+             style={{ zIndex: "100", 
+                overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+             }}
+             >
 
 
-                <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-black via-transparent to-transparent z-10"></div>
+                <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-grey-400 via-transparent to-transparent z-10"></div>
                 <h1
-                    className="absolute z-20 flex items-center justify-center cookie-regular bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-pink-300"
+                    className="absolute z-20 flex items-center justify-center cookie-regular text-[#5A3e36] font-bold"
                     style={{
                         height: "20vh",
                         textAlign: "center",
-                        color: "white",
                         fontSize: "50px",
                     }}
                 >

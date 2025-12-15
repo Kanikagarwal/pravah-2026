@@ -31,17 +31,17 @@ const Carousel = ({ celebrities, frameImage }) => {
                     {images.map((celebrity, index) => (
                         <div className="flex flex-col items-center" key={index}>
                             <motion.div
-                                className="flex flex-col items-center justify-center sm:w-48 sm:h-48 space-y-2 mx-7 relative w-40 h-40"
+                                className="flex flex-col items-center justify-center sm:w-48 sm:h-48 space-y-2 mx-7 relative w-48 h-48"
                             >
                                 {/* Border Frame */}
                                 <img
                                     src={frameImage}
                                     alt="Frame"
-                                    className="absolute w-52 h-52 object-contain z-10"
+                                    className="absolute w-64 h-64 object-contain z-10 scale-110 sm:scale-105"
                                 />
 
                                 {/* Main Image */}
-                                <div className="sm:w-48 sm:h-48 w-40 h-40 rounded-full border-4 p-1 flex items-center justify-center overflow-hidden relative z-0">
+                                <div className="sm:w-46 sm:h-46 w-40 h-40 rounded-full flex items-center justify-center overflow-hidden relative z-0">
                                     <img
                                         src={celebrity.image}
                                         alt={celebrity.name}
@@ -58,7 +58,7 @@ const Carousel = ({ celebrities, frameImage }) => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5, duration: 0.6 }}
                             >
-                                <div className="text-sm font-extrabold text-white tracking-wider uppercase">
+                                <div className="text-sm font-extrabold text-[#5a3e36] tracking-wider uppercase">
                                     {celebrity.name}
                                 </div>
                             </motion.div>

@@ -14,9 +14,9 @@ const Eventcardmob = ({ events }) => {
 
   return (
     <div className="flex flex-col items-center justify-center px-4 py-6 sm:hidden h-screen">
-<div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFAF0] to-[#E6F7FF] opacity-90"></div>
-<div className="absolute top-10 left-20 w-60 h-60 bg-[#FFCCB6] rounded-full filter blur-3xl opacity-40 animate-pulse"></div>
-<div className="absolute -bottom-40 -right-40 w-80 h-80 bg-[#B3E5FC] rounded-full filter blur-2xl opacity-70 animate-pulse"></div>
+{/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f3cb7d] to-[#043045] opacity-90"></div>
+<div className="absolute top-10 left-20 w-60 h-60 bg-[#d84303] rounded-full filter blur-3xl opacity-40 animate-pulse"></div>
+<div className="absolute -bottom-40 -right-40 w-80 h-80 bg-[#B3E5FC] rounded-full filter blur-2xl opacity-70 animate-pulse"></div> */}
 
 
       {/* Cards Grid */}
@@ -43,7 +43,7 @@ const Eventcardmob = ({ events }) => {
             </div>
 
             {/* Highlight border when active */}
-            <div className="absolute inset-0 border-4 border-transparent rounded-2xl transition-all group-hover:border-blue-400"></div>
+            <div className="absolute inset-0 border-4 border-transparent rounded-2xl transition-all group-hover:border-[#FFF1b8]"></div>
           </motion.div>
         ))}
       </div>
@@ -52,7 +52,7 @@ const Eventcardmob = ({ events }) => {
       <AnimatePresence>
         {activeEvent && (
           <motion.div
-            className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-blue-50 to-white p-6 rounded-t-3xl shadow-2xl z-50"
+            className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-[#fff4c6] to-[#f8eec5] p-6 rounded-t-3xl shadow-2xl z-50"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
@@ -60,12 +60,12 @@ const Eventcardmob = ({ events }) => {
           >
             {/* Drag Indicator */}
             <div className="flex justify-center items-center mb-4">
-              <div className="w-12 h-1.5 bg-gray-400 rounded-full"></div>
+              <div className="w-12 h-1.5 bg-orange-800 rounded-full"></div>
             </div>
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-bold text-gray-800">{activeEvent.name}</h3>
+              <h3 className="text-xl font-bold text-[#5a3e36]">{activeEvent.name}</h3>
               <button
-                className="text-gray-500 hover:text-gray-800"
+                className="text-gray-500 hover:text-gray-800 font-semibold"
                 onClick={closeDrawer}
               >
                 Close
