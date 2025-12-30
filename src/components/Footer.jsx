@@ -90,9 +90,9 @@ const Footer = () => {
                             <ul className="space-y-4">
                                 <li>
                                     <p className="text-sm text-nowrap">
-                                        <span className="font-bold">Chief Coordinator, Pravah'25</span>
+                                        <span className="font-bold">Chief Coordinator, Pravah'26</span>
                                         <br />
-                                        Dr. Rohit Mukherjee -{" "}
+                                        Dr. B.L Sharma -{" "}
                                         <a
                                             href="tel:9414051576"
                                             className="underline hover:text-gray-400 transition"
