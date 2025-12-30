@@ -93,9 +93,7 @@ const Footer = () => {
                                         <span className="font-bold">Chief Coordinator, Pravah'26</span>
                                         <br />
 
-                                        Dr. B.L. Sharma -{" "}
-
-                                        Dr. B.L Sharma -{" "}
+                                        Prof.(Dr). B.L. Sharma -{" "}
 
                                         <a
                                             href="tel:9414968681"
@@ -125,9 +123,9 @@ const Footer = () => {
                                             9001928479
                                         </a>
                                         <br />
-                                        Vaibhav Upadhyay -{" "}
-                                        <a href="tel:9105939291" className="underline hover:text-gray-400 transition">
-                                            9105939291
+                                        Sanskar Chaturvedi -{" "}
+                                        <a href="tel:6377829943" className="underline hover:text-gray-400 transition">
+                                            6377829943
                                         </a>
                                     </p>
                                 </li>
