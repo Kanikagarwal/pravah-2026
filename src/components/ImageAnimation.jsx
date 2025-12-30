@@ -7,12 +7,9 @@ const ImageAnimation = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const mobileXOffset = isMobile ? (currentIndex === 4 )?0:30 : 0;
-
-  // ✅ IMPORTANT: use data everywhere
   const data = isMobile ? mobileHelper : helper;
+  const mobileXOffset = isMobile && currentIndex !== 4 ? 30 : 0;
 
-  // Resize handler
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -23,7 +20,6 @@ const ImageAnimation = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // ✅ Single interval only
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % data.length);
@@ -33,16 +29,18 @@ const ImageAnimation = () => {
   }, [data]);
 
   return (
-    <>
+    /* ✅ CONTAINMENT FIX */
+    <div className="relative overflow-hidden min-h-[420px] flex items-center justify-center">
+      
       {/* Text */}
       <AnimatePresence mode="wait">
         <motion.p
           key={`text-${currentIndex}`}
-          className="font-bold text-[#5A3E36] text-xl mb-10 max-[600px]:absolute max-[600px]:bottom-4 max-[600px]:right-52"
+          className="font-bold text-[#5A3E36] text-xl mb-6"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 1.2, ease: "easeInOut", delay: 1 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
         >
           {data[currentIndex].name}
         </motion.p>
@@ -53,35 +51,37 @@ const ImageAnimation = () => {
         <motion.img
           key={`img-${currentIndex}`}
           src={data[currentIndex].bgImage}
+          alt={data[currentIndex].name}
           initial={{
             opacity: 0,
             scale: 0.95,
             y: data[currentIndex].translateY,
-            x: mobileXOffset
+            x: mobileXOffset,
           }}
           animate={{
             opacity: 1,
             scale: 1,
             y: data[currentIndex].translateY + 10,
-            x: mobileXOffset
+            x: mobileXOffset,
           }}
           exit={{
             opacity: 0,
             scale: 0.95,
             y: data[currentIndex].translateY,
-            x: mobileXOffset
+            x: mobileXOffset,
           }}
           transition={{ duration: 2, ease: "easeInOut" }}
+          className="block"
           style={{
-            width: data[currentIndex].width, // ✅ mobile width now applied
-            maxWidth: "100%",               // ✅ allows shrinking
+            width: data[currentIndex].width,
+            maxWidth: "100%",
             borderRadius: "16px",
             filter: "drop-shadow(0 10px 20px grey)",
           }}
-          alt={data[currentIndex].name}
         />
       </AnimatePresence>
-    </>
+
+    </div>
   );
 };
 

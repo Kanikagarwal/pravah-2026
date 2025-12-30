@@ -92,16 +92,16 @@ const Footer = () => {
                                     <p className="text-sm text-nowrap">
                                         <span className="font-bold">Chief Coordinator, Pravah'25</span>
                                         <br />
-                                        Dr. Rohit Mukherjee -{" "}
+                                        Dr. B.L. Sharma -{" "}
                                         <a
-                                            href="tel:9414051576"
+                                            href="tel:9414968681"
                                             className="underline hover:text-gray-400 transition"
                                         >
-                                            9414051576
+                                            9414968681
                                         </a>
                                     </p>
                                 </li>
-                                <li className="mb-2">
+                                {/* <li className="mb-2">
                                     <p className="text-sm text-nowrap">
                                         <span className="font-bold">Chief Co-Coordinator, Pravah'25</span>
                                         <br />
@@ -111,14 +111,14 @@ const Footer = () => {
                                         </a>
                                     </p>
 
-                                </li>
+                                </li> */}
                                 <li>
                                     <p className="text-sm text-nowrap">
                                         <span className="font-bold">For Events</span>
                                         <br />
-                                        Yashvardhan Sharma -{" "}
-                                        <a href="tel:9587483461" className="underline hover:text-gray-400 transition">
-                                            9587483461
+                                        Dipesh Kaushik -{" "}
+                                        <a href="tel:9001928479" className="underline hover:text-gray-400 transition">
+                                            9001928479
                                         </a>
                                         <br />
                                         Vaibhav Upadhyay -{" "}
@@ -131,12 +131,12 @@ const Footer = () => {
                                     <p className="text-sm text-nowrap">
                                         <span className="font-bold">For Website</span>
                                         <br />
-                                        Kavya Gupta -{" "}
+                                        Kanika Agarwal -{" "}
                                         <a
-                                            href="tel:7976227748"
+                                            href="tel:9660046683"
                                             className="underline hover:text-gray-400 transition"
                                         >
-                                            9057277613
+                                            9660046683
                                         </a>
                                     </p>
                                 </li>
@@ -182,7 +182,7 @@ const Footer = () => {
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-white sm:text-center">
-                        © 2025{" "}
+                        © 2026{" "}
                         <a href="https://www.skit.ac.in/" className="hover:underline">
                             SKIT, Jaipur
                         </a>

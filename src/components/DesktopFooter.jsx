@@ -91,17 +91,17 @@ const DesktopFooter = () => {
               <ul className="space-y-4">
                 <li className="mb-2">
                   <p className="text-sm">
-                    <span className="font-bold">Chief Coordinator, Pravah'25</span>
+                    <span className="font-bold">Chief Coordinator, Pravah'26</span>
                     <br />
-                    Dr. Rohit Mukherjee -{" "}
-                    <a href="tel:9414051576" className="underline hover:text-gray-400 transition">
-                      9414051576
+                    Dr. B.L. Sharma -{" "}
+                    <a href="tel:9414968681" className="underline hover:text-gray-400 transition">
+                      9414968681
                     </a>
                   </p>
 
                 </li>
 
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <p className="text-sm">
                     <span className="font-bold">Chief Co-Coordinator, Pravah'25</span>
                     <br />
@@ -111,7 +111,7 @@ const DesktopFooter = () => {
                     </a>
                   </p>
 
-                </li>
+                </li> */}
 
               </ul>
             </div>
@@ -136,9 +136,9 @@ const DesktopFooter = () => {
                 <p className="text-sm">
                   <span className="font-bold">For Events</span>
                   <br />
-                  Yashvardhan Sharma -{" "}
-                  <a href="tel:9587483461" className="underline hover:text-gray-400 transition">
-                    9587483461
+                  Dipesh Kaushik -{" "}
+                  <a href="tel:9001928479" className="underline hover:text-gray-400 transition">
+                    9001928479
                   </a>
                   <br />
                   Vaibhav Upadhyay -{" "}
@@ -154,9 +154,9 @@ const DesktopFooter = () => {
                 <p className="text-sm">
                   <span className="font-bold">For Website</span>
                   <br />
-                  Kavya Gupta -{" "}
-                  <a href="tel:9057277613" className="underline hover:text-gray-400 transition">
-                    9057277613
+                  Kanika Agarwal -{" "}
+                  <a href="tel:9660046683" className="underline hover:text-gray-400 transition">
+                    9660046683
                   </a>
                 </p>
 
@@ -172,7 +172,7 @@ const DesktopFooter = () => {
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-white sm:text-center mb-0">
-            © 2025{" "}
+            © 2026{" "}
             <a href="https://www.skit.ac.in/" className="hover:underline">
               SKIT, Jaipur
             </a>

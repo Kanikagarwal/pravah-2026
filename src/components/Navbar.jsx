@@ -70,7 +70,33 @@ const Navbarr = ({
           } sm:border-b border-gray-200 sm:border-none`}
         >
           {/* Left Links (for desktop) */}
-          <div className="hidden md:flex space-x-8 items-center flex-grow justify-start">
+          <a href={`/skit-pravah-2025`}>
+            <div className="sm:flex sm:justify-center sm:items-center flex-grow">
+              {/* <img
+                src="/skit_logo.png"
+                className={`sm:w-14 w-14 mx-4 hidden sm:block `} // Apply filter dynamically
+                alt="SKIT M & G Logo"
+              /> */}
+
+              {/* <img
+                src="/logo-skit.png"
+                className={`sm:w-32 w-32 ${filter || ""} mx-4 max-[760px]:filter max-[760px]:brightness-0 max-[760px]:invert` } // Apply filter dynamically
+                alt="SKIT M & G Logo"
+              /> */}
+
+              <img
+                src={
+                  logo
+                    ? logo
+                    : "logo.png"
+                }
+                className="sm:w-20 w-16 min-[760px]:block mx-4" // Apply filter dynamically
+                alt="SKIT M & G Logo"
+              />
+            </div>
+          </a>
+          <div className="flex flex-row justify-end mb-4 ">
+            <div className="hidden md:flex space-x-8 px-8 items-center flex-grow justify-end">
             <a
               href={`/skit-pravah-2025`}
               className={`text-md font-medium ${
@@ -113,35 +139,9 @@ const Navbarr = ({
               ></span>
             </Link>
           </div>
-
-          {/* Logo (Centered) */}
-          <a href={`/skit-pravah-2025`}>
-            <div className="sm:flex sm:justify-center sm:items-center flex-grow">
-              <img
-                src="/skit_logo.png"
-                className={`sm:w-14 w-14 ${filter || ""} mx-4 hidden sm:block`} // Apply filter dynamically
-                alt="SKIT M & G Logo"
-              />
-
-              <img
-                src="/logo-skit.png"
-                className={`sm:w-32 w-32 ${filter || ""} mx-4`} // Apply filter dynamically
-                alt="SKIT M & G Logo"
-              />
-
-              <img
-                src={
-                  logo
-                    ? logo
-                    : "https://ik.imagekit.io/2lfvkrya5/sxt058o5ftklmmq3biva-min.png?updatedAt=1739642885356"
-                }
-                className="sm:w-16 w-16 hidden sm:block mx-4" // Apply filter dynamically
-                alt="SKIT M & G Logo"
-              />
-            </div>
-          </a>
+          
           {/* Right Links (for desktop) */}
-          <div className="hidden md:flex space-x-8 items-center flex-grow justify-end">
+          <div className="hidden md:flex space-x-8 items-center flex-grow justify-start">
             <Link
               to="/about-skit-pravah-2025"
               className={`text-md font-medium ${
@@ -184,6 +184,8 @@ const Navbarr = ({
               ></span>
             </Link>
           </div>
+          </div>
+          
 
           {/* Toggler Button for Mobile */}
           <button

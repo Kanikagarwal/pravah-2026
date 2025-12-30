@@ -20,7 +20,7 @@ const SponsorCarousel = ({ sponsors, speed = 30 }) => {
               <img
                 src={sponsor.image}
                 alt=""
-                className="w-24 h-24 object-contain filter grayscale invert brightness-200 hover:grayscale-0 transition duration-300"
+                className="w-24 h-24 object-contain filter grayscale brightness-200 hover:grayscale-0 transition duration-300"
               />
             </div>
           </div>

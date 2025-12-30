@@ -353,14 +353,14 @@ const Glimpses = () => {
 
                 <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-grey-400 via-transparent to-transparent z-10"></div>
                 <h1
-                    className="absolute z-20 flex items-center justify-center cookie-regular text-[#5A3e36] font-bold"
+                    className="absolute z-20 flex items-center justify-center cookie-regular text-white font-bold"
                     style={{
                         height: "20vh",
                         textAlign: "center",
                         fontSize: "50px",
                     }}
                 >
-                    Pravah'25 Glimpses
+                    Pravah'26 Glimpses
                 </h1>
 
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>

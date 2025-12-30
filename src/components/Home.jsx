@@ -81,7 +81,7 @@ const Home = () => {
   // Scroll animation
 
   const handleLeave = (origin, destination, direction) => {
-    if (destination.index === 3 || destination.index === 1) {
+    if (destination.index === 3 || destination.index === 1 || destination.index === 2 || destination.index === 4 || destination.index === 5) {
       setBgColor("bg-white");
       settextColor("text-[#5A3E36]");
       // setFilter("filter sm:invert sm:sepia sm:brightness-100 sm:contrast-100");
@@ -486,9 +486,9 @@ const Home = () => {
                     </p>
 
                     {/* DATE */}
-                    <p className="text-red-300 font-semibold text-xl sm:text-2xl mt-6 -translate-y-20">
-                      {/* 15<sup>th</sup> – 22<sup>nd</sup> February */}
-                      Coming soon...
+                    <p className="text-red-600 font-semibold text-xl sm:text-2xl mt-6 -translate-y-20">
+                      09<sup>th</sup> – 14<sup>th</sup> February
+                      
                     </p>
 
                     {/* BUTTON */}
@@ -895,7 +895,7 @@ const Home = () => {
               </div>
 
               {/* Section 2 */}
-              <div className="section p-0 bg-slate-100" id="rasasSection">
+              <div className="section p-0 bg-[#5a3e36] z-10" id="rasasSection">
                 {/* <div className="relative hidden sm:block">
                   <motion.img
                     src="rb_166391.png"
@@ -944,8 +944,9 @@ const Home = () => {
                 </div> */}
 
                 {/* Video Section - desktop */}
-                <SpotlightGrid />
+                {/* <SpotlightGrid /> */}
 
+                <EventCountdown />
                 {/* Video Section */}
                 <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
                   <div className="radial-grid absolute inset-0" />
@@ -1444,7 +1445,7 @@ const Home = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                   >
-                    Pravah'25 Milestones
+                    Pravah'26 Milestones
                   </motion.div>
 
                   {/* Highlights Section */}
@@ -1543,7 +1544,7 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  Pravah'25 Highlights
+                  Pravah'26 Highlights
                 </motion.h2>
 
                 {/* Highlight Cards */}

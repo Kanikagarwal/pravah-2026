@@ -62,7 +62,7 @@ const About = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                Pravah'25
+                Pravah'26
               </motion.span>
             </h1>
 
@@ -88,7 +88,7 @@ const About = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-semibold mb-4 cookie-regular">Welcome to Pravah'25</h2>
+                <h2 className="text-3xl font-semibold mb-4 cookie-regular">Welcome to Pravah'26</h2>
                 <p className="text-lg leading-relaxed abeezee-regular">
                   Pravah is the annual college fest that brings together a celebration of culture, technology, sports, and more. A platform for innovation and creativity, attracting students nationwide.
                 </p>
@@ -123,7 +123,7 @@ const About = () => {
 
         <div className="fixed -bottom-0 left-0 w-full hidden sm:block pointer-events-none -z-20">
           <img
-            src="/rb_2149158780.png"
+            src="navras/bg3.jpg"
             alt="Pravah 2025 - Incredible India | SKIT"
             className="w-full h-auto object-cover transform translate-y-[300px] translate-x-0 opacity-10"
           />
