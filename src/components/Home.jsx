@@ -223,14 +223,14 @@ const Home = () => {
       image: "/events/rawaz.jpg",
       url: "/skit-pravah-2025-events-rawaz-gallery",
     },
-    {
-      id: 5,
-      name: "Clash of Bands",
-      description:
-        "An electrifying rap battle where words ignite and rhythms collide.",
-      image: "/COB/12.jpg",
-      url: "/skit-pravah-2025-events-cob-gallery",
-    },
+    // {
+    //   id: 5,
+    //   name: "Clash of Bands",
+    //   description:
+    //     "An electrifying rap battle where words ignite and rhythms collide.",
+    //   image: "/COB/12.jpg",
+    //   url: "/skit-pravah-2025-events-cob-gallery",
+    // },
     {
       id: 6,
       name: "Annual Day",
@@ -872,7 +872,7 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="fixed bottom-0 right-3 z-20 w-[50%] sm:flex flex-row justify-end items-end gap-4">
+                <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-row justify-end items-end gap-4">
                   <ImageAnimation />
                 </div>
 
@@ -948,6 +948,8 @@ const Home = () => {
 
                 <EventCountdown />
                 {/* Video Section */}
+                <div className="hidden">
+
                 <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
                   <div className="radial-grid absolute inset-0" />
                   {/* Left Video Card */}
@@ -1024,6 +1026,7 @@ const Home = () => {
                       Logo Reveal
                     </p>
                   </motion.div>
+                </div>
                 </div>
 
                 {/* <div className="relative hidden sm:block">

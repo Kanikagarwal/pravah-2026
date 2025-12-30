@@ -7,7 +7,7 @@ const ImageAnimation = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const data = isMobile ? mobileHelper : helper;
+  const data = helper;
   const mobileXOffset = isMobile && currentIndex !== 4 ? 30 : 0;
 
   useEffect(() => {
