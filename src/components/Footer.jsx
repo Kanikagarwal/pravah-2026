@@ -92,11 +92,11 @@ const Footer = () => {
                                     <p className="text-sm text-nowrap">
                                         <span className="font-bold">Chief Coordinator, Pravah'26</span>
                                         <br />
-<<<<<<< HEAD
+
                                         Dr. B.L. Sharma -{" "}
-=======
+
                                         Dr. B.L Sharma -{" "}
->>>>>>> 5bdd85baca05a8f2a0f4440b86ccb395fdb180a6
+
                                         <a
                                             href="tel:9414968681"
                                             className="underline hover:text-gray-400 transition"
