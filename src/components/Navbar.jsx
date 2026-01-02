@@ -45,7 +45,7 @@ const Navbarr = ({
         animate={{ y: hideNavbar ? -140 : 0, opacity: hideNavbar ? 0 : 1 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className={`fixed w-full top-0 left-0 transition-colors duration-1000 ease-in-out ${
-          isDesktop ? bgColor : "bg-slate-100"
+          isDesktop ? bgColor : "bg-[#f9eddd]"
         } ${isDesktop ? navbarDisplay : "block"}`}
         style={{ zIndex: 1000 }}
       >
