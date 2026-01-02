@@ -136,7 +136,17 @@ const Aaveg = () => {
         height={3} // Set the height of the loading bar
         ref={loadingBar} // Reference to control loading bar
       /> */}
-
+<div
+                className="section relative overflow-hidden bg-slate-100"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+              >
       {/* Navbar */}
       <Navbarr logo="https://res.cloudinary.com/dktkdi3sm/image/upload/v1735466875/aaveg_logo_wiqp6x.png" eventName={"AAVEG"} />
       <ParallaxProvider>
@@ -168,14 +178,14 @@ const Aaveg = () => {
                   className="w-full px-5 py-3 text-gray-800 bg-white bg-opacity-70 border border-gray-300 rounded-full shadow-lg focus:outline-none "
                   style={{ backdropFilter: 'blur(10px)' }}
                 />
-                <span className="absolute inset-y-0 right-4 flex items-center text-purple-600">
+                <span className="absolute inset-y-0 right-4 flex items-center text-[#5a3e36]">
                   <FaSearch className="text-lg" />
                 </span>
 
               </motion.div>
 
 
-              <button className="px-6 py-3 bg-black text-white font-semibold rounded-3xl shadow-md hover:bg-black transition duration-300 flex items-center gap-2 m-auto" onClick={() => window.location.href = "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//one%20fold-min.pdf"}>
+              <button className="px-6 py-3 bg-[#5a3e36] text-[#f9eddd] font-semibold rounded-3xl shadow-md  transition duration-300 flex items-center gap-2 m-auto" onClick={() => window.location.href = "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//one%20fold-min.pdf"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -207,7 +217,7 @@ const Aaveg = () => {
                   {[...Array(3)].map((_, index) => (
                     <div
                       key={index}
-                      className="flex flex-col items-center bg-gray-50 rounded-lg shadow-lg overflow-hidden w-full border border-gray-200"
+                      className="flex flex-col items-center bg-[#5a3e36] rounded-lg shadow-lg overflow-hidden w-full border border-gray-200"
                     >
                       <div className="w-full h-44 md:h-48 relative p-3">
                         <Skeleton height={192} width="100%" />
@@ -223,7 +233,7 @@ const Aaveg = () => {
                 filteredEvents.map((event, index) => (
                   <motion.div
                     key={event._id}
-                    className="flex flex-col items-center bg-gray-100 rounded-xl overflow-hidden border border-gray-400 cursor-pointer opacity-10 shadow-sm"
+                    className="flex flex-col items-center bg-[#5a3e36] rounded-xl overflow-hidden border border-[#5a3e36] cursor-pointer opacity-10 shadow-sm"
                     style={{
                       position: 'relative',
 
@@ -270,12 +280,12 @@ const Aaveg = () => {
 
                     <div className="flex flex-col justify-between p-3 leading-normal space-y-4 w-full">
                       <h5
-                        className="text-xl font-bold text-gray-900 tracking-tight text-center mt-2"
+                        className="text-xl font-bold text-[#f9eddd] tracking-tight text-center mt-2"
                       >
                         {event.eventName}
                       </h5>
                       <button
-                        className="bg-gradient-to-r from-black to-black text-white font-medium w-full px-6 py-3 rounded-lg shadow-sm  relative z-50 hidden sm:block"
+                        className="bg-[#f9eddd] text-[#2d201c] font-medium w-full px-6 py-3 rounded-lg shadow-sm  relative z-50 hidden sm:block"
                         // onClick={() =>
                         //   window.open(event.eventRegistrationLink, '_blank')
                         // }
@@ -376,7 +386,7 @@ const Aaveg = () => {
         </Parallax>
 
 
-        <motion.div
+        {/* <motion.div
           className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.5 }}
@@ -396,10 +406,10 @@ const Aaveg = () => {
             alt="Pravah 2025 - Incredible India | SKIT"
             className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10 "
           />
-        </div>
+        </div> */}
 
       </ParallaxProvider>
-
+      </div>
       <Modal
         show={openModal}
         onClose={() => { setOpenModal(false); setIsLoading(true); }}
@@ -407,11 +417,11 @@ const Aaveg = () => {
         size="xl"
         className='backdrop-filter backdrop-blur-lg'
       >
-        <Modal.Header className="border-b border-gray-300 py-4 px-6 bg-gray-100 rounded-t-2xl">
+        <Modal.Header className="border-b border-gray-300 py-4 px-6 bg-[#f9eddd] rounded-t-2xl">
           <h2 className="text-xl font-bold text-gray-800">{title} Registration</h2>
         </Modal.Header>
 
-        <Modal.Body className="h-[100vh] relative p-0 bg-gray-100 scrollbar-hide overflow-auto" >
+        <Modal.Body className="h-[100vh] relative p-0 bg-[#f9eddd] scrollbar-hide overflow-auto" >
           {title !== "Esports" && isLoading && (
             <div className="flex items-center justify-center absolute inset-0 bg-white bg-opacity-60">
               <div className="animate-spin rounded-full h-12 w-12 border-4 border-gray-600 border-t-transparent"></div>
@@ -432,7 +442,7 @@ const Aaveg = () => {
                 {esportsEvents.map((event, index) => (
                   <div
                     key={index}
-                    className="p-5 border border-gray-300 rounded-xl shadow-sm flex justify-between items-center bg-white hover:shadow-md transition-shadow"
+                    className="p-5 border border-gray-300 rounded-xl shadow-sm flex justify-between items-center bg-[#fef4e6] hover:shadow-md transition-shadow"
                   >
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800">{event.name}</h3>
@@ -453,7 +463,7 @@ const Aaveg = () => {
                         href={event.registrationLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-blue-500 text-white rounded-md text-sm font-medium hover:bg-blue-600 transition-colors"
+                        className="px-4 py-2 bg-[#5a3e36] text-white rounded-md text-sm font-medium hover:bg-[#432e28] transition-colors"
                       >
                         Register Now
                       </a>
@@ -466,7 +476,7 @@ const Aaveg = () => {
           </div>
         </Modal.Body>
 
-        <Modal.Footer className="bg-gray-50 border-t border-gray-300 shadow-md rounded-b-2xl">
+        <Modal.Footer className="bg-[#f9eddd] border-t border-gray-300 shadow-md rounded-b-2xl">
           {/* <div className="flex justify-between items-center w-full">
             <h3 className="text-lg font-semibold text-gray-800">Registration Fee</h3>
             <span className="text-xl font-bold text-gray-600">
@@ -485,7 +495,7 @@ const Aaveg = () => {
           setIsLoading(true);
         }}
         style={{ zIndex: 2000 }}
-        className="w-full sm:w-[500px] bg-white h-screen shadow-lg "
+        className="w-full sm:w-[500px] bg-[#f9eddd] h-screen shadow-lg "
       >
         {/* Header Section */}
         <Drawer.Header title={title + ' - Registration'}>
@@ -504,7 +514,7 @@ const Aaveg = () => {
         <Drawer.Items className="h-[calc(100vh-120px)] overflow-hidden relative p-0">
           {/* Loading Spinner */}
           {title !== "Esports" && isLoading && (
-            <div className="flex items-center justify-center absolute inset-0 bg-white bg-opacity-50">
+            <div className="flex items-center justify-center absolute inset-0 bg-[#f9eddd] bg-opacity-50">
               <div className="animate-spin rounded-full h-16 w-16 border-4 border-gray-600 border-t-transparent"></div>
             </div>
           )}
@@ -527,7 +537,7 @@ const Aaveg = () => {
                 {esportsEvents.map((event, index) => (
                   <div
                     key={index}
-                    className="p-5 border border-gray-300 rounded-xl shadow-sm flex justify-between items-center bg-white hover:shadow-md transition-shadow"
+                    className="p-5 border border-gray-300 rounded-xl shadow-sm flex justify-between items-center bg-[#fef4e6] hover:shadow-md transition-shadow"
                   >
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800">{event.name}</h3>
@@ -548,7 +558,7 @@ const Aaveg = () => {
                         href={event.registrationLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-blue-500 text-white rounded-md text-sm font-medium hover:bg-blue-600 transition-colors"
+                        className="px-4 py-2 bg-[#5a3e36] text-white rounded-md text-sm font-medium hover:bg-[#432e28] transition-colors"
                       >
                         Register
                       </a>

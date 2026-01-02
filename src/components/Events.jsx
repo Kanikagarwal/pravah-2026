@@ -83,7 +83,19 @@ const Events = () => {
       </Helmet>
 
 
+      <div
+                className="section relative overflow-hidden bg-slate-100"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+              >
 
+              
       <Navbarr eventName={" The Event Collection"}/>
 
 
@@ -135,7 +147,7 @@ const Events = () => {
                 filteredCategories.map((category, index) => (
                   <motion.div
                     key={category._id}
-                    className="flex flex-col items-center bg-gray-50 rounded-xl overflow-hidden border border-black cursor-pointer"
+                    className="flex flex-col items-center bg-[#5a3e36] rounded-xl overflow-hidden border border-[#fff1b8] cursor-pointer"
                     initial={{ opacity: 0, y: 160 }} // Start animation state
                     whileInView={{ opacity: 1, y: 120 }} // Trigger when in view
                     viewport={{ once: true, amount: 0.2 }} // Trigger once, when 20% of the card is visible
@@ -149,14 +161,14 @@ const Events = () => {
                     {/* Image container */}
                     <div className="relative w-full h-44 md:h-48 p-3 group">
                       <img
-                        className="object-cover w-80 h-48 rounded-xl border-2 border-gray-100"
+                        className="object-cover w-80 h-48 rounded-xl border-2 border-[#5a3e36]"
                         src={category.categoryImage}
                         alt={category.categoryName}
                         loading="lazy"
                       />
 
-                      <div className="absolute inset-0 bg-black bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out sm:flex items-center justify-center group rounded-xl w-80 h-48 m-3 hidden">
-                        <p className="text-white text-md p-3 text-center font-sans">{category.categoryDescription}</p>
+                      <div className="absolute inset-0 bg-[#fff1b8] bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out sm:flex items-center justify-center group rounded-xl w-80 h-48 m-3 hidden">
+                        <p className="text-[#5a3e36] font-semibold text-md p-3 text-center font-sans">{category.categoryDescription}</p>
                       </div>
 
                     </div>
@@ -164,7 +176,7 @@ const Events = () => {
                     {/* Category name */}
                     <div className="flex flex-col justify-between p-6 leading-normal space-y-4 w-full">
                       <h5
-                        className="text-lg font-bold text-gray-900 tracking-tight cookie-regular text-center mt-5"
+                        className="text-lg font-bold text-[#fff1b8] tracking-tight cookie-regular text-center mt-5"
                         style={{ fontSize: '35px' }}
                       >
                         {category.categoryName} Events
@@ -187,19 +199,19 @@ const Events = () => {
               viewport={{ once: true }}
               transition={{ duration: 1 }}
             >
-              <img
+              {/* <img
                 src="/rb_2149151140.png"
                 alt="Pravah 2025 - Incredible India | SKIT"
                 className="w-full h-auto object-cover transform translate-y-[180px] translate-x-0 opacity-20"
-              />
+              /> */}
             </motion.div>
 
             <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20 ">
-              <img
+              {/* <img
                 src="/rb_2149158780.png"
                 alt="Pravah 2025 - Incredible India | SKIT"
                 className="w-full h-auto object-cover transform translate-y-[150px] translate-x-0 opacity-10 "
-              />
+              /> */}
             </div>
 
 
@@ -207,7 +219,7 @@ const Events = () => {
 
         </Parallax>
       </ParallaxProvider>
-
+      </div>
 
 
       <DesktopFooter />

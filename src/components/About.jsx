@@ -43,7 +43,17 @@ const About = () => {
         />
       </Helmet>
 
-
+<div
+                className="section relative overflow-hidden bg-slate-100"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+              >
       <Navbarr />
 
       <ParallaxProvider>
@@ -107,7 +117,7 @@ const About = () => {
 
         </Parallax>
 
-        <motion.div
+        {/* <motion.div
           className="fixed -bottom-0 left-0 w-full hidden sm:block pointer-events-none -z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.5 }}
@@ -127,10 +137,10 @@ const About = () => {
             alt="Pravah 2025 - Incredible India | SKIT"
             className="w-full h-auto object-cover transform translate-y-[300px] translate-x-0 opacity-10"
           />
-        </div>
+        </div> */}
 
       </ParallaxProvider>
-
+</div>
       <DesktopFooter />
 
     </div>

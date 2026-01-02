@@ -12,7 +12,7 @@ const Coordinator = ({ name, number, photo }) => {
       transition={{ duration: 0.8, ease: 'easeOut' }} // Duration and easing for the animation
     >
       <div
-        className={`relative p-6 bg-slate-100 w-full sm:w-[320px] border text-center border-gray-400 rounded-[15px] flex flex-col justify-center ${number ? 'pb-14' : 'pb-8'}`}
+        className={`relative p-6 bg-[#5a3e36] w-full sm:w-[320px] border text-center border-[#5a3e36] rounded-[15px] flex flex-col justify-center ${number ? 'pb-14' : 'pb-8'}`}
       >
         {/* Profile Photo (Only if provided) */}
         {photo && (
@@ -26,7 +26,7 @@ const Coordinator = ({ name, number, photo }) => {
         )}
 
         {/* Name */}
-        <h2 className={`text-sm sm:text-lg font-semibold text-gray-800 font-sans capitalize ${photo ? 'mt-10' : ''}`}>
+        <h2 className={`text-sm sm:text-lg font-semibold text-white font-sans capitalize ${photo ? 'mt-10' : ''}`}>
           {name}
         </h2>
 
@@ -34,7 +34,7 @@ const Coordinator = ({ name, number, photo }) => {
         {number && (
           <a
             href={`tel:${number}`} // Trigger call on click
-            className="absolute bottom-0 left-0 right-0 flex justify-center items-center rounded-b-[15px] bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] px-6 py-3 text-center text-sm font-bold text-white"
+            className="text-[#5a3e36] absolute bottom-0 left-0 right-0 flex justify-center items-center rounded-b-[15px] bg-gradient-to-r from-[#f9eddd] to-[#FFF1B8] px-6 py-3 text-center text-sm font-bold"
           >
             Call Now
             <FaPhoneAlt className="ml-2 h-4 w-4" /> {/* Call icon from React Icons */}
