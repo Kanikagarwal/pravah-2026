@@ -93,7 +93,7 @@ const DesktopFooter = () => {
                   <p className="text-sm">
                     <span className="font-bold">Chief Coordinator, Pravah'26</span>
                     <br />
-                    Dr. B.L. Sharma -{" "}
+                    Prof.(Dr).B.L. Sharma -{" "}
                     <a href="tel:9414968681" className="underline hover:text-gray-400 transition">
                       9414968681
                     </a>
@@ -129,7 +129,7 @@ const DesktopFooter = () => {
           <div className="text-white">
             <h2 className="mb-6 text-sm font-extrabold uppercase text-white flex items-center">
               <FaPhoneVolume className="mr-2" />
-              Queries
+              For Queries
             </h2>
             <ul className="space-y-4">
               <li className="mb-2">
@@ -141,9 +141,9 @@ const DesktopFooter = () => {
                     9001928479
                   </a>
                   <br />
-                  Vaibhav Upadhyay -{" "}
-                  <a href="tel:9105939291" className="underline hover:text-gray-400 transition">
-                    9105939291
+                  Sanskar Chaturvedi{" "}
+                  <a href="tel:6377829943" className="underline hover:text-gray-400 transition">
+                    6377829943
                   </a>
                 </p>
 
