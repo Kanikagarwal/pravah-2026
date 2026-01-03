@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink,Link, useLocation } from "react-router-dom";
 import "../style.css";
 
 const Navbarr = ({
@@ -67,12 +67,42 @@ const Navbarr = ({
 
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link to="/" className={`${textColor}`}>HOME</Link>
-            <Link to="/skit-pravah-2025-events" className={`${textColor}`}>DISCOVER EVENTS</Link>
-            <Link to="/skit-pravah-2025-AAVEG" className={`${textColor}`}>AAVEG</Link>
-            <Link to="/about-skit-pravah-2025" className={`${textColor}`}>ABOUT US</Link>
-            <Link to="/skit-pravah-2025-events-schedule" className={`${textColor}`}>SCHEDULE</Link>
-            <Link to="/skit-pravah-2025-sponsors" className={`${textColor}`}>SPONSORS</Link>
+            <NavLink to="/" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? "border-b-2 border-[]#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>HOME</NavLink>
+            <NavLink to="/skit-pravah-2025-events" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? " border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>DISCOVER EVENTS</NavLink>
+            <NavLink to="/skit-pravah-2025-AAVEG" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? " border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>AAVEG</NavLink>
+            <NavLink to="/about-skit-pravah-2025" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? "border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>ABOUT US</NavLink>
+            <NavLink to="/skit-pravah-2025-events-schedule" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? "border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>SCHEDULE</NavLink>
+            <NavLink to="/skit-pravah-2025-sponsors" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? "border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`}>SPONSORS</NavLink>
           </div>
 
           {/* MOBILE TOGGLE */}
