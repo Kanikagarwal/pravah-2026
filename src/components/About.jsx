@@ -65,19 +65,19 @@ const About = () => {
 
 
 
-            <h1 className='bungee-shade-regular mt-10 text-7xl hidden sm:block'>
-              <motion.span
+            <h1 className=' mt-10 text-7xl hidden sm:block text-[#5a3e36]'>
+              <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
                 Pravah'26
-              </motion.span>
+              </motion.h1>
             </h1>
 
             {/* Animated Section */}
-            <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl bg-black rounded-xl overflow-hidden shadow-xl mt-10 border-4 border-black">
+            <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl bg-[#2d201c] rounded-xl overflow-hidden shadow-xl mt-10 border-4 border-[#2d201c]">
 
               {/* Left Image */}
               <motion.div
@@ -92,14 +92,14 @@ const About = () => {
 
               {/* Text on the right */}
               <motion.div
-                className="w-full md:w-2/3 px-8 py-6 text-white"
+                className="w-full md:w-2/3 px-8 py-6 text-[#f9eddd]"
                 whileInView={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-semibold mb-4 cookie-regular">Welcome to Pravah'26</h2>
-                <p className="text-lg leading-relaxed abeezee-regular">
+                <h2 className="text-3xl font-semibold mb-4">Welcome to Pravah'26</h2>
+                <p className="text-lg leading-relaxed">
                   Pravah is the annual college fest that brings together a celebration of culture, technology, sports, and more. A platform for innovation and creativity, attracting students nationwide.
                 </p>
               </motion.div>

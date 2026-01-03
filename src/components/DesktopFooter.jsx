@@ -126,22 +126,22 @@ const DesktopFooter = () => {
 
 
 
-          <div className="text-white">
+          <div className="text-white space-x-1">
             <h2 className="mb-6 text-sm font-extrabold uppercase text-white flex items-center">
               <FaPhoneVolume className="mr-2" />
               For Queries
             </h2>
             <ul className="space-y-4">
               <li className="mb-2">
-                <p className="text-sm">
-                  <span className="font-bold">For Events</span>
+                <p className="text-xs">
+                  <span className="font-bold text-sm">For Events</span>
                   <br />
-                  Dipesh Kaushik -{" "}
+                  Dipesh Kaushik - {" "}
                   <a href="tel:9001928479" className="underline hover:text-gray-400 transition">
                     9001928479
                   </a>
                   <br />
-                  Sanskar Chaturvedi{" "}
+                  Sanskar Chaturvedi - {" "}
                   <a href="tel:6377829943" className="underline hover:text-gray-400 transition">
                     6377829943
                   </a>
@@ -151,8 +151,8 @@ const DesktopFooter = () => {
               </li>
 
               <li className="mb-2">
-                <p className="text-sm">
-                  <span className="font-bold">For Website</span>
+                <p className="text-xs">
+                  <span className="font-bold text-sm">For Website</span>
                   <br />
                   Kanika Agarwal -{" "}
                   <a href="tel:9660046683" className="underline hover:text-gray-400 transition">

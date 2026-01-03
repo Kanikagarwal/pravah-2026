@@ -7,7 +7,10 @@ import { RiVoiceprintFill } from "react-icons/ri";
 import Home from "./Home";
 
 const Landing = () => {
-  const [showLanding, setShowLanding] = useState(true);
+  const [showLanding, setShowLanding] = useState(() => {
+  return sessionStorage.getItem("landingSeen") !== "true";
+});
+
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
@@ -16,6 +19,11 @@ const Landing = () => {
     isPlaying ? audioRef.current.pause() : audioRef.current.play();
     setIsPlaying(!isPlaying);
   };
+  const handleEnter = () => {
+  sessionStorage.setItem("landingSeen", "true");
+  setShowLanding(false);
+};
+
 
   return (
     <>
@@ -100,7 +108,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Celebrating 26 Years of Excellence & The Spirit of Incredible India
+              26 Years of Legacy, Woven with the Nine Rasas of Incredible India
             </motion.p>
 
             {/* Type Line */}
@@ -118,7 +126,7 @@ const Landing = () => {
             {/* Button */}
             <motion.button
               className="mt-10 px-10 py-4 bg-gradient-to-r from-[#5a3836] to-[#5a4636] rounded-full text-white text-xl font-semibold shadow-xl hover:scale-110 transition-all relative overflow-hidden"
-              onClick={() => setShowLanding(false)}
+              onClick={handleEnter}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >

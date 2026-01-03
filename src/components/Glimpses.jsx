@@ -208,7 +208,7 @@ const Glimpses = () => {
         }
     };
 
-    const categories = ["thirak", "rawaz", "djnight", "sur", "celebnight", "ClashOfBands", "AnnualDay"];
+    const categories = ["thirak", "rawaz", "djnight", "sur", "celebnight", "AnnualDay"];
 
 
     return (
@@ -352,26 +352,31 @@ const Glimpses = () => {
 
 
                 <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-grey-400 via-transparent to-transparent z-10"></div>
-                <h1
-                    className="absolute z-20 flex items-center justify-center cookie-regular text-white font-bold"
-                    style={{
-                        height: "20vh",
-                        textAlign: "center",
-                        fontSize: "50px",
-                    }}
-                >
-                    Pravah'26 Glimpses
-                </h1>
+                <h2
+  className="absolute z-30 font-bold px-12 py-5 w-full
+             bg-gradient-to-r from-black/80 via-[#2b1b17]/80 to-black/80
+             text-[#f5e6c8] border border-[#f5e6c8]/30 text-center text-5xl"
+  style={{
+    height: "20vh",
+    fontSize: "50px",
+    boxShadow: "0px 10px 40px rgba(0,0,0,0.9)",
+    letterSpacing: "2px",
+  }}
+>
+  Pravah&apos;25 Glimpses
+</h2>
+
+
 
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
 
                 {/* Category Buttons */}
                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-16 z-20 cookie-regular">
-                    {["thirak", "rawaz", "djnight", "sur", "celebnight", "ClashOfBands", "AnnualDay"].map((category) => (
+                    {["thirak", "rawaz", "djnight", "sur", "celebnight", "AnnualDay"].map((category) => (
                         <button
                             key={category}
-                            className={`relative text-3xl font-bold transition-all duration-500 text-nowrap ${selectedCategory === category
-                                ? "bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-pink-300"
+                            className={`relative text-2xl font-bold transition-all duration-500 text-nowrap ${selectedCategory === category
+                                ? "bg-clip-text text-transparent bg-gradient-to-r from-[#f9eddd] to-[#fff1b8] shadow-lg"
                                 : "text-white"
                                 }`}
                             onClick={() => handleCategoryChange(category)}
@@ -381,7 +386,7 @@ const Glimpses = () => {
 
                             {/* Underline */}
                             <span
-                                className={`absolute bottom-0 left-1/2 w-0 h-1 transition-all duration-500 transform -translate-x-1/2 bg-gradient-to-r from-purple-300 to-pink-300 rounded-full ${selectedCategory === category ? "w-full" : "w-0"
+                                className={`absolute bottom-0 left-1/2 w-0 h-1 transition-all duration-500 transform -translate-x-1/2 bg-gradient-to-r from-[#f9eddd] to-[#fff1b8] rounded-full ${selectedCategory === category ? "w-full" : "w-0"
                                     }`}
                             ></span>
                         </button>

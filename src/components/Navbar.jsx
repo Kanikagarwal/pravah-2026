@@ -52,12 +52,12 @@ const Navbarr = ({
         
         {/* Navbar Content */}
         <div
-          className={`flex items-center justify-between mx-auto px-4 py-4 dynapuff ${
+          className={`flex items-center justify-between mx-auto px-4 py-4 font-bold ${
             isDesktop ? bgColor : "bg-[#392823]"
           }`}
         >
           {/* LOGO */}
-          <a href="/skit-pravah-2025">
+          <a href="/">
             <img
               src={logo ? `/${logo}` : "/logo.png"}
               className="sm:w-20 w-16 mx-4"
@@ -67,7 +67,7 @@ const Navbarr = ({
 
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link to="/skit-pravah-2025" className={`${textColor}`}>HOME</Link>
+            <Link to="/" className={`${textColor}`}>HOME</Link>
             <Link to="/skit-pravah-2025-events" className={`${textColor}`}>DISCOVER EVENTS</Link>
             <Link to="/skit-pravah-2025-AAVEG" className={`${textColor}`}>AAVEG</Link>
             <Link to="/about-skit-pravah-2025" className={`${textColor}`}>ABOUT US</Link>

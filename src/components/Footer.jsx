@@ -123,7 +123,7 @@ const Footer = () => {
                                             9001928479
                                         </a>
                                         <br />
-                                        Sanskar Chaturvedi -{" "}
+                                        Sanskar Chaturvedi - {" "}
                                         <a href="tel:6377829943" className="underline hover:text-gray-400 transition">
                                             6377829943
                                         </a>

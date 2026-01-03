@@ -45,8 +45,8 @@ console.debug = () => { };
 
 const router = createBrowserRouter([
   {
-    path: "/skit-pravah-2025",
-    element: <Home />,
+    path: "/",
+    element: <App />,
   },
   {
     path: "/about-skit-pravah-2025",

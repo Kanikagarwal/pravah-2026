@@ -1,6 +1,6 @@
 import React from "react";
 
-const SponsorCarousel = ({ sponsors, speed = 30 }) => {
+const SponsorCarousel = ({ sponsors, speed = 40 }) => {
   const sponsorList = sponsors.concat(sponsors); // Duplicate the list for seamless looping
 
   return (

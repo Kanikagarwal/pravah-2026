@@ -70,6 +70,27 @@ const Home = () => {
     { image: "sponsors/9.png" },
     { image: "sponsors/10.png" },
     { image: "sponsors/11.png" },
+    { image: "sponsors/12.png" },
+    { image: "sponsors/13.png" },
+    { image: "sponsors/14.png" },
+    { image: "sponsors/15.png" },
+    { image: "sponsors/16.png" },
+    { image: "sponsors/17.png" },
+    { image: "sponsors/18.png" },
+    { image: "sponsors/19.png" },
+    { image: "sponsors/20.png" },
+    { image: "sponsors/21.png" },
+    { image: "sponsors/22.png" },
+    // { image: "sponsors/23.png" },
+    { image: "sponsors/24.png" },
+    { image: "sponsors/25.png" },
+    // { image: "sponsors/26.png" },
+    { image: "sponsors/27.png" },
+    { image: "sponsors/28.png" },
+    { image: "sponsors/29.png" },
+    { image: "sponsors/30.png" },
+    { image: "sponsors/31.png" },
+    { image: "sponsors/32.png" },
   ];
 
   const [bgColor, setBgColor] = useState("bg-transparent");
@@ -1192,7 +1213,7 @@ const Home = () => {
                 {/* Event Cards - desktop */}
                 <div className="relative hidden sm:block">
                   <motion.h2
-                    className="text-4xl font-bold text-center mb-8 my-16 cookie-regular text-[#FFF1B8]"
+                    className="text-5xl font-bold text-center mb-8 my-16 text-[#FFF1B8]"
                     initial={{ y: -50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -1224,7 +1245,7 @@ const Home = () => {
                         <div className="absolute inset-0 bg-black/50 rounded-xl"></div>
 
                         {/* Event Name */}
-                        <h3 className="absolute bottom-4 left-4 text-3xl font-semibold text-[#FFF1B8] z-10 drop-shadow-md pattaya-regular">
+                        <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-[#FFF1B8] z-10 drop-shadow-md">
                           {event.name}
                         </h3>
 
@@ -1344,7 +1365,7 @@ const Home = () => {
                 </div>
 
                 <motion.h2
-                  className="text-3xl font-bold text-[#5a3e36] text-center cookie-regular mt-32 sm:block p-4 sm:mt-16 hidden"
+                  className="text-5xl font-bold text-[#5a3e36] text-center tracking-normal mt-40 sm:block p-4 sm:mt-16 hidden"
                   initial={{ y: 0, opacity: 0 }}
                   whileInView={{ y: 20, opacity: 1 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -1365,7 +1386,8 @@ const Home = () => {
                   celebrities={celebrities}
                   frameImage={"navras/borderFrame.png"}
                 /> */}
-                <div className="mt-14" ><Carousel
+                <div className="mt-14" >
+                  <Carousel
                   celebrities={celebrities}
                   frameImage={"navras/borderFrame.png"}
                 /></div>
@@ -1445,15 +1467,15 @@ const Home = () => {
 
                 <div className="py-12 bg-transparent hidden sm:block z-20">
                   {/* Title */}
-                  <motion.div
-                    className="text-center text-[#FFF1B8] font-bold text-3xl mb-8 cookie-regular mt-0"
+                  <motion.h2
+                    className="text-center text-[#FFF1B8] font-bold text-5xl mb-8 mt-0"
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: -70 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                   >
                     Pravah'26 Milestones
-                  </motion.div>
+                  </motion.h2>
 
                   {/* Highlights Section */}
                   <div className="flex justify-center gap-6">
@@ -1545,13 +1567,13 @@ const Home = () => {
 
                 {/* Animated Title */}
                 <motion.h2
-                  className="text-3xl font-bold text-center text-[#FFF1B8] mt-16 sm:hidden abeezee-regular text-nowrap"
+                  className="text-3xl font-bold text-center text-[#FFF1B8] mt-16 sm:hidden tracking-normal text-nowrap"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  Pravah'26 Highlights
+                  Pravah'25 Highlights
                 </motion.h2>
 
                 {/* Highlight Cards */}
@@ -1631,15 +1653,15 @@ const Home = () => {
                   />
                 </div>
 
-                <motion.div
-                  className="text-center text-[#5a3e36] font-bold text-2xl cookie-regular hidden sm:block"
+                <motion.h2
+                  className="text-center text-[#5a3e36] font-bold text-5xl hidden sm:block"
                   initial={{ opacity: 0, y: 0 }}
                   whileInView={{ opacity: 1, y: 110 }}
                   transition={{ duration: 1 }}
                   viewport={{ once: false }}
                 >
                   Past Patrons
-                </motion.div>
+                </motion.h2>
 
                 {/* Sponsor Carousel */}
                 <SponsorCarousel sponsors={sponsors} />

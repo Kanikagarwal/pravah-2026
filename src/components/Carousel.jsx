@@ -6,7 +6,7 @@ const Carousel = ({ celebrities, frameImage, speed = 40 }) => {
 
   return (
     
-    <div className="relative w-full h-96 lg:mb-5 2xl:mb-28 mt-10 sm:mt-0">
+    <div className="relative w-full h-96 lg:mb-5 2xl:mb-28 mt-10 sm:mt-40">
      {/* MOBILE */}
 <div className="sm:hidden relative overflow-hidden">
   <div className="overflow-x-auto no-scrollbar">
@@ -71,7 +71,7 @@ const Carousel = ({ celebrities, frameImage, speed = 40 }) => {
                 </div>
               </div>
 
-              <div className="text-center mt-3 text-sm font-extrabold text-[#5a3e36] tracking-wider uppercase">
+              <div className="text-center mt-3 text-sm font-extrabold text-[#5a3e36] uppercase">
                 {celebrity.name}
               </div>
             </div>

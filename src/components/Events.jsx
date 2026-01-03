@@ -176,8 +176,8 @@ const Events = () => {
                     {/* Category name */}
                     <div className="flex flex-col justify-between p-6 leading-normal space-y-4 w-full">
                       <h5
-                        className="text-lg font-bold text-[#fff1b8] tracking-tight cookie-regular text-center mt-5"
-                        style={{ fontSize: '35px' }}
+                        className="text-2xl font-semibold text-[#f9eddd] text-center mt-5"
+                        // style={{ fontSize: '35px' }}
                       >
                         {category.categoryName} Events
                       </h5>
