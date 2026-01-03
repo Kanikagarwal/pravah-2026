@@ -49,7 +49,7 @@ const Landing = () => {
         </div>
 
         <audio ref={audioRef} src="/section1-audio.mp3" />
-<div className="fixed bottom-4 left-4 z-50">
+<div className="fixed bottom-4 z-50 mx-10">
                 <img
                   src="/skit_logo.png"
                   alt="Logo"

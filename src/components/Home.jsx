@@ -1361,10 +1361,14 @@ const Home = () => {
                   Former Celebrity Guests
                 </motion.h2>
 
-                <Carousel
+                {/* <Carousel
                   celebrities={celebrities}
                   frameImage={"navras/borderFrame.png"}
-                />
+                /> */}
+                <div className="mt-14" ><Carousel
+                  celebrities={celebrities}
+                  frameImage={"navras/borderFrame.png"}
+                /></div>
                 <div className="absolute bottom-0 left-0 w-full overflow-hidden z-10">
   <svg
     className="w-full h-16 sm:h-24"

@@ -77,21 +77,21 @@ const Sponsors = () => {
                                             Technology Partner
                                         </h3>
                                         <div className="flex gap-8 flex-wrap justify-center items-center">
-                                            <img
+                                            {/* <img
                                                 src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790221/v7fbrrt9malhtx8jmkxy.png"
                                                 alt="Technology Partner 1"
                                                 className="w-36 sm:w-60 h-auto"
-                                            />
+                                            /> */}
                                             <img
                                                 src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790225/adqzj3vrzserlrocygb6.svg"
                                                 alt="Technology Partner 2"
                                                 className="w-28 h-auto"
                                             />
-                                            <img
+                                            {/* <img
                                                 src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1737378995/logo_k0wrhg.svg"
                                                 alt="Technology Partner 2"
                                                 className="w-28 h-auto"
-                                            />
+                                            /> */}
                                         </div>
                                     </div>
 
@@ -292,7 +292,7 @@ const Sponsors = () => {
 
 
 
-                            <motion.section
+                            {/* <motion.section
                                 className={`text-center space-y-8 `}
                                 initial={{ opacity: 0, y: -50 }}
                                 animate={{ opacity: 1, y: 130 }}
@@ -307,16 +307,16 @@ const Sponsors = () => {
                                         <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-14 h-[4px] bg-gradient-to-r from-[#351332] to-[#9e1c9e] mt-1 rounded-full"></span>
                                     </motion.h1>
                                 </div>
-                            </motion.section>
+                            </motion.section> */}
                             {/* Normal Sponsors Section */}
-                            <motion.section
+                            {/* <motion.section
                                 className="w-full mt-20 flex flex-wrap justify-center items-center gap-10 mb-20"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 100 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8 }}
                             >
-                                {/* Sponsor 1 */}
+                                Sponsor 1
                                 <div className="flex flex-col items-center">
                                     <img
                                         src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790236/rsnfhxkznnongeu3dhsl.svg"
@@ -381,7 +381,7 @@ const Sponsors = () => {
                                     />
                                 </div>
 
-                            </motion.section>
+                            </motion.section> */}
                         </main>
                     </Parallax>
                     {/* Background Image */}
