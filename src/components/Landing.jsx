@@ -75,7 +75,7 @@ const Landing = () => {
           >
             {/* Main Title */}
             <motion.h1
-              className="text-[#5A3E36] uppercase text-[18vw] sm:text-[11vw] max-[640px]:text-[9vw] font-bold"
+              className="text-[#5A3E36] uppercase text-[18vw] sm:text-[11vw] max-[640px]:text-[13vw] font-bold"
               style={{
                 textShadow: `
     0 2px 2px rgba(0,0,0,0.2),
@@ -103,7 +103,7 @@ const Landing = () => {
 
             {/* Tagline */}
             <motion.p
-              className="text-[#7a5c50] text-xl sm:text-5xl mt-8 mb-4 font-medium"
+              className="text-[#7a5c50] text-xl sm:text-3xl mt-4 font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
