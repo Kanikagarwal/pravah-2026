@@ -47,31 +47,31 @@ const Events = () => {
 
   // Handle navigation to category-specific page
   const handleCategoryClick = (categoryName) => {
-    navigate(`/skit-pravah-2025-events/${categoryName}`);
+    navigate(`/skit-pravah-2026-events/${categoryName}`);
   };
 
   return (
     <div>
 
       <Helmet>
-        <title>Events & Registrations - Pravah 2025 | SKIT</title>
+        <title>Events & Registrations - Pravah 2026 | SKIT</title>
         <meta
           name="description"
-          content="Explore the exciting events at Pravah 2025 and register to be a part of the grand celebration of Incredible India at SKIT."
+          content="Explore the exciting events at Pravah 2026 and register to be a part of the grand celebration of Incredible India at SKIT."
         />
         <meta
           name="keywords"
-          content="Pravah 2025 events, Incredible India, event registrations, SKIT, Swami Keshvanand Institute of Technology, Indian culture, celebrations"
+          content="Pravah 2026 events, Incredible India, event registrations, SKIT, Swami Keshvanand Institute of Technology, Indian culture, celebrations"
         />
         <meta
           property="og:title"
-          content="Events & Registrations - Pravah 2025 | SKIT"
+          content="Events & Registrations - Pravah 2026 | SKIT"
         />
         <meta
           property="og:description"
-          content="Join us at Pravah 2025, hosted by SKIT, to participate in vibrant events showcasing the cultural heritage and unity of Incredible India."
+          content="Join us at Pravah 2026, hosted by SKIT, to participate in vibrant events showcasing the cultural heritage and unity of Incredible India."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

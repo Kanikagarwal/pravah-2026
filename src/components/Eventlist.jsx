@@ -40,7 +40,7 @@ const Eventlist = () => {
   return (
     <div>
       <Helmet>
-        <title>{`Explore ${eventcat} Events - PRAVAH 2025 | SKIT`}</title>
+        <title>{`Explore ${eventcat} Events - PRAVAH 2026 | SKIT`}</title>
         <meta
           name="description"
           content={`Discover all the exciting ${eventcat} events at SKIT. Join us for an unforgettable journey of innovation, creativity, and excellence in ${eventcat}.`}
@@ -51,7 +51,7 @@ const Eventlist = () => {
         />
         <meta
           property="og:title"
-          content={`Explore ${eventcat} Events - PRAVAH 2025 | SKIT`}
+          content={`Explore ${eventcat} Events - PRAVAH 2026 | SKIT`}
         />
         <meta
           property="og:description"
@@ -59,7 +59,7 @@ const Eventlist = () => {
         />
         <meta
           property="og:url"
-          content={`https://pravah.skit.ac.in/skit-pravah-2025-events/${eventcat}`}
+          content={`https://pravah.skit.ac.in/skit-pravah-2026-events/${eventcat}`}
         />
         <meta
           name="author"
@@ -118,7 +118,7 @@ const Eventlist = () => {
                       <button
                         onClick={() =>
                           navigate(
-                            `/skit-pravah-2025-events/${eventcat}/${event._id}`
+                            `/skit-pravah-2026-events/${eventcat}/${event._id}`
                           )
                         }
                         className="w-full bg-gradient-to-r from-[#f9eddd] to-[#FFF1B8] hover:from-[#f9eddd] hover:[#fff1b8] hover:to-[#f9eddd] text-[#5a3e36] font-medium py-2 sm:py-3 rounded-xl sm:rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-sm"

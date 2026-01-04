@@ -31,13 +31,13 @@ const DesktopFooter = () => {
               </h2>
               <ul className="text-white font-medium text-sm">
                 <li className="mb-2">
-                  <a href="/the-team-behind-skit-pravah-2025">Team Pravah</a>
+                  <a href="/the-team-behind-skit-pravah-2026">Team Pravah</a>
                 </li>
                 <li className="mb-2">
-                  <a href="/skit-pravah-2025-AAVEG">AAVEG</a>
+                  <a href="/skit-pravah-2026-AAVEG">AAVEG</a>
                 </li>
                 <li className="mb-2">
-                  <a href="/skit-pravah-2025-events">Events</a>
+                  <a href="/skit-pravah-2026-events">Events</a>
                 </li>
               
               </ul>
@@ -182,7 +182,7 @@ const DesktopFooter = () => {
             <span className="text-sm text-white mb-0">
               Designed and Developed by{" "}
               <Link
-                to={"/skit-pravah-2025-web-team"}
+                to={"/skit-pravah-2026-web-team"}
                 className="text-gray-400 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"

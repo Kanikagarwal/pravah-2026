@@ -49,63 +49,63 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/about-skit-pravah-2025",
+    path: "/about-skit-pravah-2026",
     element: <About />,
   },
   {
-    path: "/skit-pravah-2025-events",
+    path: "/skit-pravah-2026-events",
     element: <Events />,
   },
   {
-    path: "/skit-pravah-2025-AAVEG",
+    path: "/skit-pravah-2026-AAVEG",
     element: <Aaveg />,
   },
   {
-    path: "/skit-pravah-2025-sponsors",
+    path: "/skit-pravah-2026-sponsors",
     element: <Sponsors />,
   },
   {
-    path: "/the-team-behind-skit-pravah-2025",
+    path: "/the-team-behind-skit-pravah-2026",
     element: <Teampravah />,
   },
   {
-    path: "/skit-pravah-2025-events/:eventcat",
+    path: "/skit-pravah-2026-events/:eventcat",
     element: <Eventlist />,
   },
   {
-    path: "/skit-pravah-2025-events/:eventcat/:eventid",
+    path: "/skit-pravah-2026-events/:eventcat/:eventid",
     element: <Eventdetails />,
   },
   {
-    path: "/skit-pravah-2025-events-thirak-gallery",
+    path: "/skit-pravah-2026-events-thirak-gallery",
     element: <Thirakgallery />,
   },
   {
-    path: "/skit-pravah-2025-events-rawaz-gallery",
+    path: "/skit-pravah-2026-events-rawaz-gallery",
     element: <Rawazgallery />,
   },
   {
-    path: "/skit-pravah-2025-events-djnight-gallery",
+    path: "/skit-pravah-2026-events-djnight-gallery",
     element: <Djnightgallery />,
   },
   {
-    path: "/skit-pravah-2025-events-Sur-gallery",
+    path: "/skit-pravah-2026-events-Sur-gallery",
     element: <Surgallery />,
   },
   {
-    path: "/skit-pravah-2025-events-Celebrity-gallery",
+    path: "/skit-pravah-2026-events-Celebrity-gallery",
     element: <Celebritygallery />,
   },
   {
-    path: "/skit-pravah-2025-events-AnnualDay-gallery",
+    path: "/skit-pravah-2026-events-AnnualDay-gallery",
     element: <AnnualDaygallery />,
   },
   {
-    path: "/skit-pravah-2025-events-cob-gallery",
+    path: "/skit-pravah-2026-events-cob-gallery",
     element: <Clashofbandsgallery />,
   },
   {
-    path: "/skit-pravah-2025-events-schedule",
+    path: "/skit-pravah-2026-events-schedule",
     element: <Schedule />,
   },
   {
@@ -117,7 +117,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/skit-pravah-2025-web-team",
+    path: "/skit-pravah-2026-web-team",
     element: <Webteampravah />,
   },
 ]);

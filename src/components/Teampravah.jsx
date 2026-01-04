@@ -29,7 +29,7 @@ const Teampravah = () => {
                     property="og:description"
                     content="Get to know the dynamic team behind Pravah at SKIT. These creative minds and organizers are the driving force behind this incredible cultural fest."
                 />
-                <meta property="og:url" content="https://pravah.skit.ac.in/the-team-behind-skit-pravah-2025" />
+                <meta property="og:url" content="https://pravah.skit.ac.in/the-team-behind-skit-pravah-2026" />
                 <meta
                     name="author"
                     content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
@@ -619,7 +619,7 @@ const Teampravah = () => {
                 >
                     <img
                         src="/rb_2149151140.png"
-                        alt="Pravah 2025 - Incredible India | SKIT"
+                        alt="Pravah 2026 - Incredible India | SKIT"
                         className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[200px] translate-x-0 opacity-30"
                     />
                 </motion.div>
@@ -627,7 +627,7 @@ const Teampravah = () => {
                 <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20">
                     <img
                         src="/rb_2149158780.png"
-                        alt="Pravah 2025 - Incredible India | SKIT"
+                        alt="Pravah 2026 - Incredible India | SKIT"
                         className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10"
                     />
                 </div>

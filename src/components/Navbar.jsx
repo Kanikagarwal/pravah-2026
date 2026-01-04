@@ -73,31 +73,31 @@ const Navbarr = ({
         ? "border-b-2 border-[]#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>HOME</NavLink>
-            <NavLink to="/skit-pravah-2025-events" className={({ isActive }) =>
+            <NavLink to="/skit-pravah-2026-events" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? " border-b-2 border-[#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>DISCOVER EVENTS</NavLink>
-            <NavLink to="/skit-pravah-2025-AAVEG" className={({ isActive }) =>
+            <NavLink to="/skit-pravah-2026-AAVEG" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? " border-b-2 border-[#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>AAVEG</NavLink>
-            <NavLink to="/about-skit-pravah-2025" className={({ isActive }) =>
+            <NavLink to="/about-skit-pravah-2026" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? "border-b-2 border-[#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>ABOUT US</NavLink>
-            <NavLink to="/skit-pravah-2025-events-schedule" className={({ isActive }) =>
+            <NavLink to="/skit-pravah-2026-events-schedule" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? "border-b-2 border-[#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>SCHEDULE</NavLink>
-            <NavLink to="/skit-pravah-2025-sponsors" className={({ isActive }) =>
+            <NavLink to="/skit-pravah-2026-sponsors" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? "border-b-2 border-[#5a3e36]"
@@ -133,13 +133,13 @@ const Navbarr = ({
 
           <div className="flex flex-col items-center space-y-4 py-8 text-[#FFF1B8]">
             <Link to="/"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>HOME</Link>
-            <Link to="/skit-pravah-2025-events"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>EVENTS & REGISTRATIONS</Link>
-            <Link to="/skit-pravah-2025-AAVEG"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>AAVEG</Link>
-            <Link to="/about-skit-pravah-2025"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>ABOUT US</Link>
-            <Link to="/skit-pravah-2025-events-schedule"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>EVENT SCHEDULE</Link>
-            <Link to="/skit-pravah-2025-sponsors"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>SPONSORS</Link>
-            <Link to="/the-team-behind-skit-pravah-2025" className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition" onClick={closeNavbar}> TEAM PRAVAH </Link>
-            <img src="navras/mandala.png" alt="Pravah 2025 - Incredible India | SKIT Graphics" className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full max-w-md object-contain pointer-events-none opacity-90" />
+            <Link to="/skit-pravah-2026-events"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>EVENTS & REGISTRATIONS</Link>
+            <Link to="/skit-pravah-2026-AAVEG"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>AAVEG</Link>
+            <Link to="/about-skit-pravah-2026"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>ABOUT US</Link>
+            <Link to="/skit-pravah-2026-events-schedule"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>EVENT SCHEDULE</Link>
+            <Link to="/skit-pravah-2026-sponsors"  className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition"  onClick={closeNavbar}>SPONSORS</Link>
+            <Link to="/the-team-behind-skit-pravah-2026" className="text-lg font-medium text-[#FFF1b8] hover:text-yellow-600 transition" onClick={closeNavbar}> TEAM PRAVAH </Link>
+            <img src="navras/mandala.png" alt="Pravah 2026 - Incredible India | SKIT Graphics" className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full max-w-md object-contain pointer-events-none opacity-90" />
           </div>
         </motion.div>
       </motion.nav>

@@ -323,7 +323,7 @@ const Aaveg = () => {
 
 
 
-            <h2 className="text-3xl font-semibold text-gray-800 text-center mb-3 mt-28 cookie-regular relative">
+            <h2 className="text-4xl font-semibold text-[#5a3e36] text-center mb-3 mt-20 relative">
               <motion.span
                 initial={{ opacity: 0, y: 100 }} // Start with the title off-screen and invisible
                 whileInView={{ opacity: 1, y: 0 }} // Animate to full opacity and position when in view
@@ -332,7 +332,7 @@ const Aaveg = () => {
                 className="relative inline-block"
               >
                 Faculty Coordinator's
-                <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1/2 h-[3px] bg-gradient-to-r from-[#FF6A00] to-[#660066] mt-1 rounded-full"></span>
+                {/* <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1/2 h-[3px] bg-gradient-to-r from-[#FF6A00] to-[#660066] mt-1 rounded-full"></span> */}
               </motion.span>
             </h2>
 
@@ -352,7 +352,7 @@ const Aaveg = () => {
 
 
 
-            <h2 className="text-3xl font-semibold text-gray-800 text-center mb-3 mt-8 cookie-regular relative">
+            <h2 className="text-4xl font-semibold text-[#5a3e36] text-center mb-3 mt-8 relative">
               <motion.span
                 initial={{ opacity: 0, y: 100 }} // Start with the title off-screen and invisible
                 whileInView={{ opacity: 1, y: 0 }} // Animate to full opacity and position when in view
@@ -361,7 +361,7 @@ const Aaveg = () => {
                 className="relative inline-block"
               >
                 Student Coordinator's
-                <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1/2 h-[3px] bg-gradient-to-r from-[#FF6A00] to-[#660066] mt-1 rounded-full"></span>
+                {/* <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1/2 h-[3px] bg-gradient-to-r from-[#FF6A00] to-[#660066] mt-1 rounded-full"></span> */}
               </motion.span>
             </h2>
 

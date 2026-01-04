@@ -27,17 +27,17 @@ const Footer = () => {
                             </h2>
                             <ul className="text-white font-medium text-sm">
                                 <li>
-                                    <a href="/the-team-behind-skit-pravah-2025" className="hover:underline">
+                                    <a href="/the-team-behind-skit-pravah-2026" className="hover:underline">
                                         Team Pravah
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/skit-pravah-2025-AAVEG" className="hover:underline">
+                                    <a href="/skit-pravah-2026-AAVEG" className="hover:underline">
                                         AAVEG
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/skit-pravah-2025-events" className="hover:underline">
+                                    <a href="/skit-pravah-2026-events" className="hover:underline">
                                         Events
                                     </a>
                                 </li>
@@ -195,7 +195,7 @@ const Footer = () => {
                         <span className="text-sm text-white">
                             Designed and Developed by{" "}
                             <Link
-                                to={"/skit-pravah-2025-web-team"}
+                                to={"/skit-pravah-2026-web-team"}
                                 className="text-yellow-100 hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"

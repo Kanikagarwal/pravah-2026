@@ -103,26 +103,26 @@ const Schedule = () => {
   return (
     <div>
       <Helmet>
-        <title>Event Schedule - Pravah 2025 | SKIT</title>
+        <title>Event Schedule - Pravah 2026 | SKIT</title>
         <meta
           name="description"
-          content="Explore the event schedule for Pravah 2025 at SKIT. Get all the details on upcoming events, workshops, seminars, and cultural programs."
+          content="Explore the event schedule for Pravah 2026 at SKIT. Get all the details on upcoming events, workshops, seminars, and cultural programs."
         />
         <meta
           name="keywords"
-          content="Pravah 2025, event schedule, SKIT, Swami Keshvanand Institute of Technology, workshops, seminars, cultural events, youth fest"
+          content="Pravah 2026, event schedule, SKIT, Swami Keshvanand Institute of Technology, workshops, seminars, cultural events, youth fest"
         />
         <meta
           property="og:title"
-          content="Event Schedule - Pravah 2025 | SKIT"
+          content="Event Schedule - Pravah 2026 | SKIT"
         />
         <meta
           property="og:description"
-          content="Discover the complete event schedule for Pravah 2025 at SKIT. Find out about all the exciting workshops, seminars, and cultural events happening throughout the festival."
+          content="Discover the complete event schedule for Pravah 2026 at SKIT. Find out about all the exciting workshops, seminars, and cultural events happening throughout the festival."
         />
         <meta
           property="og:url"
-          content="https://pravah.skit.ac.in/skit-pravah-2025-events-schedule   "
+          content="https://pravah.skit.ac.in/skit-pravah-2026-events-schedule"
         />
         <meta
           name="author"
@@ -149,7 +149,7 @@ const Schedule = () => {
 
         <ParallaxProvider>
           <Parallax speed={-10}>
-            {/* <Comingsoon /> */}
+            <Comingsoon />
             <main className="min-h-screen px-6 md:px-12 mt-16 relative mb-72">
               {/* <motion.section
                             className="text-center space-y-8"
@@ -219,7 +219,7 @@ const Schedule = () => {
                             transition={{ duration: 0.6, delay: i * 0.1 }}
                           >
                             <Link
-                              to={`/skit-pravah-2025-events/${event.eventCategory}/${event._id}`}
+                              to={`/skit-pravah-2026-events/${event.eventCategory}/${event._id}`}
                             >
                               <div className="relative bg-[#5a3e36] rounded-xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 group border border-black cursor-pointer">
                                 {/* Event Image */}
