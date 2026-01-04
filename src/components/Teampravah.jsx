@@ -39,7 +39,17 @@ const Teampravah = () => {
                     content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
                 />
             </Helmet>
-
+            <div
+        className="section relative overflow-hidden bg-red-500"
+        style={{
+          overflowX: "hidden",
+          backgroundImage: "url('/navras/bg3.jpg')",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "repeat",
+          position: "relative",
+        }}
+      >
             <Navbarr eventName={"Team Pravah"} />
 
             <ParallaxProvider>
@@ -610,7 +620,7 @@ const Teampravah = () => {
 
                     </main>
                 </Parallax>
-                <motion.div
+                {/* <motion.div
                     className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 0.5 }}
@@ -630,8 +640,9 @@ const Teampravah = () => {
                         alt="Pravah 2026 - Incredible India | SKIT"
                         className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10"
                     />
-                </div>
+                </div> */}
             </ParallaxProvider>
+            </div>
             <DesktopFooter />
         </div>
     )

@@ -26,7 +26,7 @@ const Coordinator = ({ name, number, photo }) => {
         )}
 
         {/* Name */}
-        <h2 className={`text-sm sm:text-lg font-semibold text-white font-sans capitalize ${photo ? 'mt-10' : ''}`}>
+        <h2 className={`text-sm sm:text-lg font-semibold text-[#f9eddd] font-sans capitalize ${photo ? 'mt-10' : ''}`}>
           {name}
         </h2>
 
