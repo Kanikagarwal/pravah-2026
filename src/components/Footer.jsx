@@ -27,7 +27,7 @@ const Footer = () => {
                             </h2>
                             <ul className="text-white font-medium text-sm">
                                 <li>
-                                    <a href="/the-team-behind-skit-pravah-2026" className="hover:underline">
+                                    <a href="/the-team-behind-skit-pravah-2026" target='_blank' className="hover:underline">
                                         Team Pravah
                                     </a>
                                 </li>

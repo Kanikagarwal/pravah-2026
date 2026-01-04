@@ -33,6 +33,7 @@ import Clashofbandsgallery from './components/Clashofbandsgallery';
 import NotFound from './components/NotFound';
 import OneSignal from 'react-onesignal';
 import Webteampravah from './components/Webteampravah';
+import Comingsoon from './components/Comingsoon';
 
 
 
@@ -66,7 +67,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/the-team-behind-skit-pravah-2026",
-    element: <Teampravah />,
+    element: <Comingsoon />,
   },
   {
     path: "/skit-pravah-2026-events/:eventcat",

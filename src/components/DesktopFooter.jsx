@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLink, FaHeadset, FaPhoneVolume, FaGlobe, FaUsers } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import Comingsoon from './Comingsoon';
 
 const DesktopFooter = () => {
   return (
@@ -31,7 +32,8 @@ const DesktopFooter = () => {
               </h2>
               <ul className="text-white font-medium text-sm">
                 <li className="mb-2">
-                  <a href="/the-team-behind-skit-pravah-2026">Team Pravah</a>
+                  <a href="/the-team-behind-skit-pravah-2026" target='_blank'>Team Pravah</a>
+                  {/* <a href={``} target="_blank">Team Pravah</a> */}
                 </li>
                 <li className="mb-2">
                   <a href="/skit-pravah-2026-AAVEG">AAVEG</a>
@@ -184,7 +186,6 @@ const DesktopFooter = () => {
               <Link
                 to={"/skit-pravah-2026-web-team"}
                 className="text-gray-400 hover:underline"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Pravah Web Team

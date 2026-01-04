@@ -74,7 +74,7 @@ const Home = () => {
     { image: "sponsors/13.png" },
     { image: "sponsors/14.png" },
     { image: "sponsors/15.png" },
-    { image: "sponsors/16.png" },
+    // { image: "sponsors/16.png" },
     { image: "sponsors/17.png" },
     { image: "sponsors/18.png" },
     { image: "sponsors/19.png" },

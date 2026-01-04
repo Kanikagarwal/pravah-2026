@@ -108,7 +108,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              26 Years of Legacy, Woven with the Nine Rasas of Incredible India
+              26 Years of Legacy, Woven with the Nine Rasas
             </motion.p>
 
             {/* Type Line */}
