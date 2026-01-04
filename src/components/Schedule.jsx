@@ -147,9 +147,11 @@ const Schedule = () => {
       >
         <Navbarr eventName={"Event's Schedule"} />
 
+            <Comingsoon />
+            <div className="hidden">
+
         <ParallaxProvider>
           <Parallax speed={-10}>
-            <Comingsoon />
             <main className="min-h-screen px-6 md:px-12 mt-16 relative mb-72">
               {/* <motion.section
                             className="text-center space-y-8"
@@ -298,6 +300,7 @@ const Schedule = () => {
             />
           </div>
         </ParallaxProvider>
+            </div>
       </div>
       {/* Background Image */}
 
