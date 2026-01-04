@@ -103,12 +103,12 @@ const Landing = () => {
 
             {/* Tagline */}
             <motion.p
-              className="text-[#7a5c50] text-xl sm:text-3xl mt-4 font-medium"
+              className="text-[#7a5c50] text-xl sm:text-5xl mt-8 mb-4 font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              26 Years of Legacy, Woven with the Nine Rasas
+              नौ रस — एक प्रवाह
             </motion.p>
 
             {/* Type Line */}

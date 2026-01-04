@@ -148,7 +148,7 @@ const Aaveg = () => {
                 }}
               >
       {/* Navbar */}
-      <Navbarr logo="https://res.cloudinary.com/dktkdi3sm/image/upload/v1735466875/aaveg_logo_wiqp6x.png" eventName={"AAVEG"} />
+      <Navbarr logo="aaveg_logo.png" eventName={"AAVEG"} />
       <ParallaxProvider>
         <Parallax speed={-10}>
           <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-12 mt-32 relative mb-20">
@@ -185,7 +185,7 @@ const Aaveg = () => {
               </motion.div>
 
 
-              <button className="px-6 py-3 bg-[#5a3e36] text-[#f9eddd] font-semibold rounded-3xl shadow-md  transition duration-300 flex items-center gap-2 m-auto" onClick={() => window.location.href = "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//one%20fold-min.pdf"}>
+              {/* <button className="px-6 py-3 bg-[#5a3e36] text-[#f9eddd] font-semibold rounded-3xl shadow-md  transition duration-300 flex items-center gap-2 m-auto" onClick={() => window.location.href = "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//one%20fold-min.pdf"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -201,7 +201,7 @@ const Aaveg = () => {
                   />
                 </svg>
                 Download Rulebook
-              </button>
+              </button> */}
 
 
             </motion.section>
