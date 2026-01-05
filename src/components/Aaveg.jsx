@@ -101,7 +101,7 @@ const Aaveg = () => {
     <div className=" text-gray-900 relative overflow-hidden  ">
 
       <Helmet  >
-        <title>Aaveg 2025 - Ignite Your Passion | SKIT</title>
+        <title>Aaveg 2026 - Ignite Your Passion | SKIT</title>
         <meta
           name="description"
           content="Join Aaveg 2025 at SKIT and unleash your energy in this dynamic sports and cultural extravaganza celebrating the spirit of Incredible India."
@@ -112,7 +112,7 @@ const Aaveg = () => {
         />
         <meta
           property="og:title"
-          content="Aaveg 2025 - Ignite Your Passion | SKIT"
+          content="Aaveg 2026 - Ignite Your Passion | SKIT"
         />
         <meta
           property="og:description"

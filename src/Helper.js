@@ -2,7 +2,7 @@ const helper = [
   {
     id: 1,
     name: "शृंगार",
-    bgImage: "navras/rk1.png",
+    bgImage: "navras/lotus-flower.png",
     width:"250px",
     bottom:20,
     right:5,
@@ -12,7 +12,7 @@ const helper = [
   {
     id: 2,
     name: "हास्य",
-    bgImage: "navras/narad.png",
+    bgImage: "navras/mask.png",
      bottom:20,
     right:5,
     width:"250px",
@@ -22,9 +22,9 @@ const helper = [
   {
     id: 3,
     name: "करुण",
-    bgImage: "navras/meera.png",
+    bgImage: "navras/water.png",
      bottom:20,
-    right:5,
+    right:-5,
     width:"310px",
     translateY:0,
     color: "#B0B0B0", // Grey
@@ -32,7 +32,7 @@ const helper = [
   {
     id: 4,
     name: "रौद्र",
-    bgImage: "navras/kaali.png",
+    bgImage: "navras/fire.png",
      bottom:10,
     right:5,
     width:"250px",
@@ -42,7 +42,7 @@ const helper = [
   {
     id: 5,
     name: "वीर",
-    bgImage: "navras/rama.png",
+    bgImage: "navras/sword.png",
      bottom:8,
     right:3,
     width:"310px",
@@ -52,7 +52,7 @@ const helper = [
   {
     id: 6,
     name: "भयानक",
-    bgImage: "navras/ravana.png",
+    bgImage: "navras/lightning.png",
      bottom:20,
     right:5,
     width:"250px",
@@ -62,7 +62,7 @@ const helper = [
   {
     id: 7,
     name: "बीभत्स",
-    bgImage: "navras/shakuni.png",
+    bgImage: "navras/smile.png",
      bottom:20,
     right:5,
     width:"250px",
@@ -72,7 +72,7 @@ const helper = [
   {
     id: 8,
     name: "अद्भुत",
-    bgImage: "navras/adbhut.png",
+    bgImage: "navras/eye.png",
      bottom:20,
     right:5,
     width:"250px",
@@ -82,7 +82,7 @@ const helper = [
   {
     id: 9,
     name: "शांत",
-    bgImage: "navras/buddha.png",
+    bgImage: "navras/meditation.png",
      bottom:20,
     right:5,
     width:"250px",

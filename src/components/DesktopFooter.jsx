@@ -138,9 +138,9 @@ const DesktopFooter = () => {
                 <p className="text-xs">
                   <span className="font-bold text-sm">For Events</span>
                   <br />
-                  Dipesh Kaushik - {" "}
-                  <a href="tel:9001928479" className="underline hover:text-gray-400 transition">
-                    9001928479
+                  Vaibhav Upadhyay - {" "}
+                  <a href="tel:9105939291" className="underline hover:text-gray-400 transition">
+                    9105939291
                   </a>
                   <br />
                   Sanskar Chaturvedi - {" "}

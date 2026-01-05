@@ -103,6 +103,12 @@ const Navbarr = ({
         ? "border-b-2 border-[#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>SPONSORS</NavLink>
+    <NavLink to="/the-team-behind-skit-pravah-2026" className={({ isActive }) =>
+    `${textColor} ${
+      isActive
+        ? " border-b-2 border-[#5a3e36]"
+        : "hover:text-[#2d201c]"
+    } transition-all duration-300`} target="_blank">TEAM PRAVAH</NavLink>
           </div>
 
           {/* MOBILE TOGGLE */}

@@ -6,10 +6,9 @@
 *{
   margin: 0px;
   padding: 0px;
-}
-* {
   font-family: 'Inter', sans-serif !important;
 }
+
 h1,h2{
   font-family: "Playfair Display", sans-serif !important;
 }
@@ -38,5 +37,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.auto-scroll {
+  animation: horizontal-scroll 25s linear infinite;
+  width: max-content;
+}
+
+
+
+@keyframes circular-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-track {
+  animation: circular-scroll 30s linear infinite;
+  width: max-content;
+}
+
+
+
 
 

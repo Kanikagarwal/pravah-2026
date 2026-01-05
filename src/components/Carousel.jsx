@@ -9,9 +9,18 @@ const Carousel = ({ celebrities, frameImage, speed = 40 }) => {
     <div className="relative w-full h-96 lg:mb-5 2xl:mb-28 mt-10 sm:mt-40">
      {/* MOBILE */}
 <div className="sm:hidden relative overflow-hidden">
-  <div className="overflow-x-auto no-scrollbar">
-    <div className="flex items-center px-4">
-      {celebrities.map((celebrity, index) => (
+  <div className="no-scrollbar">
+    <motion.div className="flex items-center px-4 auto-scroll carousel-track"
+    animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: speed,
+            ease: "linear",
+          }}
+          style={{ width: "max-content" }}
+    >
+      {images.map((celebrity, index) => (
         <div
           key={index}
           className="flex-shrink-0 flex flex-col items-center mx-6"
@@ -37,7 +46,7 @@ const Carousel = ({ celebrities, frameImage, speed = 40 }) => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   </div>
 </div>
 

@@ -497,13 +497,12 @@ const Home = () => {
                       className=" -translate-y-20 text-[10vw] sm:text-[6vw] md:text-[5vw] font-extrabold leading-tight 
        drop-shadow-[0_0_30px_rgba(255,255,255,0.15)] text-[#5A3E36]"
                     >
-                      Celebrating <br /> the 9 Emotions of India
+                      Celebrating <br /> The 9 Emotions
                     </h1>
 
                     {/* SUBTITLE */}
-                    <p className="text-[#5A3E36] text-lg sm:text-xl md:text-2xl mt-4 -translate-y-20">
-                      Experience the Colours of Navras — Love, Laughter, Fury,
-                      Peace & More
+                    <p className="text-[#5A3E36] text-lg sm:text-xl md:text-2xl mt-4 -translate-y-20 text-wrap max-w-5xl">
+                      Experience the Colours of Navras — Love, Laughter, Compassion, Fury, Heroism, Fear, Disgust, Wonder & Peace
                     </p>
 
                     {/* DATE */}
@@ -893,8 +892,9 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-row justify-end items-end gap-4">
-                  <ImageAnimation />
+                <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-col items-end gap-4 pb-4">
+
+                  {/* <ImageAnimation /> */}
                 </div>
 
                 {/* <div className="absolute -bottom-1
