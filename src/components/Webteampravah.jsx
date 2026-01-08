@@ -9,36 +9,36 @@ import { Helmet } from "react-helmet";
 const Webteampravah = () => {
   const profiles = [
     {
-      name: "Kavya Gupta",
+      name: "Kanika Agarwal",
       designation: "Full Stack",
       description: "Passionate about crafting beautiful and efficient web experiences.",
-      image: "/webteam/kavya.png",
-      phno: 9057277613,
+      image: "/webteam/kanika.png",
+      phno: 9660046683,
       links: [
-        { icon: FaGithub, url: "https://github.com/Gupta-Kavya" },
-        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kavya-gupta-721294290/" },
+        { icon: FaGithub, url: "https://github.com/Kanikagarwal" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kanika-agarwal-b372a6278/" },
       ],
     },
     {
-      name: "Gaurav Khandelwal",
-      designation: "Frontend",
+      name: "Sahil Kumar",
+      designation: "Backend",
       description: "Specialized in modern web design and interactive interfaces.",
-      image: "/webteam/gaurav.png",
-      phno: 7062878958,
+      image: "/webteam/sahil.png",
+      phno: 9608428137,
       links: [
-        { icon: FaGithub, url: "https://github.com/Gaurav515" },
-        { icon: FaLinkedin, url: "#" },
+        { icon: FaGithub, url: "https://github.com/sahil-0905" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/sahil-kumar-3345a328a" },
       ],
     },
     {
-      name: "Kunal Gupta",
+      name: "Mohit Swami",
       designation: "UI/UX",
       description: "Enthusiastic about web performance and accessibility.",
       image: "/webteam/kunal.png",
-      phno: 9256635521,
+      phno: 7073173507,
       links: [
-        { icon: FaGithub, url: "https://github.com/KunalGupta77" },
-        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kunal-gupta-002b2b293/" },
+        { icon: FaGithub, url: "https://github.com/MegaBOT07" },
+        { icon: FaLinkedin, url: "#" },
       ],
     },
   ];

@@ -95,6 +95,18 @@ const Sponsors = () => {
                                         </div>
                                     </div>
 
+                                    {/* Education Partner */}
+                                    <div className="flex flex-col items-center">
+                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                                            Education Partner
+                                        </h3>
+                                        <img
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
+                                            alt="Education Partner"
+                                            className="w-28 h-auto"
+                                        />
+                                    </div>
+
                                     {/* Workplace Readiness Solution Partner
                                     <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">

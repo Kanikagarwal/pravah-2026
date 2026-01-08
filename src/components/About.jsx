@@ -12,26 +12,26 @@ const About = () => {
 
     <div>
       <Helmet>
-        <title>About Pravah 2025 - Celebrating Innovation and Culture | SKIT</title>
+        <title>About Pravah 2026 - Celebrating Innovation and Culture | SKIT</title>
         <meta
           name="description"
-          content="Learn about Pravah 2025, an exciting celebration of innovation, creativity, and cultural excellence at SKIT. Join us for a journey filled with engaging events and memorable experiences."
+          content="Learn about Pravah 2026, an exciting celebration of innovation, creativity, and cultural excellence at SKIT. Join us for a journey filled with engaging events and memorable experiences."
         />
         <meta
           name="keywords"
-          content="Pravah 2025, SKIT, Swami Keshvanand Institute of Technology, innovation, creativity, cultural events, workshops, seminars, youth fest"
+          content="Pravah 2026, SKIT, Swami Keshvanand Institute of Technology, innovation, creativity, cultural events, workshops, seminars, youth fest"
         />
         <meta
           property="og:title"
-          content="About Pravah 2025 - Celebrating Innovation and Culture | SKIT"
+          content="About Pravah 2026 - Celebrating Innovation and Culture | SKIT"
         />
         <meta
           property="og:description"
-          content="Dive into Pravah 2025 at SKIT, where innovation meets culture. Join us in celebrating excellence through a series of inspiring events and activities."
+          content="Dive into Pravah 2026 at SKIT, where innovation meets culture. Join us in celebrating excellence through a series of inspiring events and activities."
         />
         <meta
           property="og:url"
-          content="https://pravah.skit.ac.in/about-skit-pravah-2025"
+          content="https://pravah.skit.ac.in/about-skit-pravah-2026"
         />
         <meta
           name="author"
@@ -81,7 +81,7 @@ const About = () => {
 
               {/* Left Image */}
               <motion.div
-                className="w-96 md:w-96 h-64 bg-contain bg-center relative md:left-0 -left-5 rounded-xl"
+                className="w-96 md:w-96 h-64 bg-cover bg-center relative md:left-0 rounded-xl"
                 style={{ backgroundImage: 'url("/pravah_poster.jpg")' }}
                 whileInView={{ x: 0, opacity: 1 }}
                 initial={{ x: -100, opacity: 0 }}
@@ -89,6 +89,8 @@ const About = () => {
                 viewport={{ once: true }}
               >
               </motion.div>
+
+
 
               {/* Text on the right */}
               <motion.div

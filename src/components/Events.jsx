@@ -17,6 +17,13 @@ const Events = () => {
   const [loading, setLoading] = useState(true); // Track loading state
   const navigate = useNavigate();
 
+  const eventImageObj = {
+    "Cultural": "cultural.jpeg",
+    "Technical": "tech.jpeg",
+    "Social": "social2.jpeg",
+    "Literary": "art.jpeg",
+  }
+
   // Fetch categories data from the API
   useEffect(() => {
     const fetchCategories = async () => {
@@ -124,7 +131,7 @@ const Events = () => {
     
 
             {/* Render categories dynamically */}
-            <motion.div className="mt-20 flex flex-wrap justify-center items-center gap-8 w-full max-w-6xl mb-20">
+            <motion.div className="mt-44 flex flex-wrap justify-center items-center gap-8 w-full max-w-4xl mb-20">
               {loading ? (
                 // Skeleton loading for categories
                 <div className="flex flex-wrap gap-8 w-full justify-center">
@@ -144,45 +151,44 @@ const Events = () => {
                   ))}
                 </div>
               ) : filteredCategories.length > 0 ? (
-                filteredCategories.map((category, index) => (
+                filteredCategories.filter(category => category.categoryName.toLowerCase() !== "non-technical")
+                .map((category, index) => (
                   <motion.div
-                    key={category._id}
-                    className="flex flex-col items-center bg-[#5a3e36] rounded-xl overflow-hidden border border-[#fff1b8] cursor-pointer"
-                    initial={{ opacity: 0, y: 160 }} // Start animation state
-                    whileInView={{ opacity: 1, y: 120 }} // Trigger when in view
-                    viewport={{ once: true, amount: 0.2 }} // Trigger once, when 20% of the card is visible
-                    transition={{
-                      delay: index * 0.2, // Stagger based on index
-                      duration: 0.8,
-                      ease: 'easeOut',
-                    }}
-                    onClick={() => handleCategoryClick(category.categoryName)}
-                  >
-                    {/* Image container */}
-                    <div className="relative w-full h-44 md:h-48 p-3 group">
-                      <img
-                        className="object-cover w-80 h-48 rounded-xl border-2 border-[#5a3e36]"
-                        src={category.categoryImage}
-                        alt={category.categoryName}
-                        loading="lazy"
-                      />
+  key={category._id}
+  className="w-[340px] md:w-[380px] bg-[#5a3e36]
+             border border-[#fff1b8] rounded-lg
+             overflow-hidden cursor-pointer
+             shadow-lg hover:shadow-2xl
+             transition-all duration-300 ease-out
+             transform hover:scale-105"
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ delay: index * 0.15, duration: 0.7, ease: "easeOut" }}
+  onClick={() => handleCategoryClick(category.categoryName)}
+>
+  {/* IMAGE — FULL WIDTH */}
+  <div className="w-full h-56 md:h-64 overflow-hidden">
+    <img
+      src={eventImageObj[category.categoryName]}
+      alt={category.categoryName}
+      className="w-full h-full object-start"
+      loading="lazy"
+    />
+  </div>
 
-                      <div className="absolute inset-0 bg-[#fff1b8] bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out sm:flex items-center justify-center group rounded-xl w-80 h-48 m-3 hidden">
-                        <p className="text-[#5a3e36] font-semibold text-md p-3 text-center font-sans">{category.categoryDescription}</p>
-                      </div>
+  {/* TEXT */}
+  <div className="px-6 py-5 text-center space-y-2 bg-[#5a3e36]">
+    <h5 className="text-2xl font-semibold text-[#f9eddd]">
+      {category.categoryName} Events
+    </h5>
 
-                    </div>
+    {/* <p className="text-sm text-[#f3e6cf] line-clamp-2 hidden sm:block">
+      {category.categoryDescription}
+    </p> */}
+  </div>
+</motion.div>
 
-                    {/* Category name */}
-                    <div className="flex flex-col justify-between p-6 leading-normal space-y-4 w-full">
-                      <h5
-                        className="text-2xl font-semibold text-[#f9eddd] text-center mt-5"
-                        // style={{ fontSize: '35px' }}
-                      >
-                        {category.categoryName} Events
-                      </h5>
-                    </div>
-                  </motion.div>
                 ))
               ) : (
                 <p className="text-gray-600 relative"></p>
@@ -192,27 +198,27 @@ const Events = () => {
 
 
 
-            <motion.div
+            {/* <motion.div
               className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 0.5 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
             >
-              {/* <img
+              <img
                 src="/rb_2149151140.png"
                 alt="Pravah 2025 - Incredible India | SKIT"
                 className="w-full h-auto object-cover transform translate-y-[180px] translate-x-0 opacity-20"
-              /> */}
-            </motion.div>
+              />
+            </motion.div> */}
 
-            <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20 ">
-              {/* <img
+            {/* <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20 ">
+              <img
                 src="/rb_2149158780.png"
                 alt="Pravah 2025 - Incredible India | SKIT"
                 className="w-full h-auto object-cover transform translate-y-[150px] translate-x-0 opacity-10 "
-              /> */}
-            </div>
+              />
+            </div> */}
 
 
           </main>
