@@ -194,33 +194,6 @@ const Events = () => {
                 <p className="text-gray-600 relative"></p>
               )}
             </motion.div>
-
-
-
-
-            {/* <motion.div
-              className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.5 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-            >
-              <img
-                src="/rb_2149151140.png"
-                alt="Pravah 2025 - Incredible India | SKIT"
-                className="w-full h-auto object-cover transform translate-y-[180px] translate-x-0 opacity-20"
-              />
-            </motion.div> */}
-
-            {/* <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20 ">
-              <img
-                src="/rb_2149158780.png"
-                alt="Pravah 2025 - Incredible India | SKIT"
-                className="w-full h-auto object-cover transform translate-y-[150px] translate-x-0 opacity-10 "
-              />
-            </div> */}
-
-
           </main>
 
         </Parallax>
