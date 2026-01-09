@@ -32,9 +32,9 @@ const Webteampravah = () => {
     },
     {
       name: "Mohit Swami",
-      designation: "UI/UX",
+      designation: "Full Stack",
       description: "Enthusiastic about web performance and accessibility.",
-      image: "/webteam/kunal.png",
+      image: "/webteam/mohit.jpeg",
       phno: 7073173507,
       links: [
         { icon: FaGithub, url: "https://github.com/MegaBOT07" },
