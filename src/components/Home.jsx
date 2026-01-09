@@ -26,6 +26,7 @@ import Cube from "./Cube";
 import Eventcardmob from "./Eventcardmob";
 import helper from "../Helper";
 import ImageAnimation from "./ImageAnimation";
+import Comingsoon from "./Comingsoon";
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -447,6 +448,7 @@ const Home = () => {
         announce={announce}
         navbarDisplay={navbarDisplay}
       />
+      
 
       <div className="" style={{ zIndex: 200 }}>
         <ReactFullpage
@@ -506,7 +508,7 @@ const Home = () => {
                     </p>
 
                     {/* DATE */}
-                    <p className="text-red-600 font-semibold text-xl sm:text-2xl mt-6 -translate-y-20">
+                    <p className="text-red-600 font-semibold text-2xl sm:text-3xl mt-6 -translate-y-20">
                       09<sup>th</sup> – 14<sup>th</sup> February
                       
                     </p>
@@ -1474,7 +1476,7 @@ const Home = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                   >
-                    Pravah'26 Milestones
+                    Pravah'25 Milestones
                   </motion.h2>
 
                   {/* Highlights Section */}
@@ -1573,7 +1575,7 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  Pravah'25 Highlights
+                  Pravah'25 Milestones
                 </motion.h2>
 
                 {/* Highlight Cards */}

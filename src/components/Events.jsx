@@ -90,7 +90,7 @@ const Events = () => {
       </Helmet>
 
 
-      <div
+      {/*<div
                 className="section relative overflow-hidden bg-slate-100"
                 style={{
                   overflowX: "hidden",
@@ -105,6 +105,7 @@ const Events = () => {
               
       <Navbarr eventName={" The Event Collection"}/>
 
+<Comingsoon />
 
       {/* <div className="absolute bottom-0 left-0 w-full hidden sm:block z-0 ">
                   <motion.img
@@ -120,17 +121,17 @@ const Events = () => {
                     }}
                   />
                   
-                </div> */}
+                </div> 
       <ParallaxProvider>
         <Parallax speed={-15}>
 
         
           <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-12 mt-20 relative mb-60">
-            {/* Heading Section */}
+            
            
     
 
-            {/* Render categories dynamically */}
+            
             <motion.div className="mt-44 flex flex-wrap justify-center items-center gap-8 w-full max-w-4xl mb-20">
               {loading ? (
                 // Skeleton loading for categories
@@ -167,7 +168,7 @@ const Events = () => {
   transition={{ delay: index * 0.15, duration: 0.7, ease: "easeOut" }}
   onClick={() => handleCategoryClick(category.categoryName)}
 >
-  {/* IMAGE — FULL WIDTH */}
+   
   <div className="w-full h-56 md:h-64 overflow-hidden">
     <img
       src={eventImageObj[category.categoryName]}
@@ -177,15 +178,15 @@ const Events = () => {
     />
   </div>
 
-  {/* TEXT */}
+  
   <div className="px-6 py-5 text-center space-y-2 bg-[#5a3e36]">
     <h5 className="text-2xl font-semibold text-[#f9eddd]">
       {category.categoryName} Events
     </h5>
 
-    {/* <p className="text-sm text-[#f3e6cf] line-clamp-2 hidden sm:block">
+     <p className="text-sm text-[#f3e6cf] line-clamp-2 hidden sm:block">
       {category.categoryDescription}
-    </p> */}
+    </p> 
   </div>
 </motion.div>
 
@@ -198,8 +199,21 @@ const Events = () => {
 
         </Parallax>
       </ParallaxProvider>
-      </div>
-
+      </div>*/}
+      <div
+                className="section relative overflow-hidden bg-slate-100"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+              >
+               <Navbarr eventName={" The Event Collection"}/> 
+              </div>
+<Comingsoon />
 
       <DesktopFooter />
     </div>
