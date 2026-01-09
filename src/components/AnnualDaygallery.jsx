@@ -97,7 +97,7 @@ const AnnualDaygallery = () => {
     property="og:description"
     content="Experience the unforgettable moments of SKIT's Annual Day, where vibrant performances and inspiring speeches highlight the spirit of creativity and achievement within our community."
   />
-  <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events-AnnualDay-gallery" />
+  <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events-AnnualDay-gallery" />
   <meta
     name="author"
     content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

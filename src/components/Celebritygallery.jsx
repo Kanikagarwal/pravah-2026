@@ -101,7 +101,7 @@ const Celebritygallery = () => {
     property="og:description"
     content="Celebrate the best of entertainment with live celebrity performances at Pravah'25. A night of music, dance, and memories that will last forever!"
   />
-  <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events-Celebrity-gallery" />
+  <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events-Celebrity-gallery" />
   <meta
     name="author"
     content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

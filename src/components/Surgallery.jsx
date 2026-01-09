@@ -97,7 +97,7 @@ const Surgallery = () => {
           property="og:description"
           content="Immerse yourself in the beautiful melodies and soulful performances of Sur, SKIT's annual musical celebration, honoring India's rich music tradition."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events-Sur-gallery" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events-Sur-gallery" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

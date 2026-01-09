@@ -21,7 +21,7 @@ const Webteampravah = () => {
     },
     {
       name: "Sahil Kumar",
-      designation: "Backend",
+      designation: "Full Stack",
       description: "Specialized in modern web design and interactive interfaces.",
       image: "/webteam/sahil.png",
       phno: 9608428137,
@@ -49,21 +49,21 @@ const Webteampravah = () => {
         <title>Pravah Web Team 2026 - Meet the Creators | SKIT</title>
         <meta
           name="description"
-          content="Meet the talented Pravah Web Team 2025 at SKIT, the creative minds behind the Pravah website. Learn about their journey and contributions."
+          content="Meet the talented Pravah Web Team 2026 at SKIT, the creative minds behind the Pravah website. Learn about their journey and contributions."
         />
         <meta
           name="keywords"
-          content="Pravah Web Team 2025, SKIT, Swami Keshvanand Institute of Technology, website team, developers, designers, Pravah 2025"
+          content="Pravah Web Team 2026, SKIT, Swami Keshvanand Institute of Technology, website team, developers, designers, Pravah 2026"
         />
         <meta
           property="og:title"
-          content="Pravah Web Team 2025 - Meet the Creators | SKIT"
+          content="Pravah Web Team 2026 - Meet the Creators | SKIT"
         />
         <meta
           property="og:description"
-          content="Discover the team of passionate developers and designers who brought the Pravah 2025 website to life at SKIT."
+          content="Discover the team of passionate developers and designers who brought the Pravah 2026 website to life at SKIT."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-web-team" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-web-team" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

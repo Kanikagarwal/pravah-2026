@@ -128,7 +128,7 @@ const Eventdetails = () => {
           .map((event) => ({
             name: event.eventTitle,
             image: event.eventImage,
-            url: `/skit-pravah-2025-events/${event.eventCategory}/${event._id}`,
+            url: `/skit-pravah-2026-events/${event.eventCategory}/${event._id}`,
           }));
         setRelatedEvents(formattedEvents);
       } catch (error) {
@@ -222,7 +222,7 @@ const Eventdetails = () => {
           />
           <meta
             property="og:url"
-            content={`https://pravah.skit.ac.in/skit-pravah-2025-events/${event?.eventCategory}/${eventid}`}
+            content={`https://pravah.skit.ac.in/skit-pravah-2026-events/${event?.eventCategory}/${eventid}`}
           />
 
           <meta
@@ -529,7 +529,7 @@ const Eventdetails = () => {
           <Drawer
             open={isOpen}
             onClose={() =>
-              (window.location.href = `/skit-pravah-2025-events/${event?.eventCategory}`)
+              (window.location.href = `/skit-pravah-2026-events/${event?.eventCategory}`)
             }
             style={{ zIndex: 1000 }}
             className="w-screen h-screen  flex flex-col bg-[#2d201c]"
@@ -807,28 +807,6 @@ const Eventdetails = () => {
               </div>
             </Drawer.Items>
           </Drawer>
-
-          {/* <motion.div
-          className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img
-            src="/rb_2149151140.png"
-            alt="Pravah 2025 - Incredible India | SKIT"
-            className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[200px] translate-x-0 opacity-30"
-          />
-        </motion.div>
-
-        <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20">
-          <img
-            src="/rb_2149158780.png"
-            alt="Pravah 2025 - Incredible India | SKIT"
-            className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10"
-          />
-        </div> */}
         </ParallaxProvider>
       </div>
 

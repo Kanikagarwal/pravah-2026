@@ -97,7 +97,7 @@ const Thirakgallery = () => {
           property="og:description"
           content="Dive into the vibrant visuals of Thirak, the high-energy dance competition at SKIT, celebrating the diverse and colorful culture of India."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events-thirak-gallery" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events-thirak-gallery" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

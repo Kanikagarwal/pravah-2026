@@ -97,7 +97,7 @@ const Djnightgallery = () => {
           property="og:description"
           content="Join us for an unforgettable night of music, energy, and celebration at DJ Night, where beats and rhythm unite everyone in the spirit of Pravah 25."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-events-djnight-gallery" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events-djnight-gallery" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"

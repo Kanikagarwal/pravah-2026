@@ -397,7 +397,7 @@ const Sponsors = () => {
                         </main>
                     </Parallax>
                     {/* Background Image */}
-                    <motion.div
+                    {/* <motion.div
                         className="fixed -bottom-0 left-0 w-full hidden sm:block pointer-events-none -z-10"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 0.4 }}
@@ -406,10 +406,10 @@ const Sponsors = () => {
                     >
                         <img
                             src="/rb_2149151140.png"
-                            alt="Pravah 2025 - Incredible India | SKIT"
+                            alt="Pravah 2026 - Incredible India | SKIT"
                             className="w-full h-auto object-cover transform translate-y-[200px] opacity-20"
                         />
-                    </motion.div>
+                    </motion.div> */}
                 </ParallaxProvider>
             </div>
 

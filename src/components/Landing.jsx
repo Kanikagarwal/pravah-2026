@@ -108,7 +108,7 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              नौ रस — एक प्रवाह
+              Navras - Ek Pravah
             </motion.p>
 
             {/* Type Line */}

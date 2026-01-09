@@ -18,10 +18,10 @@ const Events = () => {
   const navigate = useNavigate();
 
   const eventImageObj = {
-    "Cultural": "cultural.jpeg",
-    "Technical": "tech.jpeg",
-    "Social": "social2.jpeg",
-    "Literary": "art.jpeg",
+    "Cultural": "cultural.jpg",
+    "Technical": "tech.jpg",
+    "Social": "social.jpg",
+    "Literary": "art.jpg",
   }
 
   // Fetch categories data from the API
@@ -104,23 +104,6 @@ const Events = () => {
 
               
       <Navbarr eventName={" The Event Collection"}/>
-
-
-      {/* <div className="absolute bottom-0 left-0 w-full hidden sm:block z-0 ">
-                  <motion.img
-                    src="/file (14).png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform"
-                    initial={{ translateY: 600 }}
-                    whileInView={{ translateY: 450 }}
-                    viewport={{ once: true, amount: 0 }}
-                    transition={{
-                      duration: 0.3,
-                      ease: "easeOut",
-                    }}
-                  />
-                  
-                </div> */}
       <ParallaxProvider>
         <Parallax speed={-15}>
 
@@ -172,7 +155,7 @@ const Events = () => {
     <img
       src={eventImageObj[category.categoryName]}
       alt={category.categoryName}
-      className="w-full h-full object-start"
+      className="w-full h-full object-cover"
       loading="lazy"
     />
   </div>

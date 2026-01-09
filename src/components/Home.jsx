@@ -213,28 +213,28 @@ const Home = () => {
       name: "Thirak",
       description: "A mesmerizing cultural dance event.",
       image: "/events/thirak.jpg",
-      url: "/skit-pravah-2025-events-thirak-gallery",
+      url: "/skit-pravah-2026-events-thirak-gallery",
     },
     {
       id: 2,
       name: "DJ Night",
       description: "An electrifying night with popular DJs.",
       image: "/events/djnight.jpg",
-      url: "/skit-pravah-2025-events-djnight-gallery",
+      url: "/skit-pravah-2026-events-djnight-gallery",
     },
     {
       id: 5,
       name: "Celebrity Night",
       description: "Meet your favorite celebrities in person.",
       image: "/events/cnight.jpg",
-      url: "/skit-pravah-2025-events-Celebrity-gallery",
+      url: "/skit-pravah-2026-events-Celebrity-gallery",
     },
     {
       id: 1,
       name: "Sur",
       description: "Feel the melody of enchanting voices.",
       image: "/events/sur.jpg",
-      url: "/skit-pravah-2025-events-Sur-gallery",
+      url: "/skit-pravah-2026-events-Sur-gallery",
     },
     {
       id: 2,
@@ -242,7 +242,7 @@ const Home = () => {
       description:
         "A dazzling showcase of style and elegance through stunning modeling performances.",
       image: "/events/rawaz.jpg",
-      url: "/skit-pravah-2025-events-rawaz-gallery",
+      url: "/skit-pravah-2026-events-rawaz-gallery",
     },
     // {
     //   id: 5,
@@ -250,7 +250,7 @@ const Home = () => {
     //   description:
     //     "An electrifying rap battle where words ignite and rhythms collide.",
     //   image: "/COB/12.jpg",
-    //   url: "/skit-pravah-2025-events-cob-gallery",
+    //   url: "/skit-pravah-2026-events-cob-gallery",
     // },
     {
       id: 6,
@@ -258,7 +258,7 @@ const Home = () => {
       description:
         "An electrifying rap battle where words ignite and rhythms collide.",
       image: "/events/annual.jpg",
-      url: "/skit-pravah-2025-events-AnnualDay-gallery",
+      url: "/skit-pravah-2026-events-AnnualDay-gallery",
     },
   ];
 
@@ -563,32 +563,7 @@ const Home = () => {
                         Close
                       </button>
 
-                      {/* 
-    <div className="absolute bottom-0 -right-0 w-full hidden sm:block pointer-events-none">
-      <img
-        src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-        alt="Pravah 2025 - Incredible India | SKIT"
-        className="w-full object-cover transform lg:translate-y-[120px] 2xl:translate-y-[120px] opacity-30"
-      />
-    </div>
-
-
-    <div className="absolute bottom-0 -right-0 w-full hidden sm:block pointer-events-none">
-      <img
-        src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-        alt="Pravah 2025 - Incredible India | SKIT"
-        className="w-full object-cover transform lg:translate-y-[50px] 2xl:translate-y-[50px] opacity-20"
-      />
-    </div>
-
-
-    <div className="absolute bottom-0 -right-0 w-full hidden sm:block pointer-events-none">
-      <img
-        src="https://ik.imagekit.io/mkqo83m1r/rb_2149158780_k69ryx.png?updatedAt=1739243122067"
-        alt="Pravah 2025 - Incredible India | SKIT"
-        className="w-full object-cover transform lg:translate-y-[250px] 2xl:translate-y-[250px] opacity-5"
-      />
-    </div> */}
+                      
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -649,11 +624,11 @@ const Home = () => {
                       transition={{ duration: 0.5, delay: 0.2 }}
                       viewport={{ once: false }}
                     >
-                      February 15<sup>th</sup> - February 22<sup>nd</sup>, 2025
+                      February 15<sup>th</sup> - February 22<sup>nd</sup>, 2026
                     </motion.p> */}
 
                     {/* Explore Button */}
-                   {/* <Link to="/skit-pravah-2025-events">
+                   {/* <Link to="/skit-pravah-2026-events">
   <motion.button
     className="relative px-8 py-4 text-xl z-50 font-semibold text-white rounded-full overflow-hidden group mb-20"
     initial={{ opacity: 0, scale: 0.9 }}
@@ -757,7 +732,7 @@ const Home = () => {
                   {/* <img
                     src="/logo.png"
                     className="w-32 mx-auto sm:w-64 sm:mb-10 absolute top-60 z-0"
-                    alt="Pravah 2025 Logo"
+                    alt="Pravah 2026 Logo"
                   /> */}
 
                   {newLocal}
@@ -897,73 +872,11 @@ const Home = () => {
                   {/* <ImageAnimation /> */}
                 </div>
 
-                {/* <div className="absolute -bottom-1
-                0 left-40 w-96 hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="https://res.cloudinary.com/dbwgfnop7/image/upload/v1739371979/wk2hvoaoegtn4tuocjmx.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[0] 2xl:translate-y-[0]"
-                  />
-                </div> */}
-
-                {/* <div className="absolute bottom-0 -right-20 w-96 hidden sm:block z-50 pointer-events-none">
-                  <img
-                    src="https://ik.imagekit.io/mkqo83m1r/rb_2150428350_oen28t.png?updatedAt=1739243375060"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[40px] 2xl:translate-y-[40px]"
-                  />
-                </div> */}
+                
               </div>
 
               {/* Section 2 */}
-              <div className="section p-0 bg-[#5a3e36] z-10" id="rasasSection">
-                {/* <div className="relative hidden sm:block">
-                  <motion.img
-                    src="rb_166391.png"
-                    alt="Top Right Pattern"
-                    className="absolute w-60"
-                    initial={{ x: 200 }} 
-                    whileInView={{ x: 100 }} 
-                    viewport={{ once: false }} 
-                    transition={{
-                      type: 'spring',
-                      stiffness: 50,
-                      damping: 20,
-                      duration: 10, 
-                    }}
-                    style={{
-                      top: '100px',
-                      right: '16px',
-                      transform: 'translateX(50%) translateY(-16px)', 
-                    }}
-                  />
-                </div>
-
-
-
-
-                <div className="relative hidden sm:block">
-                  <motion.img
-                    src="rb_56649.png"
-                    alt="Top Right Pattern"
-                    className="absolute w-60"
-                    initial={{ x: -200 }}
-                    whileInView={{ x: 0 }}
-                    viewport={{ once: false }}
-                    transition={{
-                      type: 'spring',
-                      stiffness: 50,
-                      damping: 20,
-                      duration: 10,
-                    }}
-                    style={{
-                      top: '100px', 
-                      left: '-70px',
-                      transform: 'translateX(0) translateY(-16px)',
-                    }}
-                  />
-                </div> */}
-
+              <div className="section p-0 bg-[#2d201c] z-10">
                 {/* Video Section - desktop */}
                 {/* <SpotlightGrid /> */}
 
@@ -1072,39 +985,9 @@ const Home = () => {
                   />
                 </div> */}
 
-                {/* Overlapping Pravah 2025 - Incredible India | SKIT Image */}
-                {/* <div className="absolute bottom-0 left-0 w-full hidden sm:block z-10 pointer-events-none">
-                  <img
-                    src="rb_2149158786.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[0px] 2xl:translate-y-[0px]"
-                  />
-                </div> */}
+                
 
-                {/* <div className="absolute bottom-60 right-0 w-full hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="rb_28055.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[250px] 2xl:translate-y-[0px] opacity-10"
-                  />
-                </div> */}
-
-                {/* <div className="absolute -bottom-20 -left-20 w-96 hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="rb_4171.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-96 object-cover transform lg:-translate-y-[150px] 2xl:translate-y-[0px] opacity-5"
-                  />
-                </div> */}
-
-                {/* 
-                <div className="absolute bottom-60 -right-40 w-96 hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="rb_2149353847 (1).png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-96 object-cover transform lg:translate-y-[100px] 2xl:translate-y-[0px] opacity-5"
-                  />
-                </div> */}
+                
               </div>
 
               {/* Section 6*/}
@@ -1264,7 +1147,7 @@ const Home = () => {
                   </div>
 
                   {/* Explore Button */}
-                  <Link to="/skit-pravah-2025-events">
+                  <Link to="/skit-pravah-2026-events">
                   <button className="flex items-center px-6 py-3 bg-gradient-to-r from-[#f6e397] to-[#FFF1B8] rounded-full text-[#5A3e36] text-xl font-semibold transition-all duration-300 ease-out hover:scale-105 shadow-sm m-auto mb-24 mt-5 relative z-50 cursor-pointer">
                     <span>Explore</span>
                     <span className="ml-3 text-2xl">
@@ -1277,23 +1160,10 @@ const Home = () => {
                 {/* Event Cards Mobile */}
                 <Eventcardmob events={events} />
 
-                {/* Bottom Images */}
-                {/* <div className="absolute lg:bottom-0 left-0 w-full hidden sm:block z-0 2xl:-bottom-16">
-    <motion.img
-      src="https://ik.imagekit.io/mkqo83m1r/file_9_zso7ew.png?updatedAt=1739242902103"
-      alt="Pravah 2025 - Incredible India | SKIT"
-      className="w-full object-cover transform"
-      initial={{ translateY: 400 }}
-      whileInView={{ translateY: 330 }}
-      viewport={{ once: false, amount: 0 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-    />
-  </div> */}
-
                 <div className="absolute lg:bottom-0 left-0 w-full hidden z-10 2xl:-bottom-16 bottom-0">
                   <img
                     src="file (2).png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
+                    alt="Pravah 2026 - Incredible India | SKIT"
                     className="w-full object-cover transform"
                   />
                 </div>
@@ -1420,7 +1290,7 @@ const Home = () => {
                 <div className="absolute -bottom-20  left-0 w-full sm:block z-0  hidden">
                   <motion.img
                     // src="navras/bord.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
+                    alt="Pravah 2026 - Incredible India | SKIT"
                     className="w-full object-cover transform"
                     initial={{ translateY: 150 }}
                     animate={{ translateY: 0 }}
@@ -1430,27 +1300,6 @@ const Home = () => {
                     }}
                   />
                 </div>
-
-                {/* <motion.div
-                  className="absolute -bottom-0 left-0 w-full sm:hidden pointer-events-none -z-10"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 0.5 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1 }}
-                >
-                  <img
-                    // src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full h-auto object-cover transform translate-y-[0px] translate-x-0 opacity-30"
-                  />
-                </motion.div> */}
-                {/* <div className="absolute -bottom-0 left-0 w-full sm:hidden pointer-events-none -z-20">
-                  <img
-                    // src="https://ik.imagekit.io/mkqo83m1r/rb_2149158780_k69ryx.png?updatedAt=1739243122067"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full h-auto object-cover transform translate-y-[0px] translate-x-0 opacity-10"
-                  />
-                </div> */}
               </div>
 
               {/* Section 4 */}
@@ -1599,22 +1448,7 @@ const Home = () => {
                   ))}
                 </div>
 
-                {/* <div className="absolute bottom-0 left-0 w-full hidden sm:block z-10">
-                  <img
-                    src="https://res.cloudinary.com/dbwgfnop7/image/upload/v1739372137/nuij5o6f4ucipsyyi7r8.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform translate-y-0 lg:-translate-y-5 2xl:translate-y-96 opacity-5"
-                  />
-                </div>
-
-
-                <div className="absolute bottom-0 left-0 w-full sm:block z-30">
-                  <img
-                    src="https://res.cloudinary.com/dbwgfnop7/image/upload/v1739372171/bl1qmkgr41wqc3ewlwtr.png"
-                    alt="Pravah 2025 - Incredible India | SKIT"
-                    className="w-full object-cover transform translate-y-16 lg:translate-y-80 2xl:translate-y-96"
-                  />
-                </div> */}
+                
               </div>
 
               {/* Section 7*/}

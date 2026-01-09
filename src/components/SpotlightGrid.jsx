@@ -354,7 +354,7 @@ const SpotlightGrid = () => {
       >
         <motion.img
           src="rb_2148402774.png"
-          alt="Pravah 2025 - Incredible India | SKIT"
+          alt="Pravah 2026 - Incredible India | SKIT"
           className="object-cover transform opacity-100 h-screen"
         />
       </motion.div>
@@ -362,7 +362,7 @@ const SpotlightGrid = () => {
       <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-0 pointer-events-none">
         <img
           src="rb_2.png"
-          alt="Pravah 2025 - Incredible India | SKIT"
+          alt="Pravah 2026 - Incredible India | SKIT"
           className="w-full object-cover transform lg:translate-y-[170px] 2xl:translate-y-[170px] opacity-100"
         />
       </div>
