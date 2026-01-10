@@ -26,6 +26,9 @@ import Cube from "./Cube";
 import Eventcardmob from "./Eventcardmob";
 import helper from "../Helper";
 import ImageAnimation from "./ImageAnimation";
+import Comingsoon from "./Comingsoon";
+import MobileSponsorCarousel from "./MobileSponsorCarousel";
+import Wave from "./Wave";
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -102,7 +105,13 @@ const Home = () => {
   // Scroll animation
 
   const handleLeave = (origin, destination, direction) => {
-    if (destination.index === 3 || destination.index === 1 || destination.index === 2 || destination.index === 4 || destination.index === 5) {
+    if (
+      destination.index === 3 ||
+      destination.index === 1 ||
+      destination.index === 2 ||
+      destination.index === 4 ||
+      destination.index === 5
+    ) {
       setBgColor("bg-white");
       settextColor("text-[#5A3E36]");
       // setFilter("filter sm:invert sm:sepia sm:brightness-100 sm:contrast-100");
@@ -488,13 +497,11 @@ const Home = () => {
                 </div> */}
 
                 <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
-                 
-
                   {/* 3. MAIN HERO CENTER CONTENT */}
                   <section className="relative z-10 items-center text-center px-6 mt-10 sm:mt-16 min-h-screen flex flex-col justify-center">
                     {/* TITLE */}
                     <h1
-                      className=" -translate-y-20 text-[10vw] sm:text-[6vw] md:text-[5vw] font-extrabold leading-tight 
+                      className=" -translate-y-20 mt-32 sm:mt-24 text-[10vw] sm:text-[6vw] md:text-[5vw] font-extrabold leading-tight 
        drop-shadow-[0_0_30px_rgba(255,255,255,0.15)] text-[#5A3E36]"
                     >
                       Celebrating <br /> The 9 Emotions
@@ -502,15 +509,15 @@ const Home = () => {
 
                     {/* SUBTITLE */}
                     <p className="text-[#5A3E36] text-lg sm:text-xl md:text-2xl mt-4 -translate-y-20 text-wrap max-w-5xl">
-                      Experience the Colours of Navras — Love, Laughter, Compassion, Fury, Heroism, Fear, Disgust, Wonder & Peace
+                      Experience the Colours of Navras — Love, Laughter,
+                      Compassion, Fury, Heroism, Fear, Disgust, Wonder & Peace
                     </p>
 
                     {/* DATE */}
-                    <p className="text-red-600 font-semibold text-xl sm:text-2xl mt-6 -translate-y-20">
+                    <p className="text-red-600 font-semibold text-2xl sm:text-3xl mt-6 -translate-y-20">
                       09<sup>th</sup> – 14<sup>th</sup> February
-                      
                     </p>
-
+                    <Wave/>
                     {/* BUTTON */}
                     {/* <button onClick={handleRasas} className="mt-8 px-10 py-3 text-white text-lg font-semibold rounded-full 
       bg-gradient-to-r from-purple-500 to-pink-500 shadow-xl 
@@ -543,7 +550,7 @@ const Home = () => {
 
                       <Confetti width={3000} height={1000} />
 
-                      <h1 className="text-6xl font-extrabold mb-6 text-gray-500 text-center">
+                      <h1 className="text-6xl font-extrabold mb-6 text-gray-500 text-center bg-red-800">
                         Finally, it's happening!
                       </h1>
 
@@ -562,8 +569,6 @@ const Home = () => {
                       >
                         Close
                       </button>
-
-                      
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -599,8 +604,7 @@ const Home = () => {
                       opacity: 0.1, // Adjust the opacity here
                       zIndex: 0, // Ensure it's behind the content
                     }}
-                  >
-                  </div>
+                  ></div>
 
                   {/* Flex container for centering h1 and EventCountdown */}
 
@@ -628,95 +632,15 @@ const Home = () => {
                     </motion.p> */}
 
                     {/* Explore Button */}
-                   {/* <Link to="/skit-pravah-2026-events">
+                    {/* <Link to="/skit-pravah-2026-events">
   <motion.button
     className="relative px-8 py-4 text-xl z-50 font-semibold text-white rounded-full overflow-hidden group mb-20"
     initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay: 0.4 }}
   > */}
-    {/* Gradient background */}
-    {/* <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-60 group-hover:opacity-40 rounded-full z-0"></span> */}
-
-    {/* Text */}
-    {/* <span className="relative z-10">Explore Events</span>
-  </motion.button>
-</Link> */}
-
-
                   </div>
-
-                  {/* Images with the background */}
-                  {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 sm:block z-0 pointer-events-none hidden">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/file_8_fo9nvt.png?updatedAt=1739242778269"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[140px] 2xl:translate-y-[140px] opacity-70"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-20 pointer-events-none">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/file_9_zso7ew.png?updatedAt=1739242902103"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[300px] 2xl:translate-y-[380px]"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute bottom-10 -right-0 w-full sm:block z-0 pointer-events-none">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[170px] 2xl:translate-y-[210px] opacity-30"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute bottom-0 -right-0 w-full sm:block z-0 pointer-events-none">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[100px] 2xl:translate-y-[210px] opacity-20"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute bottom-0 -right-0 w-full sm:block z-0 pointer-events-none">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/rb_2149158780_k69ryx.png?updatedAt=1739243122067"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[300px] 2xl:translate-y-[450px] opacity-5"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute -bottom-20 -left-20 w-96 sm:block z-0 pointer-events-none">
-                    <img
-                      src="https://res.cloudinary.com/dbwgfnop7/image/upload/v1739371979/wk2hvoaoegtn4tuocjmx.png"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform"
-                    />
-                  </div> */}
-
-                  {/* <div className="absolute bottom-0 -right-20 w-96 sm:block z-50 pointer-events-none">
-                    <img
-                      src="https://ik.imagekit.io/mkqo83m1r/rb_2150428350_oen28t.png?updatedAt=1739243375060"
-                      alt="Pravah 2026 - Incredible India | SKIT"
-                      className="w-full object-cover transform lg:translate-y-[40px] 2xl:translate-y-[40px]"
-                    />
-                  </div> */}
                 </div>
-
-                {/* Gradient Overlay */}
-                {/* <div
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    background:
-                      "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
-                    zIndex: 0,
-                  }}
-                ></div> */}
 
                 {/* Main Content */}
                 <div
@@ -786,93 +710,9 @@ const Home = () => {
       "repeating-linear-gradient(45deg, #1a1a1d, #1a1a1d 10px, #4e4e50 10px, #4e4e50 20px)",
   }}
 ></div> */}
-
-                {/* Scroll Down Indicator */}
-                {/* <a
-                  href="#"
-                  className="scroll-down sm:hidden"
-                  onClick={() => handleDown()}
-                  id="vibrateButton"
-                  style={{
-                    position: "absolute",
-                    bottom: "30px",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    animation: "bounce 2s infinite",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </a> */}
-
-                {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96  sm:block z-50 pointer-events-none hidden">
-                  <img
-                    src="https://ik.imagekit.io/mkqo83m1r/file_8_fo9nvt.png?updatedAt=1739242778269"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[140px] 2xl:translate-y-[140px]"
-                  />
-                </div> */}
-
-                {/* <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-20 pointer-events-none">
-                  <img
-                    src="https://ik.imagekit.io/mkqo83m1r/file_9_zso7ew.png?updatedAt=1739242902103"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[300px] 2xl:translate-y-[380px]"
-                  />
-                </div> */}
-
-                {/* <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[170px] 2xl:translate-y-[210px] opacity-30"
-                  />
-                </div>
-
-
-                <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="https://ik.imagekit.io/mkqo83m1r/rb_2149151140_y77eff.png?updatedAt=1739242990487"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[100px] 2xl:translate-y-[210px] opacity-20"
-                  />
-                </div> */}
-
-                {/* <div className="absolute -right-0 w-full hidden sm:block z-0 pointer-events-none">
-                  <img
-                    src="/cityscape.png"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full transform lg:translate-y-[0px] 2xl:translate-y-[210px]"
-                  />
-                </div> */}
-
-                {/* Here to add bg image golden - kashish */}
-                <div className="absolute bottom-0 -right-0 w-full hidden sm:block z-0 pointer-events-none">
-                  <img
-                    // src="https://ik.imagekit.io/mkqo83m1r/rb_2149158780_k69ryx.png?updatedAt=1739243122067"
-                    alt="Pravah 2026 - Incredible India | SKIT"
-                    className="w-full object-cover transform lg:translate-y-[300px] 2xl:translate-y-[450px] opacity-5"
-                  />
-                </div>
-
                 <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-col items-end gap-4 pb-4">
-
                   {/* <ImageAnimation /> */}
                 </div>
-
-                
               </div>
 
               {/* Section 2 */}
@@ -883,84 +723,88 @@ const Home = () => {
                 <EventCountdown />
                 {/* Video Section */}
                 <div className="hidden">
+                  <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
+                    <div className="radial-grid absolute inset-0" />
+                    {/* Left Video Card */}
+                    <motion.div
+                      className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 30 }}
+                      viewport={{ once: false }}
+                      transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                      <div className="relative w-full h-full group">
+                        {/* Poster Image */}
+                        <img
+                          src="teaser_graphic.png"
+                          alt="Teaser Poster"
+                          className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-blue-400 group-hover:shadow-[0_0_15px_4px_rgba(58,134,255,0.7)] transition duration-300"
+                          onClick={() =>
+                            (document.getElementById(
+                              "teaser-video"
+                            ).style.display = "block")
+                          }
+                        />
+                        {/* YouTube Video (Initially Hidden) */}
+                        <iframe
+                          id="teaser-video"
+                          width="100%"
+                          height="100%"
+                          src="https://www.youtube.com/embed/esOx6T4uQwI"
+                          title="Teaser Launch of Pravah"
+                          frameBorder="0"
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="absolute inset-0 w-full h-full rounded-lg hidden"
+                        ></iframe>
+                      </div>
+                      <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-blue-400 transition duration-300">
+                        Teaser Launch
+                      </p>
+                    </motion.div>
 
-                <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
-                  <div className="radial-grid absolute inset-0" />
-                  {/* Left Video Card */}
-                  <motion.div
-                    className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 30 }}
-                    viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                  >
-                    <div className="relative w-full h-full group">
-                      {/* Poster Image */}
-                      <img
-                        src="teaser_graphic.png"
-                        alt="Teaser Poster"
-                        className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-blue-400 group-hover:shadow-[0_0_15px_4px_rgba(58,134,255,0.7)] transition duration-300"
-                        onClick={() =>
-                          (document.getElementById(
-                            "teaser-video"
-                          ).style.display = "block")
-                        }
-                      />
-                      {/* YouTube Video (Initially Hidden) */}
-                      <iframe
-                        id="teaser-video"
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/esOx6T4uQwI"
-                        title="Teaser Launch of Pravah"
-                        frameBorder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full rounded-lg hidden"
-                      ></iframe>
-                    </div>
-                    <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-blue-400 transition duration-300">
-                      Teaser Launch
-                    </p>
-                  </motion.div>
-
-                  {/* Right Video Card */}
-                  <motion.div
-                    className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50 hidden"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 30 }}
-                    viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                  >
-                    <div className="relative w-full h-full group">
-                      {/* Poster Image */}
-                      <img
-                        src="logo_graphic.png"
-                        alt="Logo Reveal Poster"
-                        className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-pink-400 group-hover:shadow-[0_0_15px_4px_rgba(255,105,180,0.7)] transition duration-300"
-                        onClick={() =>
-                          (document.getElementById("logo-video").style.display =
-                            "block")
-                        }
-                      />
-                      {/* YouTube Video (Initially Hidden) */}
-                      <iframe
-                        id="logo-video"
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/HVL4Fgel8S4"
-                        title="Logo Reveal of Pravah"
-                        frameBorder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full rounded-lg hidden"
-                      ></iframe>
-                    </div>
-                    <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-pink-400 transition duration-300">
-                      Logo Reveal
-                    </p>
-                  </motion.div>
-                </div>
+                    {/* Right Video Card */}
+                    <motion.div
+                      className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50 hidden"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 30 }}
+                      viewport={{ once: false }}
+                      transition={{
+                        duration: 0.8,
+                        ease: "easeOut",
+                        delay: 0.2,
+                      }}
+                    >
+                      <div className="relative w-full h-full group">
+                        {/* Poster Image */}
+                        <img
+                          src="logo_graphic.png"
+                          alt="Logo Reveal Poster"
+                          className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-pink-400 group-hover:shadow-[0_0_15px_4px_rgba(255,105,180,0.7)] transition duration-300"
+                          onClick={() =>
+                            (document.getElementById(
+                              "logo-video"
+                            ).style.display = "block")
+                          }
+                        />
+                        {/* YouTube Video (Initially Hidden) */}
+                        <iframe
+                          id="logo-video"
+                          width="100%"
+                          height="100%"
+                          src="https://www.youtube.com/embed/HVL4Fgel8S4"
+                          title="Logo Reveal of Pravah"
+                          frameBorder="0"
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="absolute inset-0 w-full h-full rounded-lg hidden"
+                        ></iframe>
+                      </div>
+                      <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-pink-400 transition duration-300">
+                        Logo Reveal
+                      </p>
+                    </motion.div>
+                  </div>
                 </div>
 
                 {/* <div className="relative hidden sm:block">
@@ -984,10 +828,6 @@ const Home = () => {
                     }}
                   />
                 </div> */}
-
-                
-
-                
               </div>
 
               {/* Section 6*/}
@@ -1075,7 +915,9 @@ const Home = () => {
                   opacity-50
                   -z-10"
                   style={{
-                    background: `linear-gradient(135deg,#2A1414 0%,#3A1C1C 35%,#4A2525 50%,#3A1C1C 65%,#2A1414 100%)`,}}></div>
+                    background: `linear-gradient(135deg,#2A1414 0%,#3A1C1C 35%,#4A2525 50%,#3A1C1C 65%,#2A1414 100%)`,
+                  }}
+                ></div>
 
                 {/* Audio Button */}
                 <div className="absolute bottom-4 right-4 z-50 hidden sm:block">
@@ -1141,19 +983,18 @@ const Home = () => {
                             <FaArrowRight />
                           </span>
                         </Link>
-                       
                       </div>
                     ))}
                   </div>
 
                   {/* Explore Button */}
                   <Link to="/skit-pravah-2026-events">
-                  <button className="flex items-center px-6 py-3 bg-gradient-to-r from-[#f6e397] to-[#FFF1B8] rounded-full text-[#5A3e36] text-xl font-semibold transition-all duration-300 ease-out hover:scale-105 shadow-sm m-auto mb-24 mt-5 relative z-50 cursor-pointer">
-                    <span>Explore</span>
-                    <span className="ml-3 text-2xl">
-                      <FaArrowRight />
-                    </span>
-                  </button>
+                    <button className="flex items-center px-6 py-3 bg-gradient-to-r from-[#f6e397] to-[#FFF1B8] rounded-full text-[#5A3e36] text-xl font-semibold transition-all duration-300 ease-out hover:scale-105 shadow-sm m-auto mb-24 mt-5 relative z-50 cursor-pointer">
+                      <span>Explore</span>
+                      <span className="ml-3 text-2xl">
+                        <FaArrowRight />
+                      </span>
+                    </button>
                   </Link>
                 </div>
 
@@ -1196,7 +1037,6 @@ const Home = () => {
                 >
                   {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f0f9ff] to-[#e9ffff] bg-pattern-stripes z-0"></div> */}
                 </div>
-                
 
                 {/* Event Cards */}
                 <div className="space-y-6 top-16 relative sm:hidden hidden">
@@ -1244,7 +1084,7 @@ const Home = () => {
                 </motion.h2>
 
                 <motion.h2
-                  className="text-2xl text-[#5a3e36] font-bold text-center mt-20 mb-10 sm:hidden p-4"
+                  className="text-3xl text-[#5a3e36] font-bold text-center mt-32 mb-10 sm:hidden p-4"
                   initial={{ y: 0, opacity: 0 }}
                   whileInView={{ y: 20, opacity: 1 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -1256,21 +1096,22 @@ const Home = () => {
                   celebrities={celebrities}
                   frameImage={"navras/borderFrame.png"}
                 /> */}
-                <div className="mt-14" >
+                <div className="mt-14">
                   <Carousel
-                  celebrities={celebrities}
-                  frameImage={"navras/borderFrame.png"}
-                /></div>
+                    celebrities={celebrities}
+                    frameImage={"navras/borderFrame.png"}
+                  />
+                </div>
                 <div className="absolute bottom-0 left-0 w-full overflow-hidden z-10">
-  <svg
-    className="w-full h-16 sm:h-24"
-    viewBox="0 0 1440 100"
-    preserveAspectRatio="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    {/* Zig-zag path */}
-    <path
-      d="M0,50 
+                  <svg
+                    className="w-full h-16 sm:h-24"
+                    viewBox="0 0 1440 100"
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Zig-zag path */}
+                    <path
+                      d="M0,50 
          L30,30 L60,50 L90,30 L120,50 L150,30 L180,50 L210,30 
          L240,50 L270,30 L300,50 L330,30 L360,50 L390,30 L420,50 
          L450,30 L480,50 L510,30 L540,50 L570,30 L600,50 L630,30 
@@ -1278,14 +1119,12 @@ const Home = () => {
          L870,30 L900,50 L930,30 L960,50 L990,30 L1020,50 L1050,30 
          L1080,50 L1110,30 L1140,50 L1170,30 L1200,50 L1230,30 
          L1260,50 L1290,30 L1320,50 L1350,30 L1380,50 L1410,30 L1440,50"
-      stroke="#5A3E36"
-      strokeWidth="4"
-      fill="transparent"
-    />
-  </svg>
-</div>
-
-
+                      stroke="#5A3E36"
+                      strokeWidth="4"
+                      fill="transparent"
+                    />
+                  </svg>
+                </div>
 
                 <div className="absolute -bottom-20  left-0 w-full sm:block z-0  hidden">
                   <motion.img
@@ -1309,7 +1148,8 @@ const Home = () => {
                   opacity-80
                   -z-10"
                   style={{
-                    background: `linear-gradient(135deg,#2A1414 0%,#3A1C1C 35%,#4A2525 50%,#3A1C1C 65%,#2A1414 100%)`,}}
+                    background: `linear-gradient(135deg,#2A1414 0%,#3A1C1C 35%,#4A2525 50%,#3A1C1C 65%,#2A1414 100%)`,
+                  }}
                 ></div>
 
                 {/* desktop */}
@@ -1323,7 +1163,7 @@ const Home = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                   >
-                    Pravah'26 Milestones
+                    Pravah'25 Milestones
                   </motion.h2>
 
                   {/* Highlights Section */}
@@ -1422,7 +1262,7 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  Pravah'25 Highlights
+                  Pravah'25 Milestones
                 </motion.h2>
 
                 {/* Highlight Cards */}
@@ -1447,13 +1287,12 @@ const Home = () => {
                     </motion.div>
                   ))}
                 </div>
-
-                
               </div>
 
               {/* Section 7*/}
-              <div className="section relative section-7 z-50"
-              style={{
+              <div
+                className="section relative section-7 z-50 overflow-x-hidden"
+                style={{
                   overflowX: "hidden",
                   backgroundImage: "url('navras/bg3.jpg')",
                   backgroundSize: "cover",
@@ -1475,7 +1314,6 @@ const Home = () => {
                     zIndex: 1,
                   }}
                 />
-                
 
                 {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f0f9ff] to-[#e9ffff] bg-pattern-stripes z-0 opacity-10"></div> */}
 
@@ -1498,15 +1336,22 @@ const Home = () => {
                 </motion.h2>
 
                 {/* Sponsor Carousel */}
-                <SponsorCarousel sponsors={sponsors} />
+                <div className="sm:block hidden">
+                  <SponsorCarousel sponsors={sponsors} />
+                </div>
+
+                {/* <div className="sm:hidden">
+
+                <MobileSponsorCarousel sponsors={sponsors} />
+                </div> */}
 
                 {/* Content Section */}
-                <div
+                <section
                   className="sm:hidden"
                   style={{ position: "relative", zIndex: 2 }}
                 >
                   <Footer />
-                </div>
+                </section>
 
                 <div
                   className="hidden sm:block"

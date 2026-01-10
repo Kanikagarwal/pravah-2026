@@ -12,7 +12,7 @@ const Webteampravah = () => {
       name: "Kanika Agarwal",
       designation: "Full Stack",
       description: "Passionate about crafting beautiful and efficient web experiences.",
-      image: "/webteam/kanika.png",
+      image: "/webteam/kanika.jpg",
       phno: 9660046683,
       links: [
         { icon: FaGithub, url: "https://github.com/Kanikagarwal" },
@@ -23,7 +23,7 @@ const Webteampravah = () => {
       name: "Sahil Kumar",
       designation: "Full Stack",
       description: "Specialized in modern web design and interactive interfaces.",
-      image: "/webteam/sahil.png",
+      image: "/webteam/sahil.jpg",
       phno: 9608428137,
       links: [
         { icon: FaGithub, url: "https://github.com/sahil-0905" },
@@ -32,9 +32,9 @@ const Webteampravah = () => {
     },
     {
       name: "Mohit Swami",
-      designation: "UI/UX",
+      designation: "Full Stack",
       description: "Enthusiastic about web performance and accessibility.",
-      image: "/webteam/kunal.png",
+      image: "/webteam/mohit.jpeg",
       phno: 7073173507,
       links: [
         { icon: FaGithub, url: "https://github.com/MegaBOT07" },
@@ -106,7 +106,8 @@ const Webteampravah = () => {
               {profiles.map((profile, index) => (
                 <div
                   key={index}
-                  className="bg-[#2d201c] shadow-sm rounded-3xl p-8 text-center border border-[#2d201c]"
+                  className="bg-gradient-to-br from-[#1E120F] via-[#4B2E24] to-[#8B6A4F]
+ shadow-sm rounded-3xl p-8 text-center border border-[#2d201c]"
                 >
                   <div className="relative">
                     <img
