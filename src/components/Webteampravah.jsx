@@ -106,7 +106,7 @@ const Webteampravah = () => {
               {profiles.map((profile, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-[#1E120F] via-[#4B2E24] to-[#8B6A4F]
+                  className="bg-[#2d201c]
  shadow-sm rounded-3xl p-8 text-center border border-[#2d201c]"
                 >
                   <div className="relative">

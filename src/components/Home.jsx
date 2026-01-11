@@ -478,23 +478,7 @@ const Home = () => {
                   position: "relative",
                 }}
               >
-                {/* <div
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundImage: "url('https://res.cloudinary.com/dbwgfnop7/image/upload/v1739371883/s62fzdlocjj2w2o00jwd.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    opacity: 0.2, // Adjust the opacity here
-                    zIndex: 0, // Ensure it's behind the content
-                  }}
-                >
-                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f0f9ff] to-[#e9ffff] bg-pattern-stripes z-0"></div>
-                </div> */}
+                
 
                 <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
                   {/* 3. MAIN HERO CENTER CONTENT */}
@@ -517,9 +501,9 @@ const Home = () => {
                     <p className="text-red-600 font-semibold text-2xl sm:text-3xl mt-6 -translate-y-20">
                       09<sup>th</sup> – 14<sup>th</sup> February
                     </p>
-                    <Wave/>
+                    {/* <Wave/> */}
                     {/* BUTTON */}
-                    {/* <button onClick={handleRasas} className="mt-8 px-10 py-3 text-white text-lg font-semibold rounded-full 
+                    {/* <button className="mt-4 px-10 py-3 text-white text-lg font-semibold rounded-full 
       bg-gradient-to-r from-purple-500 to-pink-500 shadow-xl 
       hover:scale-110 transition-all">
       Explore Rasas

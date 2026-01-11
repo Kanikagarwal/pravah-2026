@@ -4,7 +4,7 @@ import { NavLink,Link, useLocation } from "react-router-dom";
 import "../style.css";
 
 const Navbarr = ({
-  bgColor = "bg-transgparent",
+  bgColor = "bg-transparent",
   textColor = "text-[#5a3e36]",
   filter,
   announce,

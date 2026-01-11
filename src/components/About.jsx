@@ -74,7 +74,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl bg-[#2d201c] rounded-xl overflow-hidden shadow-xl mt-10 border-4 border-[#2d201c]">
                 {/* Left Image */}
                 <motion.div
-  className="
+                  className="
   rounded-2xl
     w-full
     md:w-96
@@ -88,12 +88,12 @@ const About = () => {
     md:left-0
     
   "
-  style={{ backgroundImage: 'url("/pravah_poster.jpg")' }}
-  whileInView={{ x: 0, opacity: 1 }}
-  initial={{ x: -100, opacity: 0 }}
-  transition={{ duration: 1 }}
-  viewport={{ once: true }}
-></motion.div>
+                  style={{ backgroundImage: 'url("/pravah_poster.jpg")' }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  initial={{ x: -100, opacity: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                ></motion.div>
 
                 {/* Text on the right */}
                 <motion.div

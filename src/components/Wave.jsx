@@ -5,7 +5,7 @@ const Wave = () => {
     <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none opacity-50">
   {/* Wave moving normally (Left → Right) */}
   <svg
-    className="relative block w-[200%] h-60 sm:h-96"
+    className="relative block w-[200%] h-36 sm:h-88 animate-wave-oscillate"
     viewBox="0 0 1200 120"
     preserveAspectRatio="none"
   >
