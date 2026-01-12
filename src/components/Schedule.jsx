@@ -147,7 +147,9 @@ const Schedule = () => {
       >
         <Navbarr eventName={"Event's Schedule"} />
 
-            <Comingsoon />
+            <div className="w-full flex justify-center mt-24 mb-32">
+    <Comingsoon />
+  </div>
             <div className="hidden">
 
         <ParallaxProvider>

@@ -70,7 +70,7 @@ const Eventlist = () => {
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
         />
       </Helmet>
-      
+
       <div
         className="section relative overflow-hidden "
         style={{
@@ -82,8 +82,8 @@ const Eventlist = () => {
           position: "relative",
         }}
       >
-        <Navbarr eventName={eventcat + " Events"}/>
-      <ParallaxProvider>
+        <Navbarr eventName={eventcat + " Events"} />
+        <ParallaxProvider>
           <Parallax speed={-15}>
             <main className="min-h-screen flex flex-col items-center px-4 sm:px-6 md:px-0 mt-8 sm:mt-24 relative mb-72 gap-8">
               <motion.div
@@ -158,8 +158,6 @@ const Eventlist = () => {
             </center> */}
             </main>
           </Parallax>
-
-          
         </ParallaxProvider>
       </div>
       <DesktopFooter />

@@ -220,8 +220,8 @@ const Events = () => {
 <Comingsoon /> */}
 
       <DesktopFooter />
-      </>
-      )}
+            </>
+            )}
     </div>
       
   );

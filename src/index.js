@@ -67,7 +67,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/the-team-behind-skit-pravah-2026",
-    element: <Comingsoon />,
+    element: <Teampravah />,
   },
   {
     path: "/skit-pravah-2026-events/:eventcat",
