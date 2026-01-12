@@ -23,6 +23,7 @@ const Events = () => {
     "Technical": "tech.png",
     "Social": "social.png",
     "Literary": "art.png",
+    "Non-Technical": "nontech.png",
   }
 
   // Fetch categories data from the API
@@ -136,7 +137,7 @@ const Events = () => {
     
 
             
-            <motion.div className="mt-44 flex flex-wrap justify-center items-center gap-8 w-full max-w-4xl mb-20">
+            <motion.div className="mt-44 flex flex-wrap justify-center items-center gap-8 w-full max-w-8xl mb-20">
               {loading ? (
                 // Skeleton loading for categories
                 <div className="flex flex-wrap gap-8 w-full justify-center">
@@ -156,7 +157,7 @@ const Events = () => {
                   ))}
                 </div>
               ) : filteredCategories.length > 0 ? (
-                filteredCategories.filter(category => category.categoryName.toLowerCase() !== "non-technical")
+                filteredCategories
                 .map((category, index) => (
                   <motion.div
   key={category._id}
@@ -187,10 +188,6 @@ const Events = () => {
     <h5 className="text-2xl font-semibold text-[#f9eddd]">
       {category.categoryName} Events
     </h5>
-
-     {/* <p className="text-sm text-[#f3e6cf] line-clamp-2 hidden sm:block">
-      {category.categoryDescription}
-    </p>  */}
   </div>
 </motion.div>
 
@@ -204,20 +201,7 @@ const Events = () => {
         </Parallax>
       </ParallaxProvider>
       </div>
-      {/* <div
-                className="section relative overflow-hidden bg-slate-100"
-                style={{
-                  overflowX: "hidden",
-                  backgroundImage: "url('navras/bg3.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  position: "relative",
-                }}
-              >
-               <Navbarr eventName={" The Event Collection"}/> 
-              </div>
-<Comingsoon /> */}
+      
 
       <DesktopFooter />
             </>

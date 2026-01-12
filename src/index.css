@@ -69,7 +69,11 @@ code {
   width: max-content;
 }
 
-
+.hindi-font{
+  font-family: "Hind", serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
 @keyframes wave-oscillate {
   0% {

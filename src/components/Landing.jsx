@@ -103,12 +103,12 @@ const Landing = () => {
 
             {/* Tagline */}
             <motion.p
-              className="text-[#7a5c50] text-xl sm:text-3xl mt-4 font-medium"
+              className="text-[#7a5c50] text-xl sm:text-3xl mt-4 font-medium hindi-font"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Navras - Ek Pravah
+              नवरस – एक प्रवाह
             </motion.p>
 
             {/* Type Line */}
@@ -118,9 +118,9 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              Annual <span className="font-semibold">Techno</span> •{" "}
+              <span className="font-semibold">An Annual Techno</span> •{" "}
               <span className="font-semibold">Cultural</span> •{" "}
-              <span className="font-semibold">Sports</span> Fest
+              <span className="font-semibold">Sports Fest</span> 
             </motion.p>
 
             {/* Button */}
