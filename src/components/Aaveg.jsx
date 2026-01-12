@@ -27,6 +27,7 @@ const Aaveg = () => {
   const [fees, setFees] = useState(0)
   const [isLoading, setIsLoading] = useState(true);
   const handleClose = () => setIsOpen(false);
+  const SHOW_COMING_SOON = true;
 
   // Fetch Aaveg data from the API
   useEffect(() => {
@@ -209,6 +210,11 @@ const Aaveg = () => {
 
 
             {/* Render events dynamically */}
+            {SHOW_COMING_SOON ? (
+  <div className="w-full flex justify-center items-center my-20">
+    <Comingsoon />
+  </div>
+) : (
             <motion.div className="mt-10 flex flex-wrap justify-center items-center gap-8 w-full max-w-6xl mb-20">
               {/* Check if events are loaded */}
               {loading ? (
@@ -319,6 +325,7 @@ const Aaveg = () => {
                 <p className="text-gray-600 relative"></p>
               )}
             </motion.div>
+            )}
 
 
 
