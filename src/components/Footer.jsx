@@ -7,18 +7,6 @@ const Footer = () => {
         <footer className="bg-transparent top-14 relative">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    {/* <div className="mb-6 md:mb-0">
-                        <a href="#" className="flex items-center">
-                            <img
-                                src="/logo.png"
-                                className="w-10 me-3"
-                                alt="FlowBite Logo"
-                            />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                                Pravah 2025
-                            </span>
-                        </a>
-                    </div> */}
                     <div className="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-3 mt-6">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold uppercase text-white flex align-middle items-center">

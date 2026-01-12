@@ -4,7 +4,7 @@ import { NavLink,Link, useLocation } from "react-router-dom";
 import "../style.css";
 
 const Navbarr = ({
-  bgColor = "bg-transgparent",
+  bgColor = "bg-transparent",
   textColor = "text-[#5a3e36]",
   filter,
   announce,
@@ -73,7 +73,7 @@ const Navbarr = ({
         ? "border-b-2 border-[]#5a3e36]"
         : "hover:text-[#2d201c]"
     } transition-all duration-300`}>HOME</NavLink>
-            <NavLink to="/skit-pravah-2026-events" className={({ isActive }) =>
+            <NavLink to="/skit-pravah-2026-events" target="_blank" className={({ isActive }) =>
     `${textColor} ${
       isActive
         ? " border-b-2 border-[#5a3e36]"

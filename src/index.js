@@ -55,7 +55,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/skit-pravah-2026-events",
-    element: <Events />,
+    element: <Comingsoon />,
   },
   {
     path: "/skit-pravah-2026-AAVEG",

@@ -71,5 +71,15 @@ code {
 
 
 
+@keyframes wave-oscillate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-
+.animate-wave-oscillate {
+  animation: wave-oscillate 3s linear infinite alternate;
+}

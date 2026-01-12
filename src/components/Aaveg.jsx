@@ -104,11 +104,11 @@ const Aaveg = () => {
         <title>Aaveg 2026 - Ignite Your Passion | SKIT</title>
         <meta
           name="description"
-          content="Join Aaveg 2025 at SKIT and unleash your energy in this dynamic sports and cultural extravaganza celebrating the spirit of Incredible India."
+          content="Join Aaveg 2026 at SKIT and unleash your energy in this dynamic sports and cultural extravaganza celebrating the spirit of Incredible India."
         />
         <meta
           name="keywords"
-          content="Aaveg 2025, Incredible India, sports events, cultural events, SKIT, Swami Keshvanand Institute of Technology, youth fest, competitions"
+          content="Aaveg 2026, Incredible India, sports events, cultural events, SKIT, Swami Keshvanand Institute of Technology, youth fest, competitions"
         />
         <meta
           property="og:title"
@@ -116,9 +116,9 @@ const Aaveg = () => {
         />
         <meta
           property="og:description"
-          content="Experience the thrill of Aaveg 2025 at SKIT, where sportsmanship meets culture, embodying the vibrant essence of Incredible India."
+          content="Experience the thrill of Aaveg 2026 at SKIT, where sportsmanship meets culture, embodying the vibrant essence of Incredible India."
         />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2025-AAVEG" />
+        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-AAVEG" />
         <meta
           name="author"
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
@@ -386,27 +386,7 @@ const Aaveg = () => {
         </Parallax>
 
 
-        {/* <motion.div
-          className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <img
-            src="/rb_2149151140.png"
-            alt="Pravah 2025 - Incredible India | SKIT"
-            className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[200px] translate-x-0 opacity-20"
-          />
-        </motion.div>
-
-        <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20 ">
-          <img
-            src="/rb_2149158780.png"
-            alt="Pravah 2025 - Incredible India | SKIT"
-            className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10 "
-          />
-        </div> */}
+        
 
       </ParallaxProvider>
       </div>
