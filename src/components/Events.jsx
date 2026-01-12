@@ -18,10 +18,10 @@ const Events = () => {
   const navigate = useNavigate();
 
   const eventImageObj = {
-    "Cultural": "cultural.jpg",
-    "Technical": "tech.jpg",
-    "Social": "social.jpg",
-    "Literary": "art.jpg",
+    "Cultural": "cultural.png",
+    "Technical": "tech.png",
+    "Social": "social.png",
+    "Literary": "art.png",
   }
 
   // Fetch categories data from the API
@@ -151,11 +151,11 @@ const Events = () => {
   onClick={() => handleCategoryClick(category.categoryName)}
 >
    
-  <div className="w-full h-56 md:h-64 overflow-hidden">
+  <div className="w-full h-56 md:h-64 overflow-hidden bg-white">
     <img
       src={eventImageObj[category.categoryName]}
       alt={category.categoryName}
-      className="w-full h-full object-cover"
+      className="w-full h-full object-contain"
       loading="lazy"
     />
   </div>
