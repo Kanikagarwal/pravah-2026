@@ -16,6 +16,7 @@ const Events = () => {
   const [searchQuery, setSearchQuery] = useState(''); // State for search input
   const [loading, setLoading] = useState(true); // Track loading state
   const navigate = useNavigate();
+  const SHOW_COMING_SOON = false;
 
   const eventImageObj = {
     "Cultural": "cultural.png",
@@ -59,7 +60,28 @@ const Events = () => {
 
   return (
     <div>
-
+{SHOW_COMING_SOON ? (
+  <>
+  <div
+      className="section relative overflow-hidden"
+      style={{
+        overflowX: "hidden",
+        backgroundImage: "url('navras/bg3.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+      }}
+    >
+        <Navbarr eventName={"The Event Collection"} />
+        <div className="w-full flex justify-center mt-24 mb-32">
+    <Comingsoon />
+  </div>
+        </div>
+        <DesktopFooter />
+      </>
+      ) : (
+      <>
       <Helmet>
         <title>Events & Registrations - Pravah 2026 | SKIT</title>
         <meta
@@ -198,7 +220,10 @@ const Events = () => {
 <Comingsoon /> */}
 
       <DesktopFooter />
+            </>
+            )}
     </div>
+      
   );
 };
 

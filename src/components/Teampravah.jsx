@@ -54,8 +54,10 @@ const Teampravah = () => {
 
             <ParallaxProvider>
 
-                {/* <Comingsoon /> */}
-                <Parallax speed={-15}>
+                <div className="w-full flex justify-center mt-24 mb-32">
+    <Comingsoon />
+  </div>
+                {/* <Parallax speed={-15}>
                     <main className="min-h-screen flex-col items-center justify-center mt-60 relative mb-40 md:p-16 p-4">
 
 
@@ -619,7 +621,7 @@ const Teampravah = () => {
 
 
                     </main>
-                </Parallax>
+                </Parallax> */}
                 
             </ParallaxProvider>
             </div>

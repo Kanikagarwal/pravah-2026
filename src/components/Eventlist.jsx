@@ -8,7 +8,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { FaArrowRight } from "react-icons/fa";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { Helmet } from "react-helmet";
-
+import Comingsoon from "./Comingsoon";
 import Coordinator from "./Coordinator";
 
 const Eventlist = () => {
@@ -17,6 +17,7 @@ const Eventlist = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const SHOW_COMING_SOON = true;
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -39,6 +40,28 @@ const Eventlist = () => {
 
   return (
     <div>
+      {SHOW_COMING_SOON ? (
+  <>
+  <div
+      className="section relative overflow-hidden"
+      style={{
+        overflowX: "hidden",
+        backgroundImage: "url('/navras/bg3.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+      }}
+    >
+        <Navbarr eventName={"The Event Collection"} />
+        <div className="w-full flex justify-center mt-24 mb-32">
+    <Comingsoon />
+  </div>
+        </div>
+        <DesktopFooter />
+      </>
+      ) : 
+      <>
       <Helmet>
         <title>{`Explore ${eventcat} Events - PRAVAH 2026 | SKIT`}</title>
         <meta
@@ -70,7 +93,7 @@ const Eventlist = () => {
           content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
         />
       </Helmet>
-      
+
       <div
         className="section relative overflow-hidden "
         style={{
@@ -82,8 +105,8 @@ const Eventlist = () => {
           position: "relative",
         }}
       >
-        <Navbarr eventName={eventcat + " Events"}/>
-      <ParallaxProvider>
+        <Navbarr eventName={eventcat + " Events"} />
+        <ParallaxProvider>
           <Parallax speed={-15}>
             <main className="min-h-screen flex flex-col items-center px-4 sm:px-6 md:px-0 mt-8 sm:mt-24 relative mb-72 gap-8">
               <motion.div
@@ -158,11 +181,10 @@ const Eventlist = () => {
             </center> */}
             </main>
           </Parallax>
-
-          
         </ParallaxProvider>
       </div>
       <DesktopFooter />
+      </>}
     </div>
   );
 };
