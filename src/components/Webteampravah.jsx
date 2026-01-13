@@ -12,7 +12,7 @@ const Webteampravah = () => {
       name: "Kanika Agarwal",
       designation: "Full Stack",
       description: "Passionate about crafting beautiful and efficient web experiences.",
-      image: "/webteam/kanika.jpg",
+      image: "/webteam/kanika.jpeg",
       phno: 9660046683,
       links: [
         { icon: FaGithub, url: "https://github.com/Kanikagarwal" },
