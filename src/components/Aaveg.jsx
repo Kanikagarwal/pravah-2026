@@ -35,7 +35,7 @@ const Aaveg = () => {
         // loadingBar.current.continuousStart(); // Start loading bar when fetch begins
 
         const response = await fetch(
-          `${process.env.REACT_APP_API_URL}api/aaveg`
+          `${process.env.VITE_REACT_APP_API_URL}api/aaveg`
         );
         const data = await response.json();
         setEvents(data); // Store the fetched events data

@@ -30,7 +30,7 @@ const Events = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}api/categories`);
+        const response = await fetch(`${process.env.VITE_REACT_APP_API_URL}api/categories`);
         const data = await response.json();
         setCategories(data); // Store the fetched categories
         setFilteredCategories(data); // Initialize filtered categories with all categories

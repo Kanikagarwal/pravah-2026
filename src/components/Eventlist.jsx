@@ -24,7 +24,7 @@ const Eventlist = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${process.env.REACT_APP_API_URL}api/events/category/${eventcat}`
+          `${process.env.VITE_REACT_APP_API_URL}api/events/category/${eventcat}`
         );
         const data = await response.json();
         setEvents(Array.isArray(data.events) ? data.events : []);

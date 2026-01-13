@@ -120,7 +120,7 @@ const Eventdetails = () => {
     const fetchRelatedEvents = async (category) => {
       try {
         const response = await fetch(
-          `${process.env.REACT_APP_API_URL}api/events/category/${category}`
+          `${process.env.VITE_REACT_APP_API_URL}api/events/category/${category}`
         );
         const data = await response.json();
         const formattedEvents = data
