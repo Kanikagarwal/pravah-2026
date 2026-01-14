@@ -67,7 +67,7 @@ const SpotlightGrid = () => {
       </div>
 
       {/* Audio Element */}
-      <audio ref={audioRef} src="/section2-audio.mp3" />
+      <audio ref={audioRef} src="/audio.mp3" />
 
       <motion.h2
         className="text-4xl font-bold text-center mb-8 my-16 audiowide-regular text-white relative lg:left-20"

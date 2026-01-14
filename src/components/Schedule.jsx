@@ -17,7 +17,7 @@ const Schedule = () => {
     const fetchEvents = async () => {
       try {
         const response = await fetch(
-          `${process.env.VITE_REACT_APP_API_URL}api/events`
+          `${process.env.REACT_APP_API_URL}api/events`
         );
         const data = await response.json();
 

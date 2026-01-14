@@ -917,7 +917,7 @@ const Home = () => {
                   </button>
                 </div>
 
-                <audio ref={audioRef} src="/section3-audio.mp3" />
+                <audio ref={audioRef} src="/audio.mp3" />
 
                 {/* Event Cards - desktop */}
                 <div className="relative hidden sm:block">

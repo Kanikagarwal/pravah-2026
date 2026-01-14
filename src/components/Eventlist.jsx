@@ -17,14 +17,14 @@ const Eventlist = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const SHOW_COMING_SOON = true;
+  const SHOW_COMING_SOON = false;
 
   useEffect(() => {
     const fetchEvents = async () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${process.env.VITE_REACT_APP_API_URL}api/events/category/${eventcat}`
+          `${process.env.REACT_APP_API_URL}api/events/category/${eventcat}`
         );
         const data = await response.json();
         setEvents(Array.isArray(data.events) ? data.events : []);
