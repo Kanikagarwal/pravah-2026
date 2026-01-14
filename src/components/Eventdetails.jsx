@@ -241,6 +241,18 @@ const Eventdetails = () => {
           />
         </Helmet>
       )}
+      <div
+      className="section relative overflow-hidden bg-slate-100"
+                style={{
+                  overflowX: "hidden",
+                  backgroundImage: "url('/navras/bg3.jpg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
+                }}
+      >
+
       <Navbarr eventName={event?.eventTitle} />
       <ParallaxProvider>
         <Parallax speed={-15}>
@@ -268,7 +280,7 @@ const Eventdetails = () => {
               <div className="flex flex-row gap-6 h-auto w-full justify-center">
                 {/* Left Card */}
                 <motion.div
-                  className="relative flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-50 to-gray-50 rounded-2xl shadow-lg overflow-hidden w-full md:w-5/6 mb-16 transition-transform transform hover:scale-105 border border-gray-200 h-full m-auto"
+                  className="relative flex flex-col md:flex-row items-center bg-[#2d201c] rounded-2xl shadow-lg overflow-hidden w-full md:w-5/6 mb-16 transition-transform transform hover:scale-105 border border-gray-200 h-full m-auto"
                   initial={{ opacity: 0, y: 160 }}
                   animate={{ opacity: 1, y: 150 }}
                   transition={{
@@ -299,18 +311,18 @@ const Eventdetails = () => {
                   {/* Event Info */}
                   <div className="flex flex-col items-center md:items-start w-full md:w-1/2 p-8 space-y-6 h-full justify-stretch text-center md:text-left font-sans">
 
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-[#f9eddd]">
                       <strong>Date:</strong> {formatDate(event?.eventDate)}
                     </p>
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-[#f9eddd]">
                       <strong>Timings:</strong>{" "}
                       {formatTime(event?.eventTimings.from)} - {formatTime(event?.eventTimings.to)}
                     </p>
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-[#f9eddd]">
                       <strong>Venue:</strong> {event?.eventVenue}
                     </p>
 
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-[#f9eddd]">
                       <strong>Team Size:</strong> {event?.additionalFields.length > 0 ? (
                         <span className="bg-gray-200 px-2 text-gray-700 rounded-md font-medium border border-gray-500 ml-2 cursor-pointer" onClick={() => setBottomteamdrawer(true)}>
                           View
@@ -346,7 +358,7 @@ const Eventdetails = () => {
                     <div className="w-full mt-4">
                       <button
                         onClick={() => window.open(event?.ruleBook, "_blank")}
-                        className="bg-gradient-to-r from-gray-500 to-gray-500 text-white font-semibold w-full px-6 py-3 rounded-md shadow-lg flex justify-center items-center"
+                        className="bg-[#f9eddd] text-[#2d201c] font-semibold w-full px-6 py-3 rounded-md shadow-lg flex justify-center items-center"
                       >
                         Download Rule Book <FaDownload className="ml-2" />
                       </button>
@@ -357,7 +369,7 @@ const Eventdetails = () => {
 
                   {/* Right Card */}
                   <motion.div
-                    className="w-full md:w-1/2 h-60 md:h-80 relative bg-gray-50 p-4 border-l border-gray-400 rounded-r-lg border-dotted"
+                    className="w-full md:w-1/2 h-60 md:h-80 relative bg-[#2d201c] p-4 border-l border-gray-400 rounded-r-lg border-dotted"
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
@@ -367,7 +379,7 @@ const Eventdetails = () => {
                   >
         
                     <div className="border-b border-gray-300 pb-2 mb-4">
-                      <h1 className="text-xl font-semibold text-gray-800">Register</h1>
+                      <h1 className="text-xl font-semibold text-[#f9eddd]">Register</h1>
                       <button
                         onClick={() => {
                           if (navigator.clipboard) {
@@ -407,7 +419,7 @@ const Eventdetails = () => {
                             });
                           }
                         }}
-                        className="absolute top-4 right-4 bg-gray-200 text-black font-medium text-sm px-3 py-1 rounded-lg  transition duration-300 border border-gray-300"
+                        className="absolute top-4 right-4 bg-[#f9eddd] text-[#2d201c] font-medium text-sm px-3 py-1 rounded-lg  transition duration-300 border border-gray-300"
                       >
                         Copy Link
                       </button>
@@ -419,7 +431,7 @@ const Eventdetails = () => {
                     {event?.erpLink && (
                       <>
                         {/* Registration Fee */}
-                        <p className="text-lg text-gray-700 mb-2 border rounded-xl p-3 opacity-100 bg-white">
+                        <p className="text-lg text-[#2d201c] mb-2 border rounded-xl p-3 opacity-100 bg-[#f9eddd]">
                           <strong>Registration Fee:</strong>{" "}
                           {event?.additionalFields.length > 0
                             ? "Fees may vary"
@@ -435,7 +447,7 @@ const Eventdetails = () => {
                           href={event.erpLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="relative inline-flex items-center justify-center px-6 py-3 font-semibold text-white bg-gradient-to-r from-black via-black to-black rounded-xl shadow-md transition-transform focus:outline-none focus:ring focus:ring-offset-2 text-center space-x-3 w-full"
+                          className="relative inline-flex items-center justify-center px-6 py-3 font-semibold text-[#2d201c] bg-[#f9eddd] rounded-xl shadow-md transition-transform focus:outline-none focus:ring focus:ring-offset-2 text-center space-x-3 w-full"
                         >
                           <span className="relative z-10">Register Now</span>
                           <svg
@@ -480,12 +492,12 @@ const Eventdetails = () => {
                 ease: "easeOut",
               }}
             >
-              <h3 className="text-3xl font-extrabold text-gray-800 text-center mb-10  relative font-sans  tracking-tight">
+              <h3 className="text-3xl font-extrabold text-[#2d201c] text-center mb-10  relative font-sans  tracking-tight">
                 Event Description
-                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-[5px] bg-gradient-to-r from-[#351332] to-[#9e1c9e] mt-1 rounded-full"></span>
+                
               </h3>
               <motion.p
-                className="text-2xl text-gray-600 leading-relaxed text-center squada-one-regular tracking-wider"
+                className="text-2xl text-[#5a3e36] leading-relaxed text-center squada-one-regular"
               >
 
                 <div
@@ -501,7 +513,7 @@ const Eventdetails = () => {
 
 
 
-            <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-3 mt-20 relative font-sans  tracking-tight">
+            <h2 className="text-3xl font-extrabold text-[#2d201c] text-center mb-3 mt-20 relative font-sans  tracking-tight">
               <motion.span
                 initial={{ opacity: 0, y: 100 }} // Start with the title off-screen and invisible
                 whileInView={{ opacity: 1, y: 0 }} // Animate to full opacity and position when in view
@@ -510,10 +522,10 @@ const Eventdetails = () => {
                 className="relative inline-block"
               >
 
-                {event?.eventCoordinators?.length > 1 ? "Student Coordinator's" : "Student Coordinator"}
+                {event?.eventCoordinators?.length > 1 ? "Student Coordinators" : "Student Coordinator"}
 
 
-                <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-[4px] bg-gradient-to-r from-[#280f38] to-[#5a015a] mt-1 rounded-full"></span>
+                {/* <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-[4px] bg-gradient-to-r from-[#280f38] to-[#5a015a] mt-1 rounded-full"></span> */}
               </motion.span>
             </h2>
 
@@ -845,6 +857,7 @@ const Eventdetails = () => {
 
 
       </ParallaxProvider>
+      </div>
 
 
       <DesktopFooter />

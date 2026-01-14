@@ -39,14 +39,14 @@ const Dynamicfield = ({ additionalFields }) => {
     <div>
       {/* Dropdown for Type */}
       <div className="w-full mb-4 z-10 relative">
-        <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="type" className="block text-sm font-medium text-[#f9eddd] mb-2">
           Select College type
         </label>
         <select
           id="type"
           value={selectedType}
           onChange={handleTypeChange}
-          className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+          className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#f9eddd]"
         >
           <option value="">Select</option>
           {uniqueTypes?.map((type, index) => (
@@ -62,7 +62,7 @@ const Dynamicfield = ({ additionalFields }) => {
         <div className="w-full mb-4 z-10 relative">
           <label
             htmlFor="category"
-            className="block text-sm font-medium text-gray-700 mb-2"
+            className="block text-sm font-medium text-[#f9eddd] mb-2"
           >
             Participation Category
           </label>
@@ -91,7 +91,7 @@ const Dynamicfield = ({ additionalFields }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-full px-4 py-3 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <button className="w-full px-4 py-3 bg-[#f9eddd] text-[#2d201c] text-sm font-medium rounded-md hover:bg-[#f9eddd] focus:outline-none focus:ring-2 focus:ring-[#f9eddd]">
               Register ( ₹{selectedCategoryPrice} )
             </button>
           </a>
