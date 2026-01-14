@@ -1246,7 +1246,7 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  Pravah'25 Milestones
+                  Pravah'25 Highlights
                 </motion.h2>
 
                 {/* Highlight Cards */}

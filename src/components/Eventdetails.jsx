@@ -322,23 +322,24 @@ const Eventdetails = () => {
                         )}
                       </p>
 
-                      {/* <div className="w-full mt-4">
-        {event?.eventFees === 0 ? (
+                      <div className="w-full mt-4">
+        {/* {event?.eventFees === 0 ? (
           <button
             className="bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold w-full px-6 py-3 rounded-md shadow-lg flex justify-center items-center text-sm"
             disabled
           >
             No Registration Fee Required
           </button>
-        ) : (
+        )
+         : (
           <button
             onClick={() => window.open(event?.erpLink, "_blank")}
             className="bg-gradient-to-r from-green-400 to-green-600 text-white font-semibold w-full px-6 py-3 rounded-md shadow-lg flex justify-center items-center"
           >
             Register Now <FaArrowRight className="ml-2" />
           </button>
-        )}
-      </div> */}
+        )} */}
+      </div>
 
                       <div className="w-full mt-4">
                         <button
@@ -750,7 +751,7 @@ const Eventdetails = () => {
                           "linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))",
                       }}
                     >
-                      <span className="relative z-10 text-[#f9eddd]">Registers Now</span>
+                      <span className="relative z-10 text-[#f9eddd]">Register Now</span>
                       <IoMdArrowDroprightCircle className="text-2xl text-[#f9eddd] z-20" />
                       <div className="absolute inset-0 bg-gradient-to-r from-[#5a3e36] to-[#5b3e36] animate-move-background"></div>
                     </a>

@@ -56,6 +56,18 @@ const Navbarr = ({
             isDesktop ? bgColor : "bg-[#392823]"
           }`}
         >
+          <div className="flex">
+
+          {eventName === "AAVEG" && (
+  <a href="/">
+    <img
+      src={"/logo.png"}
+      className="sm:w-20 w-12 mx-4 -translate-y-2"
+      alt="SKIT Logo"
+    />
+  </a>
+)}
+
           {/* LOGO */}
           <a href="/">
             <img
@@ -64,6 +76,7 @@ const Navbarr = ({
               alt="SKIT Logo"
             />
           </a>
+          </div>
 
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex space-x-8 items-center">
