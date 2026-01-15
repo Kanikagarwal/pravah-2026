@@ -203,7 +203,7 @@ const Eventdetails = () => {
   }
 
   startCountdown(event?.timerDate ? event?.timerDate : event?.eventDate, "countdown")
-
+console.log(event);
   return (
     <div>
       {event && (
@@ -425,7 +425,7 @@ const Eventdetails = () => {
                       </button>
                     </div>
                     {!event?.erpLink &&
-                      <Dynamicfield additionalFields={event?.additionalFields} />
+                      <Dynamicfield additionalFields={event?.additionalFields} event={event?.eventTitle} />
                     }
 
                     {event?.erpLink && (
@@ -817,7 +817,7 @@ const Eventdetails = () => {
           <Drawer.Header title="Register" />
           <Drawer.Items>
             <div className="rounded-xl p-3">
-              <Dynamicfield additionalFields={event?.additionalFields} />
+              <Dynamicfield additionalFields={event?.additionalFields} event={event?.eventTitle} />
             </div>
           </Drawer.Items>
         </Drawer>
