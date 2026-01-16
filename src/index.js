@@ -35,7 +35,13 @@ import OneSignal from 'react-onesignal';
 import Webteampravah from './components/Webteampravah';
 import Comingsoon from './components/Comingsoon';
 
-
+// if (typeof window !== "undefined") {
+//   window.ResizeObserver = class {
+//     observe() {}
+//     unobserve() {}
+//     disconnect() {}
+//   };
+// }
 
 // console.log = () => { };
 console.warn = () => { };
