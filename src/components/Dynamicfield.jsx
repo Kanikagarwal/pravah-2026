@@ -3,23 +3,40 @@ import React, { useState } from "react";
 const Dynamicfield = ({ additionalFields, event }) => {
   const [selectedType, setSelectedType] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+const EVENTS_WITHOUT_COLLEGE_TYPE = [
+  "street warz",
+  // add future events here
+  // "open mic",
+  // "rap battle",
+];
+const isCollegeTypeRequired = !EVENTS_WITHOUT_COLLEGE_TYPE.includes(
+  event?.toLowerCase()
+);
 
   // Extract unique types from additionalFields
   const uniqueTypes = [
     ...new Set(additionalFields?.map((field) => field.type)),
   ];
 
-  const isStreetWarz = event?.toLowerCase() === "street warz";
+  // const isStreetWarz = event?.toLowerCase() === "street warz";
 
-  const filteredCategories = additionalFields
-  ?.filter((field) =>
-    isStreetWarz ? true : field.type === selectedType
-  )
-  ?.map((field) => ({
-    category: field.category,
-    link: field.link,
-    price: field.price,
-  }));
+  const filteredCategories = Array.from(
+  new Map(
+    additionalFields
+      ?.filter((field) =>
+        isCollegeTypeRequired ? field.type === selectedType: true
+      )
+      ?.map((field) => [
+        field.category, // key (unique)
+        {
+          category: field.category,
+          link: field.link,
+          price: field.price,
+        },
+      ])
+  ).values()
+);
+
 
 
   const handleTypeChange = (e) => {
@@ -42,7 +59,7 @@ console.log(event);
 
   return (
     <div>
-      {event?.toLowerCase() !== "street warz" && (
+      {isCollegeTypeRequired && (
   <div className="w-full mb-4 z-10 relative">
     <label
       htmlFor="type"
@@ -69,7 +86,7 @@ console.log(event);
 
 
       {/* Dropdown for Category */}
-      {(selectedType || event?.toLowerCase() == "street warz") &&(
+      {(selectedType || !isCollegeTypeRequired) &&(
         <div className="w-full mb-4 z-10 relative">
           <label
             htmlFor="category"
