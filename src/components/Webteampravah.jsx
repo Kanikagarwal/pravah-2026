@@ -9,6 +9,28 @@ import { Helmet } from "react-helmet";
 const Webteampravah = () => {
   const profiles = [
     {
+      name: "Rajesh Rajan",
+      designation: "Full Stack",
+      description: "Passionate about crafting beautiful and efficient web experiences.",
+      image: "/webteam/kanika.jpeg",
+      phno: 9660046683,
+      links: [
+        { icon: FaGithub, url: "https://github.com/Kanikagarwal" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kanika-agarwal-b372a6278/" },
+      ],
+    },
+    {
+      name: "Kavya Gupta",
+      designation: "Full Stack",
+      description: "Passionate about crafting beautiful and efficient web experiences.",
+      image: "/webteam/kanika.jpeg",
+      phno: 9660046683,
+      links: [
+        { icon: FaGithub, url: "https://github.com/Kanikagarwal" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kanika-agarwal-b372a6278/" },
+      ],
+    },
+    {
       name: "Kanika Agarwal",
       designation: "Full Stack",
       description: "Passionate about crafting beautiful and efficient web experiences.",
@@ -41,6 +63,7 @@ const Webteampravah = () => {
         { icon: FaLinkedin, url: "#" },
       ],
     },
+    
   ];
 
   return (

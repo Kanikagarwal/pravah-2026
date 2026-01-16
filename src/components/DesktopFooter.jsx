@@ -160,6 +160,11 @@ const DesktopFooter = () => {
                   <a href="tel:9660046683" className="underline hover:text-gray-400 transition">
                     9660046683
                   </a>
+                  <br />
+                  Sahil Kumar -{" "}
+                  <a href="tel:9608428137" className="underline hover:text-gray-400 transition">
+                    9608428137
+                  </a>
                 </p>
 
               </li>
