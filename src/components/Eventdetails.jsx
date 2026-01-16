@@ -562,7 +562,7 @@ console.log(event);
           open={isOpen}
           onClose={() => window.location.href = `/skit-pravah-2025-events/${event?.eventCategory}`}
           style={{ zIndex: 1000 }}
-          className="w-screen h-screen  flex flex-col bg-white"
+          className="w-screen h-screen  flex flex-col bg-[#2d201c]"
         >
           {/* <Confetti
                 width={500}
@@ -578,7 +578,7 @@ console.log(event);
           )}
 
 
-          <Drawer.Header title="Event Registration" className="border-b border-gray-300" />
+          <Drawer.Header title="Event Registration" className="border-b border-[#f9eddd]" />
           <Drawer.Items>
             {/* Main Content Area */}
 
@@ -605,7 +605,7 @@ console.log(event);
 
                 <button
                   onClick={handleShare}
-                  className="text-gray-600 text-2xl absolute top-2 right-2 bg-white rounded-xl p-2 border border-gray-100 shadow-lg"
+                  className="text-[#f9eddd] text-2xl absolute top-2 right-2 bg-[#2d201c] rounded-xl p-2 border border-[#f9eddd] shadow-lg"
                 >
                   <FaShareAlt />
                 </button>
@@ -618,7 +618,7 @@ console.log(event);
                 <div className="flex justify-between items-center gap-4">
 
 
-                  <h2 className="text-2xl font-semibold text-gray-800 font-sans">{event?.eventTitle}</h2>
+                  <h2 className="text-2xl font-semibold text-[#fff1b8] font-sans">{event?.eventTitle}</h2>
 
 
 
@@ -632,39 +632,39 @@ console.log(event);
                   href={event?.ruleBook}
                   target="_blank"
                   rel=""
-                  className="w-full px-6 py-3 text-center text-white bg-gray-800 hover:bg-gray-700 rounded-lg shadow-md transition-all duration-300 focus:outline-none focus:ring focus:ring-gray-600 flex justify-between align-middle items-center gap-2 font-normal"
+                  className="w-full px-6 py-3 text-center text-[#2d201c] bg-[#f9eddd] rounded-lg shadow-md transition-all duration-300 focus:outline-none focus:ring focus:ring-gray-600 flex justify-between align-middle items-center gap-2 font-normal"
                 >
                   Download Event Rulebook <FaDownload />
                 </a>
 
                 {/* <hr className="mt-4 border-gray-100 w-full shadow-xl" /> */}
 
-                <div className="bg-gray-50 p-3 rounded-lg border border-gray-300 shadow-sm mt-4">
+                <div className="bg-[#f9eddd] p-3 rounded-lg border border-white shadow-sm mt-4">
 
                   <div className="flex items-center mb-2 justify-between">
-                    <span className="text-sm font-medium text-gray-600">Date:</span>
-                    <p className="ml-2 text-sm text-gray-800">{formatDate(event?.eventDate)}</p>
+                    <span className="text-sm font-medium text-[#2d201c]">Date:</span>
+                    <p className="ml-2 text-sm text-[#2d201c]">{formatDate(event?.eventDate)}</p>
 
                   </div>
 
-                  <hr className="border-gray-100 w-full" />
+                  <hr className="border-white w-full" />
 
                   <div className="flex items-center mb-2 justify-between mt-2">
-                    <span className="text-sm font-medium text-gray-600">Time:</span>
-                    <p className="ml-2 text-sm text-gray-800">
+                    <span className="text-sm font-medium text-[#2d201c]">Time:</span>
+                    <p className="ml-2 text-sm text-[#2d201c]">
                       {formatTime(event?.eventTimings.from)} - {formatTime(event?.eventTimings.to)}
                     </p>
                   </div>
 
 
-                  <hr className="border-gray-100 w-full" />
+                  <hr className="border-white w-full" />
 
                   <div className="flex items-center mb-2 justify-between mt-2 ">
-                    <span className="text-sm font-medium text-gray-600">Team Size:</span>
-                    <p className="ml-2 text-sm text-gray-800 ">
+                    <span className="text-sm font-medium text-[#2d201c]">Team Size:</span>
+                    <p className="ml-2 text-sm text-[#2d201c] ">
 
                       {event?.additionalFields.length > 0 ? (
-                        <span className="flex justify-center items-center gap-2 bg-gray-200 px-2 text-gray-700 rounded-md font-medium border border-gray-500" onClick={() => setBottomteamdrawer(true)}>
+                        <span className="flex justify-center items-center gap-2 bg-[#f9eddd] px-2 text-[#2d201c] rounded-md font-medium border border-[#2d201c]" onClick={() => setBottomteamdrawer(true)}>
                           View
 
                         </span>
@@ -674,26 +674,26 @@ console.log(event);
                   </div>
 
 
-                  <hr className="border-gray-100 w-full" />
+                  <hr className="border-white w-full" />
 
                   <div className="flex items-center mb-2 justify-between mt-2 ">
-                    <span className="text-sm font-medium text-gray-600">Venue:</span>
-                    <p className="ml-2 text-sm text-gray-800 ">{event?.eventVenue}</p>
+                    <span className="text-sm font-medium text-[#2d201c]">Venue:</span>
+                    <p className="ml-2 text-sm text-[#2d201c] ">{event?.eventVenue}</p>
                   </div>
 
 
 
 
-                  <hr className="border-gray-100 w-full" />
+                  <hr className="border-white w-full" />
 
                   <div className="flex items-center justify-between mt-2">
-                    <span className="text-sm font-medium text-gray-600">Registration Fee:</span>
-                    <p className="ml-2 text-sm text-gray-800">
+                    <span className="text-sm font-medium text-[#2d201c]">Registration Fee:</span>
+                    <p className="ml-2 text-sm text-[#2d201c]">
                       {event?.additionalFields.length > 0 ? (
                         <span className="flex justify-center items-center gap-2">
                           Fees may vary{" "}
                           <Tooltip content="Fee varies by category (e.g., skit/non-skit, solo/duo/group). Click register to know the exact fee amount.">
-                            <FaInfoCircle className="text-gray-600" />
+                            <FaInfoCircle className="text-[#2d201c]" />
                           </Tooltip>
 
                         </span>
@@ -713,10 +713,10 @@ console.log(event);
                   <span className="font-bold">Note : </span>{event?.eventNote}
                 </Alert>
               }
-              <div className="bg-white p-3 rounded-lg mt-4 shadow-lg w-full shadow-gray-50 border ">
+              <div className="bg-[#f9eddd] p-3 rounded-lg mt-4 w-full shadow-gray-50 border ">
                 <div className="text-justify">
-                  <span className='text-black font-bold '>Description : </span>
-                  <span className="text-pretty text-justify text-sm mt-4 text-gray-600 font-sans font-normal"
+                  <span className='text-[#2d201c] font-bold '>Description : </span>
+                  <span className="text-pretty text-justify text-sm mt-4 text-[#5a3e36] font-sans font-normal"
                     dangerouslySetInnerHTML={{
                       __html: event?.eventDescription || "No description available.",
                     }}
@@ -731,24 +731,24 @@ console.log(event);
               </div>
 
 
-              <div className="w-full max-w-sm rounded-xl mt-4 mb-20 border p-4 border-gray-300">
+              <div className="w-full max-w-full rounded-xl mt-4 mb-20 border p-4 border-white bg-[#f9eddd]">
                 {event?.eventCoordinators?.length > 0 ? (
                   <ul className="space-y-4">
                     {event.eventCoordinators.map((coordinator, index) => (
                       <li
                         key={index}
-                        className="flex justify-between items-center bg-white shadow-sm rounded-lg p-4"
+                        className="flex justify-between items-center bg-[#412c26] shadow-sm rounded-lg p-4"
                       >
                         <div className="flex flex-col">
-                          <span className="text-gray-900 font-semibold text-lg">
+                          <span className="text-[#f9eddd] font-semibold text-lg">
                             {coordinator.name}
                           </span>
-                          <span className="text-gray-600 text-sm">
+                          <span className="text-[#f9eddd] text-sm">
                             +91 {coordinator.number}
                           </span>
                         </div>
                         <a
-                          className="bg-gray-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-indigo-600 transition flex gap-3 justify-center items-center font-medium"
+                          className="bg-[#f9eddd] text-[#2d201c] px-4 py-2 rounded-lg text-sm transition flex gap-3 justify-center items-center font-medium"
                           href={`tel:${coordinator?.number}`}
                         >
                           <FaPhoneAlt className="h-4 w-4" />     Call
@@ -757,7 +757,7 @@ console.log(event);
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-white text-center">No coordinators available.</p>
+                  <p className="text-[#f9eddd] text-center">No coordinators available.</p>
                 )}
               </div>
 
@@ -766,7 +766,7 @@ console.log(event);
             </div>
 
             {/* Fixed Footer Section */}
-            <div className="bg-gray-50 border-t border-gray-300 p-5 w-full fixed bottom-0 left-0 z-10">
+            <div className="bg-[#f9eddd] border-t border-gray-300 p-5 w-full fixed bottom-0 left-0 z-10">
               <div className="flex justify-between items-center flex-col gap-4">
 
 
@@ -775,14 +775,12 @@ console.log(event);
                     href={event.erpLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative px-6 py-3 font-semibold text-black rounded-xl w-full text-center overflow-hidden flex justify-between items-center gap-2 text-md bg-opacity-30 backdrop-blur-md border border-black shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-                    style={{
-                      backgroundImage: "linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))",
-                    }}
+                    className="relative px-6 py-3 font-semibold text-[#2d201c] bg-[#fdf2c7] rounded-xl w-full text-center overflow-hidden flex justify-between items-center gap-2 text-md bg-opacity-30 backdrop-blur-md border border-black shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    
                   >
                     <span className="relative z-10">Register Now</span>
                     <IoMdArrowDroprightCircle className="text-2xl" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 opacity-30 animate-move-background"></div>
+                    {/* <div className="absolute inset-0 bg-[#f9e8d3] opacity-30 animate-move-background"></div> */}
                   </a>
                 )}
 
@@ -793,14 +791,12 @@ console.log(event);
                     onClick={() => setBottomdrawer(true)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative px-6 py-3 font-semibold text-black rounded-lg w-full text-center overflow-hidden flex justify-between items-center gap-2 text-md bg-opacity-30 backdrop-blur-md border border-black shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-                    style={{
-                      backgroundImage: "linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))",
-                    }}
+                    className="relative px-6 py-3 bg-[#f9e9d4] font-semibold text-[#2d201c] rounded-lg w-full text-center overflow-hidden flex justify-between items-center gap-2 text-md bg-opacity-30 backdrop-blur-md border border-black shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    
                   >
                     <span className="relative z-10">Register Now</span>
-                    <IoMdArrowDroprightCircle className="text-2xl" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 opacity-30 animate-move-background"></div>
+                    <IoMdArrowDroprightCircle className="text-2xl text-[2d201c]" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 opacity-30 animate-move-background"></div> */}
                   </a>
                 )}
 

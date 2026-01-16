@@ -153,6 +153,18 @@ function Root() {
 
     OneSignal.Slidedown.promptPush();
   }, []);
+  
+  const resizeObserverErr = window.ResizeObserver;
+window.ResizeObserver = class extends resizeObserverErr {
+  constructor(callback) {
+    super((entries, observer) => {
+      window.requestAnimationFrame(() => {
+        callback(entries, observer);
+      });
+    });
+  }
+};
+
 
   return (
     <HelmetProvider>
