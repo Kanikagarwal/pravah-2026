@@ -110,7 +110,7 @@ const Eventlist = () => {
           <Parallax speed={-15}>
             <main className="min-h-screen flex flex-col items-center px-4 sm:px-6 md:px-0 mt-8 sm:mt-24 relative mb-72 gap-8">
               <motion.div
-                className="mt-28 grid grid-cols-2 sm:flex sm:flex-wrap gap-4 sm:gap-8 sm:justify-center"
+                className="mb-20 mt-28 grid grid-cols-2 sm:flex sm:flex-wrap gap-4 sm:gap-8 sm:justify-center"
                 initial={{ opacity: 0, y: 160 }}
                 whileInView={{ opacity: 1, y: 120 }}
                 viewport={{ once: true, amount: 0.2 }}

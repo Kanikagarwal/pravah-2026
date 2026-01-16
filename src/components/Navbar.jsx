@@ -62,7 +62,7 @@ const Navbarr = ({
   <a href="/">
     <img
       src={"/logo.png"}
-      className="sm:w-20 w-12 mx-4 -translate-y-2"
+      className="sm:w-20 w-16 mx-2 -translate-y-2"
       alt="SKIT Logo"
     />
   </a>

@@ -26,7 +26,7 @@ const Aaveg = () => {
   const [fees, setFees] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const handleClose = () => setIsOpen(false);
-  const SHOW_COMING_SOON = true;
+  const SHOW_COMING_SOON = false;
 
   // Fetch Aaveg data from the API
   useEffect(() => {
@@ -355,10 +355,10 @@ const Aaveg = () => {
               {/* Coordinator Cards */}
 
               <center>
-                <div className="flex justify-center items-center font-sans mb-8">
+                <div className="flex justify-center items-center font-sans mb-20">
                   <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-8 w-full max-w-6xl">
+                    <Coordinator name="Harsh Nagori" number="9672419399" />
                     <Coordinator name="Chahat Shrimali" number="9929715052" />
-                    <Coordinator name="Harsh Nagori" number="9672419399   " />
                   </div>
                 </div>
               </center>

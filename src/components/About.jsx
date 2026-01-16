@@ -59,7 +59,7 @@ const About = () => {
         <ParallaxProvider>
           <Parallax speed={-10}>
             <main className="min-h-screen px-6 md:px-12 sm:mt-16 mt-32 relative mb-40 flex flex-col items-center justify-center">
-              <h1 className=" mt-10 text-7xl hidden sm:block text-[#5a3e36]">
+              <h1 className=" mt-10 text-5xl sm:text-7xl sm:block text-[#5a3e36]">
                 <motion.h1
                   whileInView={{ opacity: 1, y: 0 }}
                   initial={{ opacity: 0, y: -50 }}
