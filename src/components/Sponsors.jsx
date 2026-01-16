@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbarr from './Navbar';
 import DesktopFooter from './DesktopFooter';
-import { motion } from 'framer-motion';
+import { motion, px } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
@@ -107,17 +107,17 @@ const Sponsors = () => {
                                         />
                                     </div>
 
-                                    {/* Workplace Readiness Solution Partner
+                                     {/* Workplace Readiness Solution Partner */}
                                     <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Workplace Readiness Solution Partner
+                                            Supported By
                                         </h3>
                                         <img
-                                            src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790233/esnjmv4legytq2ohmirj.png"
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
                                             alt="Workplace Readiness Solution Partner"
-                                            className="w-96 h-auto"
+                                            className="w-40 h-40"
                                         />
-                                    </div> */}
+                                    </div> 
 
 
 
