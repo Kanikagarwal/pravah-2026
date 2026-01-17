@@ -40,7 +40,7 @@ const Sponsors = () => {
 
                             {/* Sponsors Section */}
                             <motion.section
-                                className="w-full mt-20"
+                                className="w-full mt-20 mb-20"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 100 }}
                                 viewport={{ once: true }}
@@ -121,16 +121,16 @@ const Sponsors = () => {
 
 
 
-                                    {/* <div className="flex flex-col items-center">
+                                    <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Food Partner
+                                            Official Study Abroad Education Partner
                                         </h3>
                                         <img
-                                            src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1737437860/Screenshot_2025-01-21_110549_cj4ccb.png"
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
                                             alt="Workplace Readiness Solution Partner"
                                             className="w-28 h-auto"
                                         />
-                                    </div> */}
+                                    </div>
 
 
 

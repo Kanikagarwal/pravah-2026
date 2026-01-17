@@ -85,19 +85,19 @@ const Aaveg = () => {
       rulebookLink:
         "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//valorant%20RULE%20BOOK%202025-min.pdf",
     },
-    {
-      name: "Real Cricket",
-      registrationLink: "https://erp.skit.ac.in/register/r/pravah25realcri",
-      prize: "₹50",
-      rulebookLink:
-        "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//REAL%20CRICKET%2024%20TOURNAMENT%20RULEBOOK%20FOR%20E%20(1)-min.pdf",
-    },
-    {
-      name: "Battlefronts",
-      registrationLink: "https://forms.gle/8eL3ZZMms9pr1ron8",
-      prize: "Free",
-      rulebookLink: "#",
-    },
+    // {
+    //   name: "Real Cricket",
+    //   registrationLink: "https://erp.skit.ac.in/register/r/pravah25realcri",
+    //   prize: "₹50",
+    //   rulebookLink:
+    //     "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//REAL%20CRICKET%2024%20TOURNAMENT%20RULEBOOK%20FOR%20E%20(1)-min.pdf",
+    // },
+    // {
+    //   name: "Battlefronts",
+    //   registrationLink: "https://forms.gle/8eL3ZZMms9pr1ron8",
+    //   prize: "Free",
+    //   rulebookLink: "#",
+    // },
   ];
 
   return (
