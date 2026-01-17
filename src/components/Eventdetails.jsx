@@ -322,14 +322,14 @@ console.log(event);
                       <strong>Venue:</strong> {event?.eventVenue}
                     </p>
 
-                    <p className="text-lg text-[#f9eddd]">
+                    {/* <p className="text-lg text-[#f9eddd]">
                       <strong>Team Size:</strong> {event?.additionalFields.length > 0 ? (
                         <span className="bg-gray-200 px-2 text-gray-700 rounded-md font-medium border border-gray-500 ml-2 cursor-pointer" onClick={() => setBottomteamdrawer(true)}>
                           View
 
                         </span>
                       ) : event?.teamSize + " Member"}
-                    </p>
+                    </p> */}
 
 
 
@@ -661,7 +661,7 @@ console.log(event);
 
                   <div className="flex items-center mb-2 justify-between mt-2 ">
                     <span className="text-sm font-medium text-[#2d201c]">Team Size:</span>
-                    <p className="ml-2 text-sm text-[#2d201c] ">
+                    {/* <p className="ml-2 text-sm text-[#2d201c] ">
 
                       {event?.additionalFields.length > 0 ? (
                         <span className="flex justify-center items-center gap-2 bg-[#f9eddd] px-2 text-[#2d201c] rounded-md font-medium border border-[#2d201c]" onClick={() => setBottomteamdrawer(true)}>
@@ -670,7 +670,7 @@ console.log(event);
                         </span>
                       ) : event?.teamSize + " Member"}
 
-                    </p>
+                    </p> */}
                   </div>
 
 

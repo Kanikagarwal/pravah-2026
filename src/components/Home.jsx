@@ -499,7 +499,7 @@ const Home = () => {
 
                     {/* DATE */}
                     <p className="text-red-600 font-semibold text-2xl sm:text-3xl mt-6 -translate-y-20">
-                      09<sup>th</sup> – 14<sup>th</sup> February
+                      16 <sup>th</sup> – 21 <sup>st</sup> February
                     </p>
                     {/* <Wave/> */}
                     {/* BUTTON */}

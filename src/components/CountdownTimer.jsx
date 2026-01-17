@@ -39,7 +39,7 @@ const CountdownTimer = ({ eventDate }) => {
 
         {/* Live Text */}
         <span className="text-lg font-bold tracking-wide dynapuff text-red-600">
-          09 <sup>th</sup> – 14 <sup>th</sup> February
+          16 <sup>th</sup> – 21 <sup>st</sup> February
         </span>
 
         {/* Right Pulse */}
@@ -82,7 +82,7 @@ const CountdownTimer = ({ eventDate }) => {
 
 const EventCountdown = () => {
   // IST-safe event time
-  const eventDate = "2026-02-09T00:00:00+05:30";
+  const eventDate = "2026-02-16T00:00:00+05:30";
 
   return (
     <div className="p-3 sm:p-0">

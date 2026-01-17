@@ -63,6 +63,28 @@ const Webteampravah = () => {
         { icon: FaLinkedin, url: "#" },
       ],
     },
+    {
+      name: "Rajesh Rajan",
+      designation: "Full Stack",
+      description: "Enthusiastic about web performance and accessibility.",
+      image: "/webteam/rajesh.jpeg",
+      phno:  9887507364,
+      links: [
+        { icon: FaGithub, url: "#" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/rajesh-rajaan-bbb6a386/" },
+      ],
+    },
+    {
+      name: "Milnd Sharma",
+      designation: "Full Stack",
+      description: "Enthusiastic about web performance and accessibility.",
+      image: "/webteam/miln.jpeg",
+      phno:  9887827277,
+      links: [
+        { icon: FaGithub, url: "#" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/milind4computing/" },
+      ],
+    },
     
   ];
 
