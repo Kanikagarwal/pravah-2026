@@ -829,7 +829,7 @@ console.log(event);
           </Drawer.Items>
         </Drawer>
 
-        <motion.div
+        {/* <motion.div
           className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.5 }}
@@ -841,7 +841,7 @@ console.log(event);
             alt="Pravah 2025 - Incredible India | SKIT"
             className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[200px] translate-x-0 opacity-30"
           />
-        </motion.div>
+        </motion.div> */}
 
         <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20">
           <img

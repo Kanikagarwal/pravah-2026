@@ -118,9 +118,9 @@ const Landing = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              <span className="font-semibold">An Annual Techno</span> •{" "}
-              <span className="font-semibold">Cultural</span> •{" "}
-              <span className="font-semibold">Sports Fest</span> 
+              <span className="font-extrabold">An Annual Techno</span> •{" "}
+              <span className="font-extrabold">Cultural</span> •{" "}
+              <span className="font-extrabold">Sports Fest</span> 
             </motion.p>
 
             {/* Button */}

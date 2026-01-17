@@ -1,6 +1,7 @@
 import React from "react";
 
 const CategoryTable = ({ additionalFields }) => {
+console.log(additionalFields);
 
     return (
         <div className="flex justify-center items-center ">

@@ -40,7 +40,7 @@ const Sponsors = () => {
 
                             {/* Sponsors Section */}
                             <motion.section
-                                className="w-full mt-20 mb-20"
+                                className="w-full mt-20 mb-40"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 100 }}
                                 viewport={{ once: true }}
@@ -108,16 +108,7 @@ const Sponsors = () => {
                                     </div>
 
                                      {/* Workplace Readiness Solution Partner */}
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Supported By
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
-                                            alt="Workplace Readiness Solution Partner"
-                                            className="w-40 h-40"
-                                        />
-                                    </div> 
+                                    
 
 
 
@@ -131,7 +122,16 @@ const Sponsors = () => {
                                             className="w-28 h-auto"
                                         />
                                     </div>
-
+                                    <div className="flex flex-col items-center">
+                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                                            Supported By
+                                        </h3>
+                                        <img
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
+                                            alt="Workplace Readiness Solution Partner"
+                                            className="w-40 h-40"
+                                        />
+                                    </div> 
 
 
                                     {/* <div className="flex flex-col items-center">
