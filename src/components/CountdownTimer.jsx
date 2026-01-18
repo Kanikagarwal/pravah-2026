@@ -26,7 +26,7 @@ const CountdownTimer = ({ eventDate }) => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [eventDate, isLive]);
+  }, [eventDate, isLive,calculateTimeLeft]);
 
   if (isLive) {
     return (
