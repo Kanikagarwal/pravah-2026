@@ -66,22 +66,22 @@ const Aaveg = () => {
   const esportsEvents = [
     {
       name: "BGMI",
-      registrationLink: "https://erp.skit.ac.in/register/r/pravah25bgmi",
-      prize: "₹200",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdB6mf9sLs__mO3c9bO4TCef-2ECL4NEnnkeIpcoMHT5g__mg/viewform",
+      prize: "₹250",
       rulebookLink:
         "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//RuleBook%20BGMI-min.pdf",
     },
     {
       name: "Freefire",
-      registrationLink: "https://erp.skit.ac.in/register/r/pravah25freefir",
-      prize: "₹200",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfxc-RZUVNJXnszVo68YSSi-X0v6gX55NRIQXP0JMPZ5DJX6Q/viewform?usp=dialog",
+      prize: "₹250",
       rulebookLink:
         "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//FREE%20FIRE%20RULE%20BOOK%202025%20(3)-min.pdf",
     },
     {
       name: "Valorant",
-      registrationLink: "https://erp.skit.ac.in/register/r/pravah25valo",
-      prize: "₹200",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeCx2NnFqhfYouS-9RJXhBZaKuccJDLLObXvIoKOo7FAbBQqg/viewform?usp=publish-editor",
+      prize: "₹250",
       rulebookLink:
         "https://czgscxfecdtvpjuoxqkx.supabase.co/storage/v1/object/public/pravah2025//valorant%20RULE%20BOOK%202025-min.pdf",
     },

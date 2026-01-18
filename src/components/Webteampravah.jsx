@@ -64,8 +64,19 @@ const Webteampravah = () => {
       ],
     },
     {
-      name: "Rajesh Rajan",
+      name: "Kavya Gupta",
       designation: "Full Stack",
+      description: "Enthusiastic about web performance and accessibility.",
+      image: "/webteam/kavya.jpg",
+      phno:  9057277613,
+      links: [
+        { icon: FaGithub, url: "https://github.com/Gupta-Kavya" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/kavya-gupta-721294290" },
+      ],
+    },
+    {
+      name: "Rajesh Rajan",
+      // designation: "Full Stack",
       description: "Enthusiastic about web performance and accessibility.",
       image: "/webteam/rajesh.jpeg",
       phno:  9887507364,
@@ -75,8 +86,8 @@ const Webteampravah = () => {
       ],
     },
     {
-      name: "Milnd Sharma",
-      designation: "Full Stack",
+      name: "Milind Sharma",
+      // designation: "Full Stack",
       description: "Enthusiastic about web performance and accessibility.",
       image: "/webteam/miln.jpeg",
       phno:  9887827277,
