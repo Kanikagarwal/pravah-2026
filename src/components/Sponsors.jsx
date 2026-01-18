@@ -106,6 +106,17 @@ const Sponsors = () => {
                                             className="w-28 h-auto"
                                         />
                                     </div>
+                                     {/* entertainment patners */}
+                                     <div className="flex flex-col items-center">
+                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                                            Entertainment Partner
+                                        </h3>
+                                        <img
+                                            src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1768724006/urban_aura_logo_1_on3xxi.png"
+                                            alt="Education Partner"
+                                            className="w-44 h-auto"
+                                        />
+                                    </div>
 
                                      {/* Workplace Readiness Solution Partner */}
                                     
