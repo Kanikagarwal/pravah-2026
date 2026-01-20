@@ -439,7 +439,7 @@ console.log(event);
                               ? `₹${event?.eventFees}`
                               : "FREE"}
                         </p>
-                        <p className="text-sm text-gray-500 mb-4">
+                        <p className="text-sm text-red-500 mb-4">
                           * Note: The fee once paid is non-refundable.
                         </p>
                         {/* Register Button */}
@@ -708,11 +708,11 @@ console.log(event);
                 </div>
 
               </div>
-              {event?.eventNote &&
+              {/* {event?.eventNote &&
                 <Alert color="gray" className="mt-4 border border-gray-300">
                   <span className="font-bold">Note : </span>{event?.eventNote}
                 </Alert>
-              }
+              } */}
               <div className="bg-[#f9eddd] p-3 rounded-lg mt-4 w-full shadow-gray-50 border ">
                 <div className="text-justify">
                   <span className='text-[#2d201c] font-bold '>Description : </span>
