@@ -560,7 +560,7 @@ console.log(event);
         <Drawer
 
           open={isOpen}
-          onClose={() => window.location.href = `/skit-pravah-2025-events/${event?.eventCategory}`}
+          onClose={() => window.location.href = `/skit-pravah-2026-events/${event?.eventCategory}`}
           style={{ zIndex: 1000 }}
           className="w-screen h-screen  flex flex-col bg-[#2d201c]"
         >
@@ -843,13 +843,13 @@ console.log(event);
           />
         </motion.div> */}
 
-        <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20">
+        {/* <div className="fixed -bottom-0 left-0 w-full sm:block pointer-events-none -z-20">
           <img
             src="/rb_2149158780.png"
             alt="Pravah 2025 - Incredible India | SKIT"
             className="w-full h-auto object-cover transform translate-y-[0px] sm:translate-y-[300px] translate-x-0 opacity-10"
           />
-        </div>
+        </div> */}
 
 
       </ParallaxProvider>
