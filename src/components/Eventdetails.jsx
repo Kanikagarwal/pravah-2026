@@ -659,9 +659,9 @@ console.log(event);
 
                   <hr className="border-white w-full" />
 
-                  <div className="flex items-center mb-2 justify-between mt-2 ">
+                  {/* <div className="flex items-center mb-2 justify-between mt-2 ">
                     <span className="text-sm font-medium text-[#2d201c]">Team Size:</span>
-                    {/* <p className="ml-2 text-sm text-[#2d201c] ">
+                    <p className="ml-2 text-sm text-[#2d201c] ">
 
                       {event?.additionalFields.length > 0 ? (
                         <span className="flex justify-center items-center gap-2 bg-[#f9eddd] px-2 text-[#2d201c] rounded-md font-medium border border-[#2d201c]" onClick={() => setBottomteamdrawer(true)}>
@@ -670,8 +670,8 @@ console.log(event);
                         </span>
                       ) : event?.teamSize + " Member"}
 
-                    </p> */}
-                  </div>
+                    </p>
+                  </div> */}
 
 
                   <hr className="border-white w-full" />
