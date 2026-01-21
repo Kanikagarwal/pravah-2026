@@ -439,7 +439,7 @@ console.log(event);
                               ? `₹${event?.eventFees}`
                               : "FREE"}
                         </p>
-                        <p className="text-sm text-red-500 mb-4">
+                        <p className="text-sm text-gray-500 mb-4">
                           * Note: The fee once paid is non-refundable.
                         </p>
                         {/* Register Button */}

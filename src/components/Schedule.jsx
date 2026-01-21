@@ -46,6 +46,7 @@ const Schedule = () => {
       });
       return acc;
     }, {});
+console.log(sortedGroupedEvents);
 
   const isLiveEvent = (timings) => {
     const { from, to } = timings;
@@ -87,6 +88,25 @@ const Schedule = () => {
 
   const today = new Date().toISOString().split("T")[0];
 
+  const formatDayAndMonth = (dateString) => {
+  const date = new Date(dateString);
+
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "short" });
+
+  const suffix =
+    day % 10 === 1 && day !== 11
+      ? "st"
+      : day % 10 === 2 && day !== 12
+      ? "nd"
+      : day % 10 === 3 && day !== 13
+      ? "rd"
+      : "th";
+
+  return `${day}${suffix} ${month}`;
+};
+
+
   return (
     <div>
       <Helmet>
@@ -119,7 +139,8 @@ const Schedule = () => {
                     >
                       <div className="flex justify-between items-center py-4">
                         <h2 className="text-4xl font-extrabold">
-                          DAY {index + 1} - {formatDayWithSuffix(day)} Feb
+                          DAY {index + 1} - {formatDayAndMonth(day)}
+
                         </h2>
 
                         {day === today && (
