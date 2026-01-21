@@ -31,6 +31,28 @@ const Webteampravah = () => {
     //   ],
     // },
     {
+      name: "Rajesh Rajan",
+      // designation: "Full Stack",
+      description: "Enthusiastic about web performance and accessibility.",
+      image: "/webteam/rajesh.jpeg",
+      phno:  9887507364,
+      links: [
+        { icon: FaGithub, url: "#" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/rajesh-rajaan-bbb6a386/" },
+      ],
+    },
+    {
+      name: "Milind Sharma",
+      // designation: "Full Stack",
+      description: "Enthusiastic about web performance and accessibility.",
+      image: "/webteam/miln.jpeg",
+      phno:  9887827277,
+      links: [
+        { icon: FaGithub, url: "#" },
+        { icon: FaLinkedin, url: "https://www.linkedin.com/in/milind4computing/" },
+      ],
+    },
+    {
       name: "Kanika Agarwal",
       designation: "Full Stack",
       description: "Passionate about crafting beautiful and efficient web experiences.",
@@ -74,28 +96,7 @@ const Webteampravah = () => {
         { icon: FaLinkedin, url: "https://www.linkedin.com/in/kavya-gupta-721294290" },
       ],
     },
-    {
-      name: "Rajesh Rajan",
-      // designation: "Full Stack",
-      description: "Enthusiastic about web performance and accessibility.",
-      image: "/webteam/rajesh.jpeg",
-      phno:  9887507364,
-      links: [
-        { icon: FaGithub, url: "#" },
-        { icon: FaLinkedin, url: "https://www.linkedin.com/in/rajesh-rajaan-bbb6a386/" },
-      ],
-    },
-    {
-      name: "Milind Sharma",
-      // designation: "Full Stack",
-      description: "Enthusiastic about web performance and accessibility.",
-      image: "/webteam/miln.jpeg",
-      phno:  9887827277,
-      links: [
-        { icon: FaGithub, url: "#" },
-        { icon: FaLinkedin, url: "https://www.linkedin.com/in/milind4computing/" },
-      ],
-    },
+    
     
   ];
 
