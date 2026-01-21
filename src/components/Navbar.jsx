@@ -61,7 +61,7 @@ const Navbarr = ({
           {eventName === "AAVEG" && (
   <a href="/">
     <img
-      src={"/logo.png"}
+      src={"https://res.cloudinary.com/ddvevjjoh/image/upload/v1769008687/logo_zjttfx.png"}
       className="sm:w-20 w-16 mx-2 -translate-y-2"
       alt="SKIT Logo"
     />
@@ -71,7 +71,7 @@ const Navbarr = ({
           {/* LOGO */}
           <a href="/">
             <img
-              src={logo ? `/${logo}` : "/logo.png"}
+              src={logo ? `/${logo}` : "https://res.cloudinary.com/ddvevjjoh/image/upload/v1769008687/logo_zjttfx.png"}
               className="sm:w-20 w-16 mx-4"
               alt="SKIT Logo"
             />

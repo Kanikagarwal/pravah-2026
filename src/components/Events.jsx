@@ -24,6 +24,7 @@ const Events = () => {
     "Social": "social.png",
     "Literary": "art.png",
     "Non-Technical": "nontech.png",
+    "E-Gaming":"egaming.PNG"
   }
 
   // Fetch categories data from the API
@@ -32,8 +33,13 @@ const Events = () => {
       try {
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/categories`);
         const data = await response.json();
-        setCategories(data); // Store the fetched categories
-        setFilteredCategories(data); // Initialize filtered categories with all categories
+        const sortedData = [...data].sort((a, b) => {
+        if (a.categoryName === "E-Gaming") return -1;
+        if (b.categoryName === "E-Gaming") return 1;
+        return 0;
+      });
+        setCategories(sortedData); // Store the fetched categories
+        setFilteredCategories(sortedData); // Initialize filtered categories with all categories
         setLoading(false); // Stop loading once data is fetched
       } catch (error) {
         console.error('Error fetching categories data:', error);
