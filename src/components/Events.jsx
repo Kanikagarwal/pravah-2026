@@ -24,7 +24,7 @@ const Events = () => {
     "Social": "social.png",
     "Literary": "art.png",
     "Non-Technical": "nontech.png",
-    "E-Gaming":"egaming.PNG"
+    "E-Gaming":"egaming.png"
   }
 
   // Fetch categories data from the API
