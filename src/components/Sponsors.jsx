@@ -142,6 +142,11 @@ const Sponsors = () => {
                                             alt="Workplace Readiness Solution Partner"
                                             className="w-40 h-40"
                                         />
+                                        <img
+                                            src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769228344/IMG-20260124-WA0002-removebg-preview_gp5ubz.png"
+                                            alt="Workplace Readiness Solution Partner"
+                                            className="w-40 h-40 mt-5"
+                                        />
                                     </div> 
 
 
