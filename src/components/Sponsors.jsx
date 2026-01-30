@@ -1,54 +1,50 @@
-import React from 'react';
-import Navbarr from './Navbar';
-import DesktopFooter from './DesktopFooter';
-import { motion, px } from 'framer-motion';
-import { Helmet } from 'react-helmet';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import React from "react";
+import Navbarr from "./Navbar";
+import DesktopFooter from "./DesktopFooter";
+import { motion, px } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 const Sponsors = () => {
-    return (
-        <div className="text-gray-800 relative overflow-hidden">
-            <Helmet>
-                <title>Become a Sponsor - Partner with Aaveg and Pravah | SKIT</title>
-                <meta
-                    name="description"
-                    content="Partner with Aaveg and Pravah at SKIT and showcase your brand at one of the largest sports and cultural fests. Support innovation, creativity, and youth engagement."
-                />
-                <meta
-                    name="keywords"
-                    content="Aaveg sponsors, Pravah sponsors, SKIT sponsors, sponsor opportunities, brand partnership, youth fest sponsorship, cultural fest sponsorship, sports fest sponsorship"
-                />
-            </Helmet>
-            <div
-                className="section relative overflow-hidden bg-slate-100"
-                style={{
-                    overflowX: "hidden",
-                    backgroundImage: "url('navras/bg3.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    position: "relative",
-                }}
-            >
-
-
-                <Navbarr eventName={"Flagship Partners"} />
-                <ParallaxProvider>
-                    <Parallax speed={-15}>
-                        <main className="min-h-screen flex flex-col items-center px-4 md:px-16 mt-16 relative mb-32">
-
-
-                            {/* Sponsors Section */}
-                            <motion.section
-                                className="w-full mt-20 mb-40"
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 100 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.8 }}
-                            >
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16">
-                                    {/* Coding Partner */}
-                                    {/* <div className="flex flex-col items-center">
+  return (
+    <div className="text-gray-800 relative overflow-hidden">
+      <Helmet>
+        <title>Become a Sponsor - Partner with Aaveg and Pravah | SKIT</title>
+        <meta
+          name="description"
+          content="Partner with Aaveg and Pravah at SKIT and showcase your brand at one of the largest sports and cultural fests. Support innovation, creativity, and youth engagement."
+        />
+        <meta
+          name="keywords"
+          content="Aaveg sponsors, Pravah sponsors, SKIT sponsors, sponsor opportunities, brand partnership, youth fest sponsorship, cultural fest sponsorship, sports fest sponsorship"
+        />
+      </Helmet>
+      <div
+        className="section relative overflow-hidden bg-slate-100"
+        style={{
+          overflowX: "hidden",
+          backgroundImage: "url('navras/bg3.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "relative",
+        }}
+      >
+        <Navbarr eventName={"Flagship Partners"} />
+        <ParallaxProvider>
+          <Parallax speed={-15}>
+            <main className="min-h-screen flex flex-col items-center px-4 md:px-16 mt-16 relative mb-32">
+              {/* Sponsors Section */}
+              <motion.section
+                className="w-full mt-20 mb-40"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 100 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16">
+                  {/* Coding Partner */}
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
                                             Coding Partner
                                         </h3>
@@ -59,98 +55,110 @@ const Sponsors = () => {
                                         />
                                     </div> */}
 
-                                    {/* Radio Partner */}
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
-                                            Radio Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790215/tknvlipq31aaziq5gcvm.png"
-                                            alt="Radio Partner"
-                                            className="w-28 h-auto"
-                                        />
-                                    </div>
+                  {/* Radio Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Radio Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790215/tknvlipq31aaziq5gcvm.png"
+                      alt="Radio Partner"
+                      className="w-28 h-auto"
+                    />
+                  </div>
 
-                                    {/* Technology Partner */}
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
-                                            Technology Partner
-                                        </h3>
-                                        <div className="flex gap-8 flex-wrap justify-center items-center">
-                                            {/* <img
+                  {/* Technology Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Technology Partner
+                    </h3>
+                    <div className="flex gap-8 flex-wrap justify-center items-center">
+                      {/* <img
                                                 src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790221/v7fbrrt9malhtx8jmkxy.png"
                                                 alt="Technology Partner 1"
                                                 className="w-36 sm:w-60 h-auto"
                                             /> */}
-                                            <img
-                                                src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790225/adqzj3vrzserlrocygb6.svg"
-                                                alt="Technology Partner 2"
-                                                className="w-28 h-auto"
-                                            />
-                                            {/* <img
+                      <img
+                        src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790225/adqzj3vrzserlrocygb6.svg"
+                        alt="Technology Partner 2"
+                        className="w-28 h-auto"
+                      />
+                      {/* <img
                                                 src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1737378995/logo_k0wrhg.svg"
                                                 alt="Technology Partner 2"
                                                 className="w-28 h-auto"
                                             /> */}
-                                        </div>
-                                    </div>
+                    </div>
+                  </div>
 
-                                    {/* Education Partner */}
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
-                                            Education Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
-                                            alt="Education Partner"
-                                            className="w-28 h-auto"
-                                        />
-                                    </div>
-                                     {/* entertainment patners */}
-                                     <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
-                                            Entertainment Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1768724006/urban_aura_logo_1_on3xxi.png"
-                                            alt="Education Partner"
-                                            className="w-44 h-auto"
-                                        />
-                                    </div>
+                  {/* Education Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Education Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
+                      alt="Education Partner"
+                      className="w-28 h-auto"
+                    />
+                  </div>
+                  {/* entertainment patners */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Entertainment Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1768724006/urban_aura_logo_1_on3xxi.png"
+                      alt="Education Partner"
+                      className="w-44 h-auto"
+                    />
+                  </div>
 
-                                     {/* Workplace Readiness Solution Partner */}
-                                    
+                  {/* Workplace Readiness Solution Partner */}
 
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Official Study Abroad Education Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
+                      alt="Workplace Readiness Solution Partner"
+                      className="w-28 h-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Supported By
+                    </h3>
 
+                    <div className="grid grid-cols-2 gap-8">
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
+                        alt="Supported By 1"
+                        className="w-40 h-40 object-contain"
+                      />
 
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Official Study Abroad Education Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
-                                            alt="Workplace Readiness Solution Partner"
-                                            className="w-28 h-auto"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Supported By
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
-                                            alt="Workplace Readiness Solution Partner"
-                                            className="w-40 h-40"
-                                        />
-                                        <img
-                                            src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769228344/IMG-20260124-WA0002-removebg-preview_gp5ubz.png"
-                                            alt="Workplace Readiness Solution Partner"
-                                            className="w-40 h-40 mt-5"
-                                        />
-                                    </div> 
+                      <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769228344/IMG-20260124-WA0002-removebg-preview_gp5ubz.png"
+                        alt="Supported By 2"
+                        className="w-32 h-32 object-contain"
+                      />
 
+                      <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760226/PHOTO-2026-01-29-14-41-08_prg7la.jpg"
+                        alt="Supported By 3"
+                        className="w-32 h-32 object-contain"
+                      />
 
-                                    {/* <div className="flex flex-col items-center">
+                      <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760437/Screenshot_20260129_141744_WhatsAppBusiness_dpsttg.jpg"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                             Assessment Partner
                                         </h3>
@@ -161,12 +169,7 @@ const Sponsors = () => {
                                         />
                                     </div> */}
 
-
-
-
-
-
-                                    {/* <div className="flex flex-col items-center">
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                             Entertainment Partner
                                         </h3>
@@ -186,9 +189,7 @@ const Sponsors = () => {
                                         </div>
                                     </div> */}
 
-
-
-                                    {/* <div className="flex flex-col items-center">
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                             Startup Expo Sponsors
                                         </h3>
@@ -214,8 +215,7 @@ const Sponsors = () => {
                                         </div>
                                     </div> */}
 
-
-                                    {/* <div className="flex flex-col items-center">
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                             Clothing Partner
                                         </h3>
@@ -226,9 +226,7 @@ const Sponsors = () => {
                                         />
                                     </div> */}
 
-
-
-                                    {/* <div className="flex flex-col items-center">
+                  {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                             Health Partner
                                         </h3>
@@ -239,8 +237,7 @@ const Sponsors = () => {
                                         />
                                     </div> */}
 
-
-                                    {/* <div className="flex flex-col items-center">
+                  {/* <div className="flex flex-col items-center">
                                     <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
                                         Cosplay Sponsor
                                     </h3>
@@ -250,15 +247,10 @@ const Sponsors = () => {
                                         className="w-28 h-auto"
                                     />
                                 </div> */}
+                </div>
+              </motion.section>
 
-
-                                </div>
-                            </motion.section>
-
-
-
-
-                            {/* <motion.section
+              {/* <motion.section
                             className={`text-center space-y-8 mt-6 `}
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 130 }}
@@ -318,9 +310,7 @@ const Sponsors = () => {
 
                         </motion.section> */}
 
-
-
-                            {/* <motion.section
+              {/* <motion.section
                                 className={`text-center space-y-8 `}
                                 initial={{ opacity: 0, y: -50 }}
                                 animate={{ opacity: 1, y: 130 }}
@@ -336,8 +326,8 @@ const Sponsors = () => {
                                     </motion.h1>
                                 </div>
                             </motion.section> */}
-                            {/* Normal Sponsors Section */}
-                            {/* <motion.section
+              {/* Normal Sponsors Section */}
+              {/* <motion.section
                                 className="w-full mt-20 flex flex-wrap justify-center items-center gap-10 mb-20"
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 100 }}
@@ -410,13 +400,12 @@ const Sponsors = () => {
                                 </div>
 
                             </motion.section> */}
-                        </main>
-                    </Parallax>
-                    
-                </ParallaxProvider>
-            </div>
+            </main>
+          </Parallax>
+        </ParallaxProvider>
+      </div>
 
-            {/* <div
+      {/* <div
                 className='sm:hidden'
                 style={{
                     position: "absolute",
@@ -435,9 +424,9 @@ const Sponsors = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#4f4f4f] to-[#474747] bg-pattern-stripes z-0"></div>
             </div> */}
 
-            <DesktopFooter />
-        </div>
-    );
+      <DesktopFooter />
+    </div>
+  );
 };
 
 export default Sponsors;
