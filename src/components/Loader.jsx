@@ -33,7 +33,7 @@ const Loader = () => {
                     variants={LoaderExitAnimationVariants}
                     initial="initial"
                     exit="exit"
-                    className="fixed top-0 left-0 z-[60] flex h-full w-full items-center justify-center bg-[#EDE1D0]"
+                    className="fixed top-0 left-0 z-[1600] flex h-full w-full items-center justify-center bg-[#EDE1D0]"
                 >
                     {/* 🔒 NOTHING BELOW IS TOUCHED */}
 

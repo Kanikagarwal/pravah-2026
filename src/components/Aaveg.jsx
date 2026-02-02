@@ -289,7 +289,7 @@ const Aaveg = () => {
                           </button>
 
                           <button
-                            className="bg-gradient-to-r from-black to-black text-white font-medium w-full px-6 py-3 rounded-lg shadow-sm  relative z-50 sm:hidden"
+                            className="bg-[#f9eddd] text-[#2d201c] font-medium w-full px-6 py-3 rounded-lg shadow-sm  relative z-50 sm:hidden"
                             // onClick={() =>
                             //   window.open(event.eventRegistrationLink, '_blank')
                             // }
@@ -418,14 +418,14 @@ const Aaveg = () => {
                       </p>
                     </div>
                     <div className="flex gap-3">
-                      <a
+                      {/* <a
                         href={event.rulebookLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-500 text-white rounded-md text-sm font-medium hover:bg-gray-600 transition-colors cursor-pointer"
                       >
                         Rulebook
-                      </a>
+                      </a> */}
                       <a
                         href={event.registrationLink}
                         target="_blank"
@@ -513,14 +513,14 @@ const Aaveg = () => {
                       </p>
                     </div>
                     <div className="flex gap-3">
-                      <a
+                      {/* <a
                         href={event.rulebookLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-gray-500 text-white rounded-md text-sm font-medium hover:bg-gray-600 transition-colors"
                       >
                         Rulebook
-                      </a>
+                      </a> */}
                       <a
                         href={event.registrationLink}
                         target="_blank"

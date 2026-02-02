@@ -131,7 +131,7 @@ const Sponsors = () => {
                       Supported By
                     </h3>
 
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-3 gap-8">
                       <img
                         src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
                         alt="Supported By 1"
@@ -155,19 +155,25 @@ const Sponsors = () => {
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050551/SkillWiz_branding-white-removebg-preview_vl9fkh.png"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
+                      />
+                     
                     </div>
                   </div>
 
-                  {/* <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Assessment Partner
+                                            Medical Partner
                                         </h3>
                                         <img
-                                            src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1737449549/SkillWiz_branding-white_1_rkkryu.png"
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
                                             alt="Workplace Readiness Solution Partner"
                                             className="w-52 h-auto"
                                         />
-                                    </div> */}
+                                    </div>
 
                   {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
@@ -215,16 +221,16 @@ const Sponsors = () => {
                                         </div>
                                     </div> */}
 
-                  {/* <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Clothing Partner
+                                            Food Partner
                                         </h3>
                                         <img
-                                            src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1738593791/mc0ios9qihp944xez0s4.png"
+                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
                                             alt=""
                                             className="w-52 h-auto"
                                         />
-                                    </div> */}
+                                    </div>
 
                   {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
