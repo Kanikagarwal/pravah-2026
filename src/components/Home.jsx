@@ -702,9 +702,9 @@ const Home = () => {
               {/* Section 2 */}
               <div className="section p-0 bg-[#2d201c] z-10">
                 {/* Video Section - desktop */}
-                <SpotlightGrid />
+                {/* <SpotlightGrid /> */}
 
-                {/* <EventCountdown /> */}
+                <EventCountdown />
                 {/* Video Section */}
                 <div className="hidden">
                   <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
