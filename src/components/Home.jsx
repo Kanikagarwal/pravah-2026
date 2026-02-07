@@ -478,8 +478,6 @@ const Home = () => {
                   position: "relative",
                 }}
               >
-                
-
                 <div className="relative w-full min-h-screen overflow-hidden flex flex-col">
                   {/* 3. MAIN HERO CENTER CONTENT */}
                   <section className="relative z-10 items-center text-center px-6 mt-10 sm:mt-16 min-h-screen flex flex-col justify-center">
@@ -501,23 +499,18 @@ const Home = () => {
                     <p className="text-red-600 font-semibold text-2xl sm:text-3xl mt-6 -translate-y-20">
                       16 <sup>th</sup> – 21 <sup>st</sup> February
                     </p>
-                    {/* <Wave/> */}
-                    {/* BUTTON */}
-                    {/* <button className="mt-4 px-10 py-3 text-white text-lg font-semibold rounded-full 
-      bg-gradient-to-r from-purple-500 to-pink-500 shadow-xl 
-      hover:scale-110 transition-all">
-      Explore Rasas
-    </button> */}
-                  </section>
 
-                  {/* 4. BOTTOM ILLUSTRATION STRIP */}
-                  {/* <div className="absolute bottom-0 left-0 w-full">
-                    <img
-                      src="/navras-illustration.png"
-                      alt="Navras Illustration"
-                      className="w-full object-cover max-h-[280px] sm:max-h-[350px]"
-                    />
-                  </div> */}
+                    {/* BUTTON */}
+                    <Link to="/skit-pravah-2026-events">
+                      <button
+                        className="mt-4 px-10 py-3 text-[#fff] text-lg font-semibold rounded-full 
+      bg-[#2d2c10] shadow-xl 
+      hover:scale-110 transition-all"
+                      >
+                        Explore →
+                      </button>
+                    </Link>
+                  </section>
                 </div>
 
                 <AnimatePresence>
@@ -616,13 +609,15 @@ const Home = () => {
                     </motion.p> */}
 
                     {/* Explore Button */}
-                    {/* <Link to="/skit-pravah-2026-events">
-  <motion.button
-    className="relative px-8 py-4 text-xl z-50 font-semibold text-white rounded-full overflow-hidden group mb-20"
-    initial={{ opacity: 0, scale: 0.9 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5, delay: 0.4 }}
-  > */}
+                    <Link to="/skit-pravah-2026-events">
+                      <motion.button
+                        className="relative px-8 py-4 text-xl z-50 font-semibold text-white rounded-full overflow-hidden group mb-20"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                      ></motion.button>
+                      Explore
+                    </Link>
                   </div>
                 </div>
 
@@ -679,33 +674,12 @@ const Home = () => {
                   </div> */}
                 </div>
 
-                {/* Decorative Bars */}
-                {/* <div
-                  className="absolute bottom-0 w-full h-2"
-                  style={{
-                    background:
-                      "repeating-linear-gradient(45deg, #ff9e00, #ff9e00 10px, #d4145a 10px, #d4145a 20px)",
-                  }}
-                ></div> */}
-                {/* <div
-  className="absolute top-0 w-full h-2"
-  style={{
-    background:
-      "repeating-linear-gradient(45deg, #1a1a1d, #1a1a1d 10px, #4e4e50 10px, #4e4e50 20px)",
-  }}
-></div> */}
+                
                 <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-col items-end gap-4 pb-4">
                   {/* <ImageAnimation /> */}
                 </div>
               </div>
-
-              {/* Section 2 */}
-              <div className="section p-0 bg-[#2d201c] z-10">
-                {/* Video Section - desktop */}
-                {/* <SpotlightGrid /> */}
-
-                <EventCountdown />
-                {/* Video Section */}
+{/* Video Section */}
                 <div className="hidden">
                   <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
                     <div className="radial-grid absolute inset-0" />
@@ -725,7 +699,7 @@ const Home = () => {
                           className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-blue-400 group-hover:shadow-[0_0_15px_4px_rgba(58,134,255,0.7)] transition duration-300"
                           onClick={() =>
                             (document.getElementById(
-                              "teaser-video"
+                              "teaser-video",
                             ).style.display = "block")
                           }
                         />
@@ -767,7 +741,7 @@ const Home = () => {
                           className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-pink-400 group-hover:shadow-[0_0_15px_4px_rgba(255,105,180,0.7)] transition duration-300"
                           onClick={() =>
                             (document.getElementById(
-                              "logo-video"
+                              "logo-video",
                             ).style.display = "block")
                           }
                         />
@@ -790,29 +764,37 @@ const Home = () => {
                     </motion.div>
                   </div>
                 </div>
+              {/* Section 2 */}
+              <div className="section min-h-screen w-full flex flex-col items-center justify-center px-4 text-center gap-10 bg-[#2d201c]">
 
-                {/* <div className="relative hidden sm:block">
-                  <motion.img
-                    src="logo.png"
-                    alt="Top Right Pattern"
-                    className="absolute w-60 opacity-30"
-                    initial={{ y: -500 }} // Start off-screen to the left
-                    whileInView={{ x: -100, y: -100 }} 
-                    viewport={{ once: false }} 
-                    transition={{
-                      type: 'spring',
-                      stiffness: 50,
-                      damping: 20,
-                      duration: 10, 
-                    }}
-                    style={{
-                      bottom: '0', 
-                      left: '50%',  
-                      transform: 'translateX(-50%) translateY(0)',
-                    }}
-                  />
-                </div> */}
-              </div>
+  {/* Countdown */}
+  <div className="w-full flex justify-center">
+    <EventCountdown />
+  </div>
+
+  {/* Video Card */}
+  <motion.div
+    className="video-card relative w-full max-w-xl aspect-video bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
+    <iframe
+      className="absolute inset-0 w-full h-full rounded-xl"
+      src="https://www.youtube.com/embed/STmA_ohIuyM?si=zHJJxFAkcAZNXYl0"
+      title="Teaser Launch of Pravah"
+      frameBorder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </motion.div>
+
+  {/* <p className="text-sm sm:text-base font-medium text-gray-200">
+    Teaser Launch
+  </p> */}
+<Confetti width={3000} height={1000} />
+</div>
 
               {/* Section 6*/}
 

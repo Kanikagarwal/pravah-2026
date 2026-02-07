@@ -55,6 +55,29 @@ const Sponsors = () => {
                                         />
                                     </div> */}
 
+{/* Technology Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Technology Partner
+                    </h3>
+                    <div className="flex gap-8 flex-wrap justify-center items-center">
+                      <img
+                        src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790225/adqzj3vrzserlrocygb6.svg"
+                        alt="Technology Partner 2"
+                        className="w-28 h-auto"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Food Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
+                      alt=""
+                      className="w-52 h-auto"
+                    />
+                  </div>
                   {/* Radio Partner */}
                   <div className="flex flex-col items-center">
                     <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
@@ -67,29 +90,7 @@ const Sponsors = () => {
                     />
                   </div>
 
-                  {/* Technology Partner */}
-                  <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
-                      Technology Partner
-                    </h3>
-                    <div className="flex gap-8 flex-wrap justify-center items-center">
-                      {/* <img
-                                                src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1736790221/v7fbrrt9malhtx8jmkxy.png"
-                                                alt="Technology Partner 1"
-                                                className="w-36 sm:w-60 h-auto"
-                                            /> */}
-                      <img
-                        src="http://res.cloudinary.com/dktkdi3sm/image/upload/v1736790225/adqzj3vrzserlrocygb6.svg"
-                        alt="Technology Partner 2"
-                        className="w-28 h-auto"
-                      />
-                      {/* <img
-                                                src="https://res.cloudinary.com/dktkdi3sm/image/upload/v1737378995/logo_k0wrhg.svg"
-                                                alt="Technology Partner 2"
-                                                className="w-28 h-auto"
-                                            /> */}
-                    </div>
-                  </div>
+                  
 
                   {/* Education Partner */}
                   <div className="flex flex-col items-center">
@@ -99,6 +100,20 @@ const Sponsors = () => {
                     <img
                       src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
                       alt="Education Partner"
+                      className="w-28 h-auto"
+                    />
+                  </div>
+                  
+
+                  {/* Workplace Readiness Solution Partner */}
+
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Official Study Abroad Education Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
+                      alt="Workplace Readiness Solution Partner"
                       className="w-28 h-auto"
                     />
                   </div>
@@ -113,17 +128,14 @@ const Sponsors = () => {
                       className="w-44 h-auto"
                     />
                   </div>
-
-                  {/* Workplace Readiness Solution Partner */}
-
                   <div className="flex flex-col items-center">
                     <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                      Official Study Abroad Education Partner
+                      Medical Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
                       alt="Workplace Readiness Solution Partner"
-                      className="w-28 h-auto"
+                      className="w-52 h-auto"
                     />
                   </div>
                   <div className="flex flex-col items-center">
@@ -132,10 +144,28 @@ const Sponsors = () => {
                     </h3>
 
                     <div className="grid grid-cols-3 gap-8">
+                       <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760226/PHOTO-2026-01-29-14-41-08_prg7la.jpg"
+                        alt="Supported By 3"
+                        className="w-32 h-32 object-contain"
+                      />
+
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
-                        alt="Supported By 1"
-                        className="w-40 h-40 object-contain"
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050551/SkillWiz_branding-white-removebg-preview_vl9fkh.png"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
+                      />
+
+                      <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760437/Screenshot_20260129_141744_WhatsAppBusiness_dpsttg.jpg"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
+                      />
+
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770470164/FAST_PIZZA_page-0001.jpg-removebg-preview_athbjn.png"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
                       />
 
                       <img
@@ -145,35 +175,19 @@ const Sponsors = () => {
                       />
 
                       <img
-                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760226/PHOTO-2026-01-29-14-41-08_prg7la.jpg"
-                        alt="Supported By 3"
-                        className="w-32 h-32 object-contain"
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
+                        alt="Supported By 1"
+                        className="w-40 h-40 object-contain"
                       />
 
-                      <img
-                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1769760437/Screenshot_20260129_141744_WhatsAppBusiness_dpsttg.jpg"
-                        alt="Supported By 4"
-                        className="w-32 h-32 object-contain"
-                      />
-                      <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050551/SkillWiz_branding-white-removebg-preview_vl9fkh.png"
-                        alt="Supported By 4"
-                        className="w-32 h-32 object-contain"
-                      />
-                     
+                      
+
+                      
+                      
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Medical Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
-                                            alt="Workplace Readiness Solution Partner"
-                                            className="w-52 h-auto"
-                                        />
-                                    </div>
+                  
 
                   {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
@@ -221,16 +235,7 @@ const Sponsors = () => {
                                         </div>
                                     </div> */}
 
-                  <div className="flex flex-col items-center">
-                                        <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                                            Food Partner
-                                        </h3>
-                                        <img
-                                            src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
-                                            alt=""
-                                            className="w-52 h-auto"
-                                        />
-                                    </div>
+                  
 
                   {/* <div className="flex flex-col items-center">
                                         <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
