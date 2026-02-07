@@ -719,6 +719,7 @@ const Home = () => {
                       <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-blue-400 transition duration-300">
                         Teaser Launch
                       </p>
+                         
                     </motion.div>
 
                     {/* Right Video Card */}
@@ -789,6 +790,7 @@ const Home = () => {
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
+      <Confetti width={3000} height={1000} />
     </motion.div>
 
   </div>
