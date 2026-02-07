@@ -765,36 +765,35 @@ const Home = () => {
                   </div>
                 </div>
               {/* Section 2 */}
-              <div className="section min-h-screen w-full flex flex-col items-center justify-center px-4 text-center gap-10 bg-[#2d201c]">
+              <div className="section min-h-screen w-full flex items-center justify-center bg-[#2d201c] px-4">
+  <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-12">
 
-  {/* Countdown */}
-  <div className="w-full flex justify-center">
-    <EventCountdown />
+    {/* Countdown */}
+    <div className="w-full flex justify-center">
+      <EventCountdown />
+    </div>
+
+    {/* Video */}
+    <motion.div
+      className="w-full aspect-video bg-gray-100 rounded-xl shadow-lg overflow-hidden"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <iframe
+        className="w-full h-full rounded-xl"
+        src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
+        title="Teaser Launch of Pravah"
+        frameBorder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </motion.div>
+
   </div>
-
-  {/* Video Card */}
-  <motion.div
-    className="video-card relative w-full max-w-xl aspect-video bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition"
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: false }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-  >
-    <iframe
-      className="absolute inset-0 w-full h-full rounded-xl"
-      src="https://www.youtube.com/embed/STmA_ohIuyM?si=zHJJxFAkcAZNXYl0"
-      title="Teaser Launch of Pravah"
-      frameBorder="0"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </motion.div>
-
-  {/* <p className="text-sm sm:text-base font-medium text-gray-200">
-    Teaser Launch
-  </p> */}
-<Confetti width={3000} height={1000} />
 </div>
+
 
               {/* Section 6*/}
 
