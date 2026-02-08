@@ -742,54 +742,58 @@ const Home = () => {
                 </div>
               </div>
               {/* Section 2 */}
-              <div
-                className="
-  section
-  min-h-[100svh]
-  w-full
-  flex
-  items-center
-  justify-center
-  bg-[#2d201c]
-  px-3 sm:px-6
-  pt-20 sm:pt-0
-"
-              >
-                <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-8 sm:gap-12">
-                  {/* Countdown */}
-                  <div className="w-full z-1000 flex justify-center scale-90 sm:scale-100">
-                    <EventCountdown />
-                  </div>
+<div
+  className="
+    section
+    relative
+    min-h-screen
+    w-full
+    flex
+    items-center
+    justify-center
+    bg-[#2d201c]
+    px-4
+  "
+>
+  <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-8 sm:gap-12">
 
-                  {/* Video */}
-                  <motion.div
-                    className="w-full aspect-video
+    {/* Countdown */}
+    <div className="w-full flex justify-center">
+      <EventCountdown />
+    </div>
+
+    {/* Video */}
+    <motion.div
+      className="
+        w-full
+        aspect-video
         bg-gray-100
         rounded-lg sm:rounded-xl
         shadow-lg
         overflow-hidden
       "
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                  >
-                    <iframe
-                      className="w-full h-full"
-                      src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
-                      title="Teaser Launch of Pravah"
-                      frameBorder="0"
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
+        title="Teaser Launch of Pravah"
+        frameBorder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </motion.div>
+  </div>
 
-                    {/* Confetti (hidden on small screens) */}
-                  </motion.div>
-                    <div className="block z-1000 w-full h-full absolute top-0 left-0">
-                      <Confetti width={3000} height={1000} />
-                    </div>
-                </div>
-              </div>
+  {/* Confetti Overlay */}
+  <div className="pointer-events-none absolute inset-0 justify-center">
+    <Confetti width={window.innerWidth} height={window.innerHeight} />
+  </div>
+</div>
+
 
               {/* Section 6*/}
 
