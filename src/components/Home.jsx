@@ -766,35 +766,47 @@ const Home = () => {
                   </div>
                 </div>
               {/* Section 2 */}
-              <div className="section min-h-screen w-full flex items-center justify-center bg-[#2d201c] px-4">
-  <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-12">
+  <div className="section min-h-screen w-full flex items-center justify-center bg-[#2d201c] px-3 sm:px-6">
+  <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-8 sm:gap-12">
 
     {/* Countdown */}
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center scale-90 sm:scale-100">
       <EventCountdown />
     </div>
 
     {/* Video */}
     <motion.div
-      className="w-full aspect-video bg-gray-100 rounded-xl shadow-lg overflow-hidden"
-      initial={{ opacity: 0, y: 50 }}
+      className="
+        w-full
+        aspect-video
+        bg-gray-100
+        rounded-lg sm:rounded-xl
+        shadow-lg
+        overflow-hidden
+      "
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
     >
       <iframe
-        className="w-full h-full rounded-xl"
+        className="w-full h-full"
         src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
         title="Teaser Launch of Pravah"
         frameBorder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-      <Confetti width={3000} height={1000} />
+
+      {/* Confetti (hidden on small screens) */}
+      <div className="hidden sm:block">
+        <Confetti width={1200} height={600} />
+      </div>
     </motion.div>
 
   </div>
 </div>
+
 
 
               {/* Section 6*/}
