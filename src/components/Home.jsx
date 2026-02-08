@@ -525,7 +525,7 @@ const Home = () => {
                     >
                       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f0f9ff] to-[#e9ffff] bg-pattern-stripes -z-10 opacity-10"></div>
 
-                      <Confetti width={3000} height={1000} />
+                      {/* <Confetti width={3000} height={1000} /> */}
 
                       <h1 className="text-6xl font-extrabold mb-6 text-gray-500 text-center bg-red-800">
                         Finally, it's happening!
@@ -578,8 +578,8 @@ const Home = () => {
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
-                      opacity: 0.1, // Adjust the opacity here
-                      zIndex: 0, // Ensure it's behind the content
+                      opacity: 0.1,
+                      zIndex: 0,
                     }}
                   ></div>
 
@@ -650,164 +650,146 @@ const Home = () => {
                     </motion.div>
                   </div>
 
-                  {/* Decorative Text */}
-                  {/* <motion.div
-                    className="mt-5"
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                  >
-                    <p className="text-lg sm:text-xl font-semibold">
-                      Experience the Culture, Colors, and Festivity of India
-                    </p>
-                  </motion.div> */}
+                  
 
-                  {/* Call-to-Action Button */}
-                  {/* <div className="mt-8">
-                    <a
-                      href="#"
-                      className="absolute left-1/2 bottom-0 px-8 py-3 text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-full font-bold text-lg shadow-lg transform hover:scale-105 transition-transform"
-                      onClick={() => handleDown()}
-                    >
-                      Learn More
-                    </a>
-                  </div> */}
+                  
                 </div>
 
                 
-                <div className="fixed bottom-0 right-3 z-20 w-[50%] hidden sm:flex flex-col items-end gap-4 pb-4">
-                  {/* <ImageAnimation /> */}
+              </div>
+              {/* Video Section */}
+              <div className="hidden">
+                <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
+                  <div className="radial-grid absolute inset-0" />
+                  {/* Left Video Card */}
+                  <motion.div
+                    className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 30 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                  >
+                    <div className="relative w-full h-full group">
+                      {/* Poster Image */}
+                      <img
+                        src="teaser_graphic.png"
+                        alt="Teaser Poster"
+                        className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-blue-400 group-hover:shadow-[0_0_15px_4px_rgba(58,134,255,0.7)] transition duration-300"
+                        onClick={() =>
+                          (document.getElementById(
+                            "teaser-video",
+                          ).style.display = "block")
+                        }
+                      />
+                      {/* YouTube Video (Initially Hidden) */}
+                      <iframe
+                        id="teaser-video"
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/esOx6T4uQwI"
+                        title="Teaser Launch of Pravah"
+                        frameBorder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full rounded-lg hidden"
+                      ></iframe>
+                    </div>
+                    <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-blue-400 transition duration-300">
+                      Teaser Launch
+                    </p>
+                  </motion.div>
+
+                  {/* Right Video Card */}
+                  <motion.div
+                    className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50 hidden"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 30 }}
+                    viewport={{ once: false }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "easeOut",
+                      delay: 0.2,
+                    }}
+                  >
+                    <div className="relative w-full h-full group">
+                      {/* Poster Image */}
+                      <img
+                        src="logo_graphic.png"
+                        alt="Logo Reveal Poster"
+                        className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-pink-400 group-hover:shadow-[0_0_15px_4px_rgba(255,105,180,0.7)] transition duration-300"
+                        onClick={() =>
+                          (document.getElementById("logo-video").style.display =
+                            "block")
+                        }
+                      />
+                      {/* YouTube Video (Initially Hidden) */}
+                      <iframe
+                        id="logo-video"
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/HVL4Fgel8S4"
+                        title="Logo Reveal of Pravah"
+                        frameBorder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full rounded-lg hidden"
+                      ></iframe>
+                    </div>
+                    <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-pink-400 transition duration-300">
+                      Logo Reveal
+                    </p>
+                  </motion.div>
                 </div>
               </div>
-{/* Video Section */}
-                <div className="hidden">
-                  <div className="flex flex-col items-center justify-center gap-6 min-h-screen px-4 sm:hidden">
-                    <div className="radial-grid absolute inset-0" />
-                    {/* Left Video Card */}
-                    <motion.div
-                      className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50"
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 30 }}
-                      viewport={{ once: false }}
-                      transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
-                      <div className="relative w-full h-full group">
-                        {/* Poster Image */}
-                        <img
-                          src="teaser_graphic.png"
-                          alt="Teaser Poster"
-                          className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-blue-400 group-hover:shadow-[0_0_15px_4px_rgba(58,134,255,0.7)] transition duration-300"
-                          onClick={() =>
-                            (document.getElementById(
-                              "teaser-video",
-                            ).style.display = "block")
-                          }
-                        />
-                        {/* YouTube Video (Initially Hidden) */}
-                        <iframe
-                          id="teaser-video"
-                          width="100%"
-                          height="100%"
-                          src="https://www.youtube.com/embed/esOx6T4uQwI"
-                          title="Teaser Launch of Pravah"
-                          frameBorder="0"
-                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="absolute inset-0 w-full h-full rounded-lg hidden"
-                        ></iframe>
-                      </div>
-                      <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-blue-400 transition duration-300">
-                        Teaser Launch
-                      </p>
-                         
-                    </motion.div>
-
-                    {/* Right Video Card */}
-                    <motion.div
-                      className="video-card relative rounded-lg w-72 h-48 bg-gray-100 shadow-md overflow-hidden hover:scale-105 transform transition z-50 hidden"
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 30 }}
-                      viewport={{ once: false }}
-                      transition={{
-                        duration: 0.8,
-                        ease: "easeOut",
-                        delay: 0.2,
-                      }}
-                    >
-                      <div className="relative w-full h-full group">
-                        {/* Poster Image */}
-                        <img
-                          src="logo_graphic.png"
-                          alt="Logo Reveal Poster"
-                          className="w-full h-full object-cover cursor-pointer rounded-lg group-hover:opacity-90 border-[3px] border-transparent group-hover:border-pink-400 group-hover:shadow-[0_0_15px_4px_rgba(255,105,180,0.7)] transition duration-300"
-                          onClick={() =>
-                            (document.getElementById(
-                              "logo-video",
-                            ).style.display = "block")
-                          }
-                        />
-                        {/* YouTube Video (Initially Hidden) */}
-                        <iframe
-                          id="logo-video"
-                          width="100%"
-                          height="100%"
-                          src="https://www.youtube.com/embed/HVL4Fgel8S4"
-                          title="Logo Reveal of Pravah"
-                          frameBorder="0"
-                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="absolute inset-0 w-full h-full rounded-lg hidden"
-                        ></iframe>
-                      </div>
-                      <p className="text-center text-sm font-medium mt-2 text-gray-800 group-hover:text-pink-400 transition duration-300">
-                        Logo Reveal
-                      </p>
-                    </motion.div>
-                  </div>
-                </div>
               {/* Section 2 */}
-  <div className="section min-h-screen w-full flex items-center justify-center bg-[#2d201c] px-3 sm:px-6">
-  <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-8 sm:gap-12">
+              <div
+                className="
+  section
+  min-h-[100svh]
+  w-full
+  flex
+  items-center
+  justify-center
+  bg-[#2d201c]
+  px-3 sm:px-6
+  pt-20 sm:pt-0
+"
+              >
+                <div className="w-full max-w-3xl flex flex-col items-center justify-center text-center gap-8 sm:gap-12">
+                  {/* Countdown */}
+                  <div className="w-full z-1000 flex justify-center scale-90 sm:scale-100">
+                    <EventCountdown />
+                  </div>
 
-    {/* Countdown */}
-    <div className="w-full flex justify-center scale-90 sm:scale-100">
-      <EventCountdown />
-    </div>
-
-    {/* Video */}
-    <motion.div
-      className="
-        w-full
-        aspect-video
+                  {/* Video */}
+                  <motion.div
+                    className="w-full aspect-video
         bg-gray-100
         rounded-lg sm:rounded-xl
         shadow-lg
         overflow-hidden
       "
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-    >
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
-        title="Teaser Launch of Pravah"
-        frameBorder="0"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                  >
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
+                      title="Teaser Launch of Pravah"
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
 
-      {/* Confetti (hidden on small screens) */}
-      <div className="hidden sm:block">
-        <Confetti width={1200} height={600} />
-      </div>
-    </motion.div>
-
-  </div>
-</div>
-
-
+                    {/* Confetti (hidden on small screens) */}
+                  </motion.div>
+                    <div className="block z-1000 w-full h-full absolute top-0 left-0">
+                      <Confetti width={3000} height={1000} />
+                    </div>
+                </div>
+              </div>
 
               {/* Section 6*/}
 
