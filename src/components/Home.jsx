@@ -779,7 +779,7 @@ const Home = () => {
     >
       <iframe
         className="w-full h-full"
-        src="https://www.youtube.com/embed/STmA_ohIuyM?enablejsapi=1"
+        src="https://www.youtube.com/embed/STmA_ohIuyM"
         title="Teaser Launch of Pravah"
         frameBorder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

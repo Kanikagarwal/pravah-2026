@@ -85,7 +85,7 @@ const EventCountdown = () => {
   const eventDate = "2026-02-16T00:00:00+05:30";
 
   return (
-    <div className="pt-20 sm:p-0">
+    <div className="pt-48 sm:p-0">
       <CountdownTimer eventDate={eventDate} />
     </div>
   );
