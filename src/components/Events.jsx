@@ -25,7 +25,7 @@ const Events = () => {
     "Literary": "art.png",
     "Non-Technical": "nontech.png",
     "E-Gaming":"egaming.png",
-    "Bachpan ki yaadein": "Bachpankiyaadein.png"
+    "Bachpan ki yaadein": "bky.png"
   }
 
   // Fetch categories data from the API
@@ -34,11 +34,25 @@ const Events = () => {
       try {
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/categories`);
         const data = await response.json();
-        const sortedData = [...data].sort((a, b) => {
-        if (a.categoryName === "E-Gaming") return -1;
-        if (b.categoryName === "E-Gaming") return 1;
-        return 0;
-      });
+        const priorityOrder = ["Bachpan ki yaadein","E-Gaming"]; // add names in order you want
+
+const sortedData = [...data].sort((a, b) => {
+  const aIndex = priorityOrder.indexOf(a.categoryName);
+  const bIndex = priorityOrder.indexOf(b.categoryName);
+
+  // If both are in priority list → sort by their priority position
+  if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+
+  // If only a is priority → a comes first
+  if (aIndex !== -1) return -1;
+
+  // If only b is priority → b comes first
+  if (bIndex !== -1) return 1;
+
+  // Otherwise keep original order
+  return 0;
+});
+
         setCategories(sortedData); // Store the fetched categories
         setFilteredCategories(sortedData); // Initialize filtered categories with all categories
         setLoading(false); // Stop loading once data is fetched
@@ -165,6 +179,7 @@ const Events = () => {
                 </div>
               ) : filteredCategories.length > 0 ? (
                 filteredCategories
+                .filter(category => category.categoryName.toLowerCase() !== "e-gaming")
                 .map((category, index) => (
                   <motion.div
   key={category._id}
@@ -193,7 +208,10 @@ const Events = () => {
   
   <div className="px-6 py-5 text-center space-y-2 bg-[#5a3e36]">
     <h5 className="text-2xl font-semibold text-[#f9eddd]">
-      {category.categoryName} Events
+      {category.categoryName
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")} {(category.categoryName!="Bachpan ki yaadein")?"Events":""}
     </h5>
   </div>
 </motion.div>
