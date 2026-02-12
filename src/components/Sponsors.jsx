@@ -68,16 +68,6 @@ const Sponsors = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                      Food Partner
-                    </h3>
-                    <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
-                      alt=""
-                      className="w-52 h-auto"
-                    />
-                  </div>
                   {/* Radio Partner */}
                   <div className="flex flex-col items-center">
                     <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
@@ -89,7 +79,39 @@ const Sponsors = () => {
                       className="w-28 h-auto"
                     />
                   </div>
+                  {/* Radio Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-16 audiowide-regular">
+                      Real Estate Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770908930/a-removebg-preview_2_kyfyhn.png"
+                      alt="Radio Partner"
+                      className="w-[350px] h-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Food Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
+                      alt=""
+                      className="w-52 h-auto"
+                    />
+                  </div>
 
+                  {/* Cooling Partner */}
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
+                      Cooling Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909558/a-removebg-preview_3_bwcvji.png"
+                      alt="Radio Partner"
+                      className="w-[250px] h-auto"
+                    />
+                  </div>
                   
 
                   {/* Education Partner */}
@@ -100,7 +122,7 @@ const Sponsors = () => {
                     <img
                       src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
                       alt="Education Partner"
-                      className="w-28 h-auto"
+                      className="w-[150px] h-auto"
                     />
                   </div>
                   
@@ -117,6 +139,17 @@ const Sponsors = () => {
                       className="w-28 h-auto"
                     />
                   </div>
+                  
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
+                      Medical Partner
+                    </h3>
+                    <img
+                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
+                      alt="Workplace Readiness Solution Partner"
+                      className="w-52 h-auto"
+                    />
+                  </div>
                   {/* entertainment patners */}
                   <div className="flex flex-col items-center">
                     <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular">
@@ -126,16 +159,6 @@ const Sponsors = () => {
                       src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1768724006/urban_aura_logo_1_on3xxi.png"
                       alt="Education Partner"
                       className="w-44 h-auto"
-                    />
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-medium uppercase tracking-wider mb-6 audiowide-regular text-center">
-                      Medical Partner
-                    </h3>
-                    <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
-                      alt="Workplace Readiness Solution Partner"
-                      className="w-52 h-auto"
                     />
                   </div>
                   <div className="flex flex-col items-center">
@@ -167,11 +190,20 @@ const Sponsors = () => {
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
+                   
+
                       <img
-                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1770706969/PHOTO-2026-02-10-12-12-21-removebg-preview_osl0p2.png"
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909758/a-removebg-preview_4_nfoht8.png"
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
+
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909930/a-removebg-preview_5_gu5owj.png"
+                        alt="Supported By 5"
+                        className="w-32 h-32 object-contain"
+                      />
+
 
                       <img
                         src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770484942/imgpsh_fullsize_anim-2_tazqdf.png"
@@ -186,13 +218,36 @@ const Sponsors = () => {
                       />
 
                       <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910348/cc_sr7sxy.png"
+                        alt="Ching Chong"
+                        className="w-40 h-40 object-contain"
+                      />
+
+
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910034/e4e616f8-ba04-4e3f-8189-0a6492ce5f76.png"
+                        alt="Supported By 2"
+                        className="w-32 h-32 object-contain"
+                      />
+
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910207/a-removebg-preview_6_hdoiti.png"
+                        alt="Supported By 2"
+                        className="w-32 h-32 object-contain"
+                      />
+
+
+                      <img
                         src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
                         alt="Supported By 1"
                         className="w-40 h-40 object-contain"
                       />
 
-                      
-
+                      <img
+                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910679/a-removebg-preview_7_yzgboc.png"
+                        alt="Supported By 1"
+                        className="w-40 h-40 object-contain"
+                      />
                       
                       
                     </div>
