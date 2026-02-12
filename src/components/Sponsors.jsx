@@ -167,6 +167,11 @@ const Sponsors = () => {
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
+                      <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1770706969/PHOTO-2026-02-10-12-12-21-removebg-preview_osl0p2.png"
+                        alt="Supported By 4"
+                        className="w-32 h-32 object-contain"
+                      />
 
                       <img
                         src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770484942/imgpsh_fullsize_anim-2_tazqdf.png"
