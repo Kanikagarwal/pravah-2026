@@ -37,8 +37,8 @@ const Events = () => {
         );
         const data = await response.json();
         const sortedData = [...data].sort((a, b) => {
-        if (a.categoryName === "E-Gaming") return -1;
-        if (b.categoryName === "E-Gaming") return 1;
+        if (a.categoryName === "Bachpan ki yaadein") return -1;
+        if (b.categoryName === "Bachpan ki yaadein") return 1;
         return 0;
       });
         setCategories(sortedData); // Store the fetched categories
@@ -197,7 +197,11 @@ const Events = () => {
   
   <div className="px-6 py-5 text-center space-y-2 bg-[#5a3e36]">
     <h5 className="text-2xl font-semibold text-[#f9eddd]">
-      {category.categoryName} Events
+      {category.categoryName
+  .split(" ")
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(" ")}
+ {(category.categoryName=="Bachpan ki yaadein")?" ":"Events"}
     </h5>
   </div>
 </motion.div>

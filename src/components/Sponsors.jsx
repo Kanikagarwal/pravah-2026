@@ -249,7 +249,11 @@ const Sponsors = () => {
                         className="w-40 h-40 object-contain"
                       />
                       
-                      
+                      <img
+                        src="ea.jpeg"
+                        alt="Supported By 1"
+                        className="w-40 h-40 object-contain"
+                      />
                     </div>
                   </div>
 
