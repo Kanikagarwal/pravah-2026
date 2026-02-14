@@ -47,7 +47,7 @@ const Schedule = () => {
       eventCategory: "special",
       eventImage: "/AnnualDay/5.JPG",
       eventDate: "2026-02-16T00:00:00",
-      eventTimings: { from: "14:00", to: "17:00" },
+      eventTimings: { from: "09:30", to: "12:00" },
       schedule: true,
     },
     

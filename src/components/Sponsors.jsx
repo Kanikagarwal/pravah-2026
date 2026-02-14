@@ -85,7 +85,7 @@ const Sponsors = () => {
                       Real Estate Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770908930/a-removebg-preview_2_kyfyhn.png"
+                      src="a.png"
                       alt="Radio Partner"
                       className="w-[350px] h-auto"
                     />
@@ -107,7 +107,7 @@ const Sponsors = () => {
                       Cooling Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909558/a-removebg-preview_3_bwcvji.png"
+                      src="b.png"
                       alt="Radio Partner"
                       className="w-[250px] h-auto"
                     />
@@ -120,7 +120,7 @@ const Sponsors = () => {
                       Education Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1767804276/33_aeifbj.png"
+                      src="c.png"
                       alt="Education Partner"
                       className="w-[150px] h-auto"
                     />
@@ -134,7 +134,7 @@ const Sponsors = () => {
                       Official Study Abroad Education Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768632964/z_ukasch.png"
+                      src="z.png"
                       alt="Workplace Readiness Solution Partner"
                       className="w-28 h-auto"
                     />
@@ -193,13 +193,13 @@ const Sponsors = () => {
                    
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909758/a-removebg-preview_4_nfoht8.png"
+                        src="e.png"
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909930/a-removebg-preview_5_gu5owj.png"
+                        src="f.png"
                         alt="Supported By 5"
                         className="w-32 h-32 object-contain"
                       />
@@ -218,20 +218,20 @@ const Sponsors = () => {
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910348/cc_sr7sxy.png"
+                        src="cc.png"
                         alt="Ching Chong"
                         className="w-40 h-40 object-contain"
                       />
 
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910034/e4e616f8-ba04-4e3f-8189-0a6492ce5f76.png"
+                        src="v.jpg"
                         alt="Supported By 2"
                         className="w-32 h-32 object-contain"
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910207/a-removebg-preview_6_hdoiti.png"
+                        src="m.png"
                         alt="Supported By 2"
                         className="w-32 h-32 object-contain"
                       />
@@ -244,7 +244,7 @@ const Sponsors = () => {
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770910679/a-removebg-preview_7_yzgboc.png"
+                        src="s.png"
                         alt="Supported By 1"
                         className="w-40 h-40 object-contain"
                       />
