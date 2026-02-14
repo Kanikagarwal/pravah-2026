@@ -10,6 +10,58 @@ import { Helmet } from "react-helmet";
 const Schedule = () => {
   const [events, setEvents] = useState([]);
 
+  // ✅ MANUAL EVENTS (added)
+  const manualEvents = [
+    {
+      _id: "manual1",
+      eventTitle: "DJ Night",
+      eventCategory: "special",
+      eventImage: "/Celebrity/7.JPG",
+      eventDate: "2026-02-19T00:00:00",
+      eventTimings: { from: "19:00", to: "22:00" },
+      schedule: true,
+    },
+    {
+      _id: "manual2",
+      eventTitle: "Celeb Night",
+      eventCategory: "special",
+      eventImage: "/Celebrity/3.JPG",
+      eventDate: "2026-02-20T00:00:00",
+      eventTimings: { from: "19:00", to: "22:00" },
+      schedule: true,
+    },
+
+    {
+      _id: "manual3",
+      eventTitle: "Prize Distribution",
+      eventCategory: "special",
+      eventImage: "/AnnualDay/6.JPG",
+      eventDate: "2026-02-21T00:00:00",
+      eventTimings: { from: "14:00", to: "17:00" },
+      schedule: true,
+    },
+
+    {
+      _id: "manual4",
+      eventTitle: "Inaugural Ceremony",
+      eventCategory: "special",
+      eventImage: "/AnnualDay/5.JPG",
+      eventDate: "2026-02-16T00:00:00",
+      eventTimings: { from: "14:00", to: "17:00" },
+      schedule: true,
+    },
+    
+    {
+      _id: "manual3",
+      eventTitle: "Annual Day",
+      eventCategory: "special",
+      eventImage: "/AnnualDay/7.JPG",
+      eventDate: "2026-02-21T00:00:00",
+      eventTimings: { from: "18:00", to: "22:00" },
+      schedule: true,
+    },
+  ];
+
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -18,17 +70,24 @@ const Schedule = () => {
         );
         const data = await response.json();
 
-        const filteredEvents = data.filter((event) => event.schedule !== false);
+        const filteredEvents = data.filter(
+          (event) => event.schedule !== false
+        );
 
-        setEvents(filteredEvents);
+        // ✅ merge API + manual events
+        setEvents([...filteredEvents, ...manualEvents]);
       } catch (error) {
         console.error("Error fetching events:", error);
+
+        // fallback: show manual events if API fails
+        setEvents(manualEvents);
       }
     };
 
     fetchEvents();
   }, []);
 
+  // group events by date
   const groupedEvents = events.reduce((acc, event) => {
     const eventDate = event.eventDate.split("T")[0];
     if (!acc[eventDate]) acc[eventDate] = [];
@@ -36,6 +95,7 @@ const Schedule = () => {
     return acc;
   }, {});
 
+  // sort by date & time
   const sortedGroupedEvents = Object.entries(groupedEvents)
     .sort(([dateA], [dateB]) => new Date(dateA) - new Date(dateB))
     .reduce((acc, [date, events]) => {
@@ -46,7 +106,6 @@ const Schedule = () => {
       });
       return acc;
     }, {});
-console.log(sortedGroupedEvents);
 
   const isLiveEvent = (timings) => {
     const { from, to } = timings;
@@ -68,44 +127,27 @@ console.log(sortedGroupedEvents);
     const [h, m] = time.split(":").map(Number);
     const period = h >= 12 ? "PM" : "AM";
     const hour = h % 12 || 12;
-    return `${hour}:${String(m).padStart(2, "0")} ${period
-
-
-
-    }`;
+    return `${hour}:${String(m).padStart(2, "0")} ${period}`;
   };
 
-  const formatDayWithSuffix = (dateString) => {
-    const day = new Date(dateString).getDate();
-    let suffix = "th";
+  const formatDayAndMonth = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = date.toLocaleString("en-US", { month: "short" });
 
-    if (day % 10 === 1 && day !== 11) suffix = "st";
-    else if (day % 10 === 2 && day !== 12) suffix = "nd";
-    else if (day % 10 === 3 && day !== 13) suffix = "rd";
+    const suffix =
+      day % 10 === 1 && day !== 11
+        ? "st"
+        : day % 10 === 2 && day !== 12
+        ? "nd"
+        : day % 10 === 3 && day !== 13
+        ? "rd"
+        : "th";
 
-    return `${day}${suffix}`;
+    return `${day}${suffix} ${month}`;
   };
 
   const today = new Date().toISOString().split("T")[0];
-
-  const formatDayAndMonth = (dateString) => {
-  const date = new Date(dateString);
-
-  const day = date.getDate();
-  const month = date.toLocaleString("en-US", { month: "short" });
-
-  const suffix =
-    day % 10 === 1 && day !== 11
-      ? "st"
-      : day % 10 === 2 && day !== 12
-      ? "nd"
-      : day % 10 === 3 && day !== 13
-      ? "rd"
-      : "th";
-
-  return `${day}${suffix} ${month}`;
-};
-
 
   return (
     <div>
@@ -140,7 +182,6 @@ console.log(sortedGroupedEvents);
                       <div className="flex justify-between items-center py-4">
                         <h2 className="text-4xl font-extrabold">
                           DAY {index + 1} - {formatDayAndMonth(day)}
-
                         </h2>
 
                         {day === today && (
@@ -163,43 +204,54 @@ console.log(sortedGroupedEvents);
                             viewport={{ once: false }}
                             transition={{ duration: 0.6, delay: i * 0.1 }}
                           >
-                            <Link
-                              to={`/skit-pravah-2026-events/${event.eventCategory}/${event._id}`}
-                            >
-                              <div className="relative bg-[#5a3e36] rounded-xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 border border-black">
-                                <div
-                                  className="relative w-full h-20 sm:h-32 bg-cover bg-center rounded-xl"
-                                  style={{
-                                    backgroundImage: `url(${event.eventImage})`,
-                                  }}
-                                />
+                            {event._id.startsWith("manual") ? (
+  <div className="relative bg-[#5a3e36] rounded-xl p-2 shadow-lg border border-black cursor-default">
+    <div
+      className="relative w-full h-20 sm:h-32 bg-cover bg-center rounded-xl"
+      style={{
+        backgroundImage: `url(${event.eventImage})`,
+      }}
+    />
 
-                                <div className="flex justify-between items-center mt-3 py-2">
-                                  <h3 className="text-lg font-bold text-[#f9eddd]">
-                                    {event.eventTitle.length > 10
-                                      ? `${event.eventTitle.substring(
-                                          0,
-                                          10
-                                        )}...`
-                                      : event.eventTitle}
-                                  </h3>
+    <div className="flex justify-between items-center mt-3 py-2">
+      <h3 className="text-lg font-bold text-[#f9eddd]">
+        {event.eventTitle.length > 10
+          ? `${event.eventTitle.substring(0, 10)}...`
+          : event.eventTitle}
+      </h3>
 
-                                  <p className="text-sm bg-[#f9eddd] px-2 py-1 rounded-lg">
-                                    {formatTime(event.eventTimings.from)}
-                                  </p>
-                                </div>
+      <p className="text-sm bg-[#f9eddd] px-2 py-1 rounded-lg">
+        {formatTime(event.eventTimings.from)}
+      </p>
+    </div>
+  </div>
+) : (
+  <Link
+    to={`/skit-pravah-2026-events/${event.eventCategory}/${event._id}`}
+  >
+    <div className="relative bg-[#5a3e36] rounded-xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 border border-black">
+      <div
+        className="relative w-full h-20 sm:h-32 bg-cover bg-center rounded-xl"
+        style={{
+          backgroundImage: `url(${event.eventImage})`,
+        }}
+      />
 
-                                {day === today &&
-                                  isLiveEvent(event.eventTimings) && (
-                                    <div className="flex items-center space-x-2 mt-2 absolute top-2 right-4 p-1 bg-red-200 rounded-full">
-                                      <FaCircle className="text-red-600 animate-pulse" />
-                                      <span className="text-sm text-red-900 font-bold">
-                                        Live
-                                      </span>
-                                    </div>
-                                  )}
-                              </div>
-                            </Link>
+      <div className="flex justify-between items-center mt-3 py-2">
+        <h3 className="text-lg font-bold text-[#f9eddd]">
+          {event.eventTitle.length > 10
+            ? `${event.eventTitle.substring(0, 10)}...`
+            : event.eventTitle}
+        </h3>
+
+        <p className="text-sm bg-[#f9eddd] px-2 py-1 rounded-lg">
+          {formatTime(event.eventTimings.from)}
+        </p>
+      </div>
+    </div>
+  </Link>
+)}
+
                           </motion.div>
                         ))}
                       </div>
