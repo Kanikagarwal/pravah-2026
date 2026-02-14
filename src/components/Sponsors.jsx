@@ -235,6 +235,11 @@ const Sponsors = () => {
                         alt="Supported By 2"
                         className="w-32 h-32 object-contain"
                       />
+                       <img
+                        src="https://res.cloudinary.com/dpfxln7h3/image/upload/v1771046692/PHOTO-2026-02-14-10-40-32-removebg-preview_xrajwr.png"
+                        alt="Supported By 2"
+                        className="w-32 h-32 object-contain"
+                      />
 
 
                       <img
