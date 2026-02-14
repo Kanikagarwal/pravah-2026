@@ -190,6 +190,7 @@ const Sponsors = () => {
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
+                   
 
                       <img
                         src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770909758/a-removebg-preview_4_nfoht8.png"

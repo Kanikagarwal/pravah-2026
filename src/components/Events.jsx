@@ -1,63 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import Navbarr from './Navbar';
-import DesktopFooter from './DesktopFooter';
-import { motion } from 'framer-motion';
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
-import { FaSearch } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
-import Comingsoon from './Comingsoon';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import React, { useState, useEffect } from "react";
+import Navbarr from "./Navbar";
+import DesktopFooter from "./DesktopFooter";
+import { motion } from "framer-motion";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import Comingsoon from "./Comingsoon";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 const Events = () => {
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]); // State for filtered categories
-  const [searchQuery, setSearchQuery] = useState(''); // State for search input
+  const [searchQuery, setSearchQuery] = useState(""); // State for search input
   const [loading, setLoading] = useState(true); // Track loading state
   const navigate = useNavigate();
   const SHOW_COMING_SOON = false;
 
   const eventImageObj = {
-    "Cultural": "cultural.png",
-    "Technical": "tech.png",
-    "Social": "social.png",
-    "Literary": "art.png",
+    Cultural: "cultural.png",
+    Technical: "tech.png",
+    Social: "social.png",
+    Literary: "art.png",
     "Non-Technical": "nontech.png",
     "E-Gaming":"egaming.png",
-    "Bachpan ki yaadein": "bky.png"
+    "Bachpan ki yaadein": "Bachpankiyaadein.png"
   }
 
   // Fetch categories data from the API
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}api/categories`);
+        const response = await fetch(
+          `${process.env.REACT_APP_API_URL}api/categories`,
+        );
         const data = await response.json();
-        const priorityOrder = ["Bachpan ki yaadein","E-Gaming"]; // add names in order you want
-
-const sortedData = [...data].sort((a, b) => {
-  const aIndex = priorityOrder.indexOf(a.categoryName);
-  const bIndex = priorityOrder.indexOf(b.categoryName);
-
-  // If both are in priority list → sort by their priority position
-  if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-
-  // If only a is priority → a comes first
-  if (aIndex !== -1) return -1;
-
-  // If only b is priority → b comes first
-  if (bIndex !== -1) return 1;
-
-  // Otherwise keep original order
-  return 0;
-});
-
+        const sortedData = [...data].sort((a, b) => {
+        if (a.categoryName === "E-Gaming") return -1;
+        if (b.categoryName === "E-Gaming") return 1;
+        return 0;
+      });
         setCategories(sortedData); // Store the fetched categories
         setFilteredCategories(sortedData); // Initialize filtered categories with all categories
         setLoading(false); // Stop loading once data is fetched
       } catch (error) {
-        console.error('Error fetching categories data:', error);
+        console.error("Error fetching categories data:", error);
         setLoading(false); // Handle error and stop loading
       }
     };
@@ -70,7 +58,7 @@ const sortedData = [...data].sort((a, b) => {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
     const filtered = categories.filter((category) =>
-      category.categoryName.toLowerCase().includes(query)
+      category.categoryName.toLowerCase().includes(query),
     );
     setFilteredCategories(filtered);
   };
@@ -82,57 +70,59 @@ const sortedData = [...data].sort((a, b) => {
 
   return (
     <div>
-{SHOW_COMING_SOON ? (
-  <>
-  <div
-      className="section relative overflow-hidden"
-      style={{
-        overflowX: "hidden",
-        backgroundImage: "url('navras/bg3.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-      }}
-    >
-        <Navbarr eventName={"The Event Collection"} />
-        <div className="w-full flex justify-center mt-24 mb-32">
-    <Comingsoon />
-  </div>
-        </div>
-        <DesktopFooter />
-      </>
+      {SHOW_COMING_SOON ? (
+        <>
+          <div
+            className="section relative overflow-hidden"
+            style={{
+              overflowX: "hidden",
+              backgroundImage: "url('navras/bg3.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              minHeight: "100vh",
+            }}
+          >
+            <Navbarr eventName={"The Event Collection"} />
+            <div className="w-full flex justify-center mt-24 mb-32">
+              <Comingsoon />
+            </div>
+          </div>
+          <DesktopFooter />
+        </>
       ) : (
-      <>
-      <Helmet>
-        <title>Events & Registrations - Pravah 2026 | SKIT</title>
-        <meta
-          name="description"
-          content="Explore the exciting events at Pravah 2026 and register to be a part of the grand celebration of Incredible India at SKIT."
-        />
-        <meta
-          name="keywords"
-          content="Pravah 2026 events, Incredible India, event registrations, SKIT, Swami Keshvanand Institute of Technology, Indian culture, celebrations"
-        />
-        <meta
-          property="og:title"
-          content="Events & Registrations - Pravah 2026 | SKIT"
-        />
-        <meta
-          property="og:description"
-          content="Join us at Pravah 2026, hosted by SKIT, to participate in vibrant events showcasing the cultural heritage and unity of Incredible India."
-        />
-        <meta property="og:url" content="https://pravah.skit.ac.in/skit-pravah-2026-events" />
-        <meta
-          name="author"
-          content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
-        />
-        <meta
-          name="organization"
-          content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
-        />
-      </Helmet>
-
+        <>
+          <Helmet>
+            <title>Events & Registrations - Pravah 2026 | SKIT</title>
+            <meta
+              name="description"
+              content="Explore the exciting events at Pravah 2026 and register to be a part of the grand celebration of Incredible India at SKIT."
+            />
+            <meta
+              name="keywords"
+              content="Pravah 2026 events, Incredible India, event registrations, SKIT, Swami Keshvanand Institute of Technology, Indian culture, celebrations"
+            />
+            <meta
+              property="og:title"
+              content="Events & Registrations - Pravah 2026 | SKIT"
+            />
+            <meta
+              property="og:description"
+              content="Join us at Pravah 2026, hosted by SKIT, to participate in vibrant events showcasing the cultural heritage and unity of Incredible India."
+            />
+            <meta
+              property="og:url"
+              content="https://pravah.skit.ac.in/skit-pravah-2026-events"
+            />
+            <meta
+              name="author"
+              content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
+            />
+            <meta
+              name="organization"
+              content="Swami Keshvanand Institute of Technology, Management, and Gramothan"
+            />
+          </Helmet>
 
       <div
                 className="section relative overflow-hidden bg-slate-100"
@@ -179,7 +169,6 @@ const sortedData = [...data].sort((a, b) => {
                 </div>
               ) : filteredCategories.length > 0 ? (
                 filteredCategories
-                .filter(category => category.categoryName.toLowerCase() !== "e-gaming")
                 .map((category, index) => (
                   <motion.div
   key={category._id}
@@ -208,10 +197,7 @@ const sortedData = [...data].sort((a, b) => {
   
   <div className="px-6 py-5 text-center space-y-2 bg-[#5a3e36]">
     <h5 className="text-2xl font-semibold text-[#f9eddd]">
-      {category.categoryName
-    .split(" ")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ")} {(category.categoryName!="Bachpan ki yaadein")?"Events":""}
+      {category.categoryName} Events
     </h5>
   </div>
 </motion.div>
@@ -228,11 +214,10 @@ const sortedData = [...data].sort((a, b) => {
       </div>
       
 
-      <DesktopFooter />
-            </>
-            )}
+          <DesktopFooter />
+        </>
+      )}
     </div>
-      
   );
 };
 
