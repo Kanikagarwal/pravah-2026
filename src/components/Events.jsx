@@ -200,7 +200,7 @@ const Events = () => {
       {category.categoryName
   .split(" ")
   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(" ")}
+  .join(" ")}{" "}
  {(category.categoryName=="Bachpan ki yaadein")?" ":"Events"}
     </h5>
   </div>

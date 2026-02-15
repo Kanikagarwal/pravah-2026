@@ -95,7 +95,7 @@ const Sponsors = () => {
                       Food Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050338/House_of_Zayka_Logo-removebg-preview_yqd6oh.png"
+                      src="b1.png"
                       alt=""
                       className="w-52 h-auto"
                     />
@@ -145,7 +145,7 @@ const Sponsors = () => {
                       Medical Partner
                     </h3>
                     <img
-                      src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050958/WhatsApp_Image_2026-02-02_at_22.17.13-removebg-preview_erwyvk.png"
+                      src="m1.png"
                       alt="Workplace Readiness Solution Partner"
                       className="w-52 h-auto"
                     />
@@ -174,7 +174,7 @@ const Sponsors = () => {
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770050551/SkillWiz_branding-white-removebg-preview_vl9fkh.png"
+                        src="sw.png"
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
@@ -186,7 +186,7 @@ const Sponsors = () => {
                       />
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770470164/FAST_PIZZA_page-0001.jpg-removebg-preview_athbjn.png"
+                        src="fp.png"
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
@@ -206,7 +206,7 @@ const Sponsors = () => {
 
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1770484942/imgpsh_fullsize_anim-2_tazqdf.png"
+                        src="ne.png"
                         alt="Supported By 4"
                         className="w-32 h-32 object-contain"
                       />
@@ -243,7 +243,7 @@ const Sponsors = () => {
 
 
                       <img
-                        src="https://res.cloudinary.com/ddvevjjoh/image/upload/v1768551236/x-removebg-preview_cixfw7.png"
+                        src="x2.png"
                         alt="Supported By 1"
                         className="w-40 h-40 object-contain"
                       />
